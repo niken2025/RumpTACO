@@ -1,7 +1,7 @@
-"""Aggression 점수화 — Haiku 1차 필터 → Opus 정밀.
+"""Aggression 점수화 — Google Gemini Flash (1차) / Pro (정밀).
 
-에이전트 정의는 .claude/agents/aggression-scorer.md 를 기본 프롬프트로 삼는다.
-여기서는 API 호출 구현. Claude Code 환경에서는 에이전트 dispatch로 대체 가능.
+에이전트 정의는 .claude/agents/aggression-scorer.md 를 시스템 프롬프트로 사용.
+무료 티어: Gemini 1.5 Flash 15 req/min, 1500 req/day — 일일 배치에 충분.
 """
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from anthropic import Anthropic
+import google.generativeai as genai
 
 
 AGENT_PROMPT_PATH = Path(__file__).resolve().parent.parent / ".claude" / "agents" / "aggression-scorer.md"
@@ -19,7 +19,6 @@ AGENT_PROMPT_PATH = Path(__file__).resolve().parent.parent / ".claude" / "agents
 
 def _system_prompt() -> str:
     raw = AGENT_PROMPT_PATH.read_text(encoding="utf-8")
-    # frontmatter 제거
     if raw.startswith("---"):
         parts = raw.split("---", 2)
         if len(parts) >= 3:
@@ -28,37 +27,63 @@ def _system_prompt() -> str:
 
 
 def _extract_json(text: str) -> dict[str, Any]:
-    """모델 출력에서 첫 JSON 오브젝트 추출."""
+    """모델 출력에서 첫 JSON 오브젝트 추출 (코드펜스 제거 포함)."""
+    # ```json ... ``` 제거
+    text = re.sub(r"```(?:json)?\s*", "", text)
+    text = re.sub(r"```\s*$", "", text)
     m = re.search(r"\{[\s\S]*\}", text)
     if not m:
         raise ValueError(f"JSON 미발견: {text[:200]}")
     return json.loads(m.group(0))
 
 
+_configured = False
+
+
+def _ensure_configured() -> None:
+    global _configured
+    if _configured:
+        return
+    api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("GOOGLE_API_KEY (또는 GEMINI_API_KEY) 환경변수 없음")
+    genai.configure(api_key=api_key)
+    _configured = True
+
+
 def score_statement(content: str, *, precise: bool = False) -> dict[str, Any]:
     """단일 발언 점수화.
 
-    precise=False: Haiku 4.5
-    precise=True: Opus 4.6
+    precise=False: Gemini 1.5 Flash (무료·빠름)
+    precise=True: Gemini 1.5 Pro (정밀·느림·유료 많음)
     """
-    client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-    model = os.getenv("MODEL_MAIN" if precise else "MODEL_LIGHT") or (
-        "claude-opus-4-6" if precise else "claude-haiku-4-5-20251001"
+    _ensure_configured()
+    default_light = "gemini-1.5-flash"
+    default_main = "gemini-1.5-pro"
+    model_name = os.getenv("MODEL_MAIN" if precise else "MODEL_LIGHT") or (
+        default_main if precise else default_light
     )
-    resp = client.messages.create(
-        model=model,
-        max_tokens=600,
-        system=_system_prompt(),
-        messages=[{"role": "user", "content": f"다음 발언의 Aggression 점수를 매겨주세요:\n\n{content}"}],
+
+    model = genai.GenerativeModel(
+        model_name=model_name,
+        system_instruction=_system_prompt(),
+        generation_config={
+            "temperature": 0.2,
+            "max_output_tokens": 600,
+            "response_mime_type": "application/json",
+        },
     )
-    out_text = "".join(block.text for block in resp.content if hasattr(block, "text"))
+    resp = model.generate_content(
+        f"다음 발언의 Aggression 점수를 매겨주세요:\n\n{content}"
+    )
+    out_text = resp.text or ""
     data = _extract_json(out_text)
-    data["_model"] = model
+    data["_model"] = model_name
     return data
 
 
 def score_batch(statements: list[dict], precise_threshold: float = 50.0) -> list[dict]:
-    """리스트 점수화. Haiku로 1차, 점수 >= threshold이면 Opus 재평가."""
+    """Flash 1차 → 점수 >= threshold이면 Pro 재평가."""
     out = []
     for s in statements:
         try:
@@ -68,7 +93,7 @@ def score_batch(statements: list[dict], precise_threshold: float = 50.0) -> list
                 try:
                     final = score_statement(s["content"], precise=True)
                 except Exception as e:  # noqa: BLE001
-                    print(f"[aggression] Opus 재평가 실패, Haiku 결과 사용: {e}")
+                    print(f"[aggression] Pro 재평가 실패, Flash 결과 사용: {e}")
             out.append({**s, **final})
         except Exception as e:  # noqa: BLE001
             print(f"[aggression] 점수화 실패: {e}")

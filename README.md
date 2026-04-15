@@ -19,11 +19,11 @@ pip install -r requirements.txt
 
 # 2. 환경변수
 cp .env.example .env        # Windows: copy .env.example .env
-# .env 편집 — ANTHROPIC_API_KEY, FRED_API_KEY, TELEGRAM_* 채우기
+# .env 편집 — GOOGLE_API_KEY, FRED_API_KEY, TELEGRAM_* 채우기
 
 # 3. 스모크 테스트
 python cli.py smoke-pain    # Pain Index 공식 확인 (API 불필요)
-python cli.py smoke-agg     # Aggression 점수화 (ANTHROPIC_API_KEY 필요)
+python cli.py smoke-agg     # Aggression 점수화 (GOOGLE_API_KEY 필요)
 
 # 4. 수동 전체 실행
 python cli.py daily --no-send   # 미리보기
@@ -50,7 +50,7 @@ GitHub repo Secrets에 `.env` 항목들을 등록하면 자동 발송.
 ## 1단계 MVP 범위
 - ✅ 9개 시장지표 수집 (FRED/Yahoo/CoinGecko)
 - ✅ Tavily 뉴스 페일오버 발언 수집
-- ✅ Claude Haiku 1차 → Opus 정밀 점수화
+- ✅ Gemini Flash(무료) 1차 → Pro 정밀 점수화
 - ✅ 룰베이스 TACO 확률 (공식: composite + interaction sigmoid)
 - ✅ 텔레그램 리포트 + 일별 마크다운 로그
 - ✅ GitHub Actions 일일 cron
