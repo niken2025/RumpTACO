@@ -1,0 +1,17 @@
+.env
+.env.local
+*.pyc
+__pycache__/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+reports/*.md
+!reports/.gitkeep
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
