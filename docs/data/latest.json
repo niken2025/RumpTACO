@@ -1,10 +1,13 @@
 {
   "generated_at": "2026-04-15T14:31:03.647766+09:00",
   "date": "2026-04-15",
-  "taco_probability": 21.54,
-  "aggression_score": 0.0,
+  "taco_probability": 82.56,
+  "aggression_score": 83.5,
   "pain_index": 50.42,
-  "expected_window_hours": null,
+  "expected_window_hours": [
+    24.0,
+    48.0
+  ],
   "model_version": "rule-based-v0.1",
   "threshold": {
     "very_high": 80,
@@ -40,6 +43,103 @@
       "trump_approval"
     ]
   },
-  "top_statements": [],
-  "explanation": "[낮음] Aggression 0.0 × Pain 50.4 → composite=0.227, interaction=0.000, raw=0.227. 룰베이스 공식 rule-based-v0.1 적용."
+  "top_statements": [
+    {
+      "source": "news",
+      "url": "https://www.nytimes.com/live/2026/04/14/world/iran-war-oil-hormuz",
+      "content": "Iran War Live Updates: U.S. and Iran Trade Proposals on Nuclear Restrictions - The New York Times\n\nPresident Trump announced a U.S. naval blockade of Iranian ports along the strait after high-level negotiations with Iran broke down over the weekend, and said that other countries would join in. An Iran-linked tanker appeared to travel through the Strait of Hormuz on Monday after the United States imposed a blockade on vessels entering or leaving Iranian ports, according to tracking data from Mari",
+      "translated": "미국과 이란이 핵 제한 조치를 놓고 협상을 진행 중이며, 트럼프 대통령은 협상 결렬 시 이란 항구 봉쇄를 발표했다.",
+      "aggression_score": 83.5,
+      "threat_intensity": 85,
+      "specificity": 70,
+      "deadline_specified": 90,
+      "topic_tags": [
+        "military",
+        "war",
+        "iran",
+        "sanctions",
+        "tariffs",
+        "foreign_policy",
+        "energy"
+      ],
+      "rationale": "이란 항구 봉쇄라는 구체적인 군사적 조치를 명시하고, 월요일 발효라는 명확한 시한을 제시했으며, 이는 즉각적인 해상 운송 차단이라는 높은 수준의 위협을 나타냅니다."
+    },
+    {
+      "source": "news",
+      "url": "https://fortune.com/2026/04/14/man-charged-in-arson-attack-on-sam-altman-ai-ceo-kill-list-prosecutors-say/",
+      "content": "Man charged in arson attack on Sam Altman’s house had AI CEO kill list, prosecutors say - Fortune\n\nA 20-year-old man has been charged with attempted murder and arson after a Molotov cocktail attack on OpenAI CEO Sam Altman’s house last week, according to the U.S. Department of Justice. **Yesterday, President Trump said** on social media, “If any of these ships come anywhere close to our BLOCKADE, they will be immediately ELIMINATED, using the same system of kill that we use against the drug deal",
+      "translated": "샘 올트먼의 집에 방화 공격을 한 남성이 인공지능 최고경영자 살해 명단을 가지고 있었다고 검찰이 밝혔다. 트럼프 대통령은 소셜 미디어에 \"만약 이 배들 중 어느 것이라도 우리 봉쇄선에 가까이 온다면\"이라고 말했다.",
+      "aggression_score": 71.5,
+      "threat_intensity": 85,
+      "specificity": 70,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "military",
+        "war",
+        "iran",
+        "middle_east",
+        "sanctions",
+        "foreign_policy"
+      ],
+      "rationale": "이란 관련 발언은 아니지만, 'BLOCKADE'에 접근하는 선박에 대한 즉각적이고 완전한 제거(ELIMINATED)를 경고하며, 이는 군사적 위협의 강도가 높고(85점), 'kill system'이라는 구체적인 조치를 언급했으나(70점), 시한은 'immediately'로 모호하여(40점) 총점 71.5점을 기록했습니다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.huffpost.com/entry/us-iran-war-talks-blockade-trump_n_69dec27ee4b05c8319cd65ac",
+      "content": "U.S., Iran May Resume Talks This Week Despite Port Blockade - HuffPost\n\n# U.S., Iran May Resume Talks This Week Despite Port Blockade. Talks to end the Iran war could resume in Pakistan over the next two days, Trump said on Tuesday. ISLAMABAD/WASHINGTON/DUBAI, April 14 (Reuters) - Talks to end the Iran war could resume in Pakistan over the next two days, U.S. President Donald Trump said on Tuesday, after the collapse of weekend negotiations prompted Washington to impose a blockade on Iranian por",
+      "translated": "트럼프 대통령은 항구 봉쇄에도 불구하고 미국과 이란이 이번 주 파키스탄에서 전쟁 종식 협상을 재개할 수 있다고 밝혔다.",
+      "aggression_score": 67.0,
+      "threat_intensity": 70,
+      "specificity": 60,
+      "deadline_specified": 70,
+      "topic_tags": [
+        "war",
+        "iran",
+        "military",
+        "sanctions",
+        "tariffs",
+        "foreign_policy"
+      ],
+      "rationale": "이란과의 전쟁 종식을 위한 협상이 임박했음을 언급하며, 이란 항구 봉쇄와 '이란 문명 전체를 파괴하겠다'는 위협을 포함하고 있어 위협 강도가 높음. 협상 재개 시한을 '이틀 내', '이번 주 내'로 명시하여 구체성이 높음. 다만, 봉쇄 조치 자체는 구체적이나 '이란 문명 파괴'는 수사적 표현으로 간주하여 위협 강도와 구체성 점수를 조정함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.marinelink.com/blogs/blog/us-and-iran-could-resume-war-talks-next-week-despite-the-port-104560",
+      "content": "US and Iran could resume war talks next week despite the port blockade - Marine Link\n\n# US and Iran could resume war talks next week despite the port blockade. teams of the U.S., Iran, and other countries could return to Islamabad to resume the talks on ending the war this week, after the weekend's negotiations failed, prompting Washington to impose an? U.S. president Donald Trump said Iran was in contact on Monday, and that they wanted to reach a deal. A military spokesperson in Iran called U.S",
+      "translated": "미국과 이란은 항구 봉쇄에도 불구하고 다음 주에 전쟁 협상을 재개할 수 있습니다.",
+      "aggression_score": 59.5,
+      "threat_intensity": 55,
+      "specificity": 60,
+      "deadline_specified": 70,
+      "topic_tags": [
+        "iran",
+        "military",
+        "war",
+        "sanctions",
+        "foreign_policy",
+        "trade"
+      ],
+      "rationale": "이란과의 전쟁 재개 가능성 및 항구 봉쇄 언급은 위협 강도를 높이며, 봉쇄 대상과 지역이 구체적으로 명시되어 구체성 점수가 높음. 'next week'이라는 시한 명시는 중간 정도의 점수를 부여함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.vpm.org/npr-news/2026-04-14/eric-swalwell-will-resign-from-congress-and-trump-feuds-with-pope-leo-over-iran-war",
+      "content": "Eric Swalwell will resign from Congress. And, Trump feuds with Pope Leo over Iran War - VPM\n\n* ➡️ **Swalwell is not the only lawmaker leaving his congressional seat.** U.S. Rep. Tony Gonzales announced yesterday that he will resign after accusations that he had a sexual relationship with a staffer who later took her own life. In times of crisis, nations typically lean on their allies for support, but President Trump has alienated many U.S. allies by failing to consult them. * 🎧 **NPR's Danielle ",
+      "translated": "에릭 스웰웰 의원이 의회직을 사임할 예정이며, 토니 곤잘레스 의원도 직원과의 부적절한 관계로 인해 사임한다고 발표했습니다.",
+      "aggression_score": 55.0,
+      "threat_intensity": 70,
+      "specificity": 60,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "foreign_policy",
+        "trade",
+        "military",
+        "iran",
+        "sanctions"
+      ],
+      "rationale": "이란 항구 봉쇄 및 선박 차단 언급은 구체적 제재를 예고하나, 시한이 모호하고 '이란 전쟁' 관련 언급은 맥락상 트럼프와 교황 간의 논쟁으로 해석되어 직접적인 군사 행동 위협 강도는 중간 수준으로 평가됨."
+    }
+  ],
+  "explanation": "[매우 높음] Aggression 83.5 × Pain 50.4 → composite=0.686, interaction=0.253, raw=0.939. 룰베이스 공식 rule-based-v0.1 적용.",
+  "notes": "Aggression/top_statements는 Gemini 쿼터 소진으로 직전 캐시(2026-04-15 13:40 KST) 재사용. Pain/시장지표는 최신."
 }
