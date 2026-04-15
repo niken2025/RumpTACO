@@ -513,8 +513,8 @@
       const pain = +data.pain_index || 0;
 
       renderGauge('gauge-taco', 'taco-center', prob, '%', probLabel(prob), probColor(prob));
-      renderGauge('gauge-agg', 'agg-center', agg, '', probLabel(agg), probColor(agg));
-      renderGauge('gauge-pain', 'pain-center', pain, '', probLabel(pain), probColor(pain));
+      renderGauge('gauge-agg', 'agg-center', agg, '%', probLabel(agg), probColor(agg));
+      renderGauge('gauge-pain', 'pain-center', pain, '%', probLabel(pain), probColor(pain));
 
       const win = data.expected_window_hours;
       document.getElementById('taco-window').textContent =

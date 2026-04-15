@@ -25,13 +25,13 @@ def send_message(text: str, *, parse_mode: str = "HTML") -> bool:
         print(text)
         return False
 
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    api_url = f"https://api.telegram.org/bot{token}/sendMessage"
     truncated = text[:4000]
 
     def _post(body: dict) -> tuple[bool, str]:
         try:
             with httpx.Client(timeout=15.0) as c:
-                r = c.post(url, json=body)
+                r = c.post(api_url, json=body)
                 if r.status_code >= 400:
                     return False, f"{r.status_code} {r.text[:200]}"
             return True, ""
@@ -42,7 +42,7 @@ def send_message(text: str, *, parse_mode: str = "HTML") -> bool:
         "chat_id": chat_id,
         "text": truncated,
         "parse_mode": parse_mode,
-        "disable_web_page_preview": True,
+        "disable_web_page_preview": False,
     })
     if ok:
         return True
@@ -84,8 +84,8 @@ def format_daily_report(
         f"<b>{emoji} RumpTACO 일일 리포트</b> — {_esc(now_kst.strftime('%Y-%m-%d %H:%M KST'))}",
         "",
         f"<b>TACO 확률</b>: <code>{prob:.1f}%</code> ({_esc(label)})",
-        f"<b>Aggression</b>: <code>{prediction.aggression_score:.1f}</code> / "
-        f"<b>Pain Index</b>: <code>{prediction.pain_index:.1f}</code>",
+        f"<b>Aggression</b>: <code>{prediction.aggression_score:.1f}%</code> / "
+        f"<b>Pain Index</b>: <code>{prediction.pain_index:.1f}%</code>",
     ]
     if prediction.expected_window_hours:
         lo, hi = prediction.expected_window_hours
@@ -121,6 +121,9 @@ def format_daily_report(
         lines.append(f"<i>결측 지표</i>: {_esc(', '.join(pain_result.missing))}")
         lines.append("")
 
+    dashboard_url = os.getenv("DASHBOARD_URL", "https://niken2025.github.io/RumpTACO/")
+    lines.append(f'📊 <a href="{_esc(dashboard_url)}">대시보드에서 자세히 보기</a>')
+    lines.append("")
     lines.append(f"<i>모델: {_esc(prediction.model_version)} (실험적 룰베이스)</i>")
     lines.append("<i>⚠️ 투자 권유 아님. 정보 제공 목적.</i>")
     return "\n".join(lines)
