@@ -29,7 +29,7 @@ from collectors.market import collect_snapshot, snapshot_dict
 from collectors.statements import collect_recent, to_dicts
 from scoring.aggression import score_batch, score_statement
 from scoring.pain import compute_pain
-from scoring.insights import generate_insight
+from scoring.translator import translate_batch
 from models.rule_based import predict as rule_predict
 from notify.telegram import format_daily_report, send_message, save_report
 from dashboard.export import write_snapshot
@@ -102,14 +102,7 @@ def daily(hours: int = 24, send: bool = True):
     pain = compute_pain(snap, history=None)
     pred = rule_predict(max_agg, pain.pain_index)
 
-    insight = generate_insight(
-        taco_probability=pred.taco_probability,
-        aggression=max_agg,
-        pain=pain.pain_index,
-        pain_contributions=pain.contributions,
-        top_statements=top,
-    )
-    rprint(f"[cyan]인사이트:[/] {insight}")
+    top = translate_batch(top[:5])
 
     report = format_daily_report(
         prediction=pred, top_statements=top, market_snapshot=snap, pain_result=pain,
@@ -119,7 +112,7 @@ def daily(hours: int = 24, send: bool = True):
 
     json_path = write_snapshot(
         prediction=pred, pain_result=pain, market_snapshot=snap,
-        top_statements=top, insight=insight,
+        top_statements=top,
     )
     rprint(f"[green]대시보드 JSON 저장: {json_path}[/]")
 

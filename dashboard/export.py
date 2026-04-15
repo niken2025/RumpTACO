@@ -24,7 +24,7 @@ def write_snapshot(
     pain_result,
     market_snapshot: dict,
     top_statements: list[dict],
-    insight: str,
+    insight: str = "",
 ) -> Path:
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
     now = datetime.now(KST)
@@ -53,13 +53,13 @@ def write_snapshot(
                 "source": s.get("source"),
                 "url": s.get("url"),
                 "content": s.get("content", "")[:500],
+                "translated": s.get("translated"),
                 "aggression_score": s.get("aggression_score"),
                 "topic_tags": s.get("topic_tags"),
                 "rationale": s.get("rationale"),
             }
             for s in top_statements[:5]
         ],
-        "insight": insight,
         "explanation": prediction.explanation,
     }
 
@@ -82,6 +82,12 @@ def write_snapshot(
         "taco_probability": payload["taco_probability"],
         "aggression_score": payload["aggression_score"],
         "pain_index": payload["pain_index"],
+        "market": {
+            k: market_snapshot.get(k) for k in (
+                "treasury_10y", "sp500", "djia", "nasdaq",
+                "vix", "wti_usd", "breakeven_5y", "btc_usd", "trump_approval",
+            )
+        },
     })
     history.sort(key=lambda x: x["date"])
     history = history[-HISTORY_MAX:]
