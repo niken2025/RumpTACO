@@ -78,9 +78,55 @@
       font-size: 12px;
       padding: 10px 14px;
       border-radius: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       backdrop-filter: blur(10px);
     }
+    .intro-card {
+      background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(167, 139, 250, 0.08), rgba(244, 114, 182, 0.08));
+      border: 1px solid rgba(124, 196, 255, 0.2);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(12px);
+    }
+    .intro-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .intro-title { font-size: 16px; color: var(--text); line-height: 1.5; }
+    .intro-title strong { background: linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 800; }
+    .intro-toggle {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: var(--text-dim);
+      padding: 6px 12px; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600;
+      transition: background 0.2s;
+    }
+    .intro-toggle:hover { background: rgba(255,255,255,0.12); }
+    .intro-body { margin-top: 14px; font-size: 13px; line-height: 1.65; color: var(--text-dim); }
+    .intro-body p { margin: 0 0 14px; }
+    .intro-body strong { color: var(--text); }
+    .intro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 14px 0; }
+    @media (max-width: 900px) { .intro-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .intro-grid { grid-template-columns: 1fr; } }
+    .intro-step { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px 14px; position: relative; }
+    .intro-step .step-num { position: absolute; top: 8px; right: 12px; font-size: 22px; font-weight: 800; color: rgba(124, 196, 255, 0.25); font-family: "JetBrains Mono", monospace; }
+    .intro-step .step-title { font-size: 13px; font-weight: 700; color: var(--cyan); margin-bottom: 6px; }
+    .intro-step .step-desc { font-size: 12px; color: var(--text-dim); line-height: 1.55; }
+    .intro-outputs { background: rgba(0,0,0,0.18); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+    .output-item { font-size: 12px; padding: 4px 0; display: flex; align-items: flex-start; gap: 8px; }
+    .output-item .dot { width: 7px; height: 7px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+    .intro-body.collapsed { display: none; }
+
+    .stmt-breakdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+    @media (max-width: 600px) { .stmt-breakdown { grid-template-columns: 1fr; } }
+    .bd-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 8px 10px; }
+    .bd-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+    .bd-val { font-size: 16px; font-weight: 700; font-family: "JetBrains Mono", monospace; margin-top: 2px; }
+    .bd-bar { height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px; margin-top: 4px; overflow: hidden; }
+    .bd-bar > div { height: 100%; transition: width 0.5s; }
+    .bd-weight { font-size: 10px; color: var(--muted); margin-left: 4px; }
+    .stmt-rationale { background: rgba(34, 211, 238, 0.06); border-left: 3px solid var(--cyan); border-radius: 4px; padding: 8px 12px; margin-top: 10px; font-size: 12px; color: var(--text-dim); line-height: 1.55; }
+    .stmt-rationale strong { color: var(--cyan); }
+    .stmt-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .stmt-tag { font-size: 10px; padding: 2px 8px; border-radius: 10px; background: rgba(167, 139, 250, 0.12); color: var(--violet); border: 1px solid rgba(167, 139, 250, 0.25); }
+    .stmt-formula { background: rgba(0,0,0,0.25); border-radius: 6px; padding: 6px 10px; font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--text-dim); margin-top: 8px; }
+    .stmt-formula strong { color: var(--orange); }
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
     .card {
       background: var(--panel);
@@ -256,6 +302,48 @@
 
     <div class="disclaimer">⚠️ 투자 권유 아님 · 정보 제공 목적 · 실험적 룰베이스 모델 v0.1</div>
 
+    <!-- Intro / About 카드 -->
+    <div class="intro-card">
+      <div class="intro-head">
+        <div class="intro-title">🌮 <strong>TACO (Trump Always Chickens Out)</strong> 시뮬레이션이란?</div>
+        <button class="intro-toggle" id="intro-toggle" aria-expanded="true">접기 ▲</button>
+      </div>
+      <div class="intro-body" id="intro-body">
+        <p>트럼프 대통령이 공개적으로 표명한 <strong>정책/위협을 스스로 철회·유예·완화할 확률</strong>을 매일 정량화하는 AI 기반 시뮬레이터입니다.
+        과거 반복적 패턴(2019 미중 무역전쟁, 2024~2025 관세 위협 등)을 학습해 "이번엔 진짜일까?"를 수치로 판단 보조합니다.</p>
+
+        <div class="intro-grid">
+          <div class="intro-step">
+            <div class="step-num">1</div>
+            <div class="step-title">📥 데이터 수집</div>
+            <div class="step-desc">Truth Social/X/뉴스 API에서 <strong>트럼프 발언</strong>을, FRED/Yahoo/CoinGecko에서 <strong>9개 시장·정치 지표</strong>를 매일 자동 수집.</div>
+          </div>
+          <div class="intro-step">
+            <div class="step-num">2</div>
+            <div class="step-title" style="color:var(--orange);">⚔️ 공격 지수 (Aggression)</div>
+            <div class="step-desc">Gemini AI가 발언 하나하나를 <strong>위협 강도 40% + 구체성 30% + 시한 명시 30%</strong>로 평가해 0~100점으로 점수화.</div>
+          </div>
+          <div class="intro-step">
+            <div class="step-num">3</div>
+            <div class="step-title" style="color:var(--pink);">🔥 고통 지수 (Pain)</div>
+            <div class="step-desc">9개 지표(국채/S&P/다우/나스닥/VIX/WTI/기대인플레/BTC/지지율)의 <strong>30일 Z-score × 가중치</strong>를 합산해 0~100점으로 시장·정치 압박 정량화.</div>
+          </div>
+          <div class="intro-step">
+            <div class="step-num">4</div>
+            <div class="step-title" style="color:var(--cyan);">🎯 TACO 확률</div>
+            <div class="step-desc">공격×고통을 룰베이스 공식(composite + interaction → sigmoid)으로 합성해 <strong>정책 번복 확률(%)</strong>과 <strong>예상 윈도우(시간)</strong>를 산출. 80%↑ 시 저점 매수 신호로 해석 가능.</div>
+          </div>
+        </div>
+
+        <div class="intro-outputs">
+          <div class="output-item"><span class="dot" style="background:var(--cyan);"></span><strong>TACO 확률</strong>: 48시간 내 정책 후퇴 가능성. 낮음(&lt;20%) · 중간(40~60%) · 높음(60~80%) · <span style="color:var(--red);">매우 높음(80%↑)</span></div>
+          <div class="output-item"><span class="dot" style="background:var(--orange);"></span><strong>공격 지수</strong>: 오늘 가장 강력한 발언의 위협 수치. 관세/제재 구체 숫자·시한 명시일수록 고점</div>
+          <div class="output-item"><span class="dot" style="background:var(--pink);"></span><strong>고통 지수</strong>: 트럼프가 체감할 수 있는 시장·정치 압박. 높을수록 정책 후퇴 유인 ↑</div>
+          <div class="output-item"><span class="dot" style="background:var(--violet);"></span><strong>회항 임계점</strong>: 공격×고통 조합이 60%/80% 임계선 위에 있으면 번복 가능성 급증</div>
+        </div>
+      </div>
+    </div>
+
     <div id="app" class="loading">데이터를 불러오는 중입니다…</div>
 
     <template id="tpl">
@@ -328,9 +416,12 @@
           <div class="market-grid" id="market-grid"></div>
         </div>
 
-        <!-- ROW 5: 발언 -->
+        <!-- ROW 5: 발언 + 공격지수 breakdown -->
         <div class="card col-12">
-          <h2><span class="dot" style="background:var(--lime);"></span>🗣 주요 발언 Top 5 · 한국어 + 원문</h2>
+          <h2><span class="dot" style="background:var(--lime);"></span>🗣 주요 발언 Top 5 · 한국어 + 공격지수 산정 근거</h2>
+          <div class="stmt-formula">
+            <strong>공격지수 = 위협강도 × 40% + 구체성 × 30% + 시한명시 × 30%</strong> · Gemini AI가 발언 하나하나를 3축으로 평가해 0~100점으로 점수화
+          </div>
           <ul class="statements" id="statements"></ul>
         </div>
       </div>
@@ -682,13 +773,64 @@
         const ko = s.translated && s.translated.length && s.translated !== s.content
           ? escapeHtml(s.translated) : '<span style="color:var(--muted);">(번역 대기 중 · 내일 CI 실행 시 자동 번역)</span>';
         const origSnippet = s.content ? escapeHtml(s.content.slice(0, 260)) + (s.content.length > 260 ? '…' : '') : '';
-        li.innerHTML = `<div class="ko">${badge}${ko}${link}</div>
-                        ${origSnippet ? `<div class="orig">원문: ${origSnippet}</div>` : ''}`;
+
+        // 공격지수 breakdown (3축)
+        const hasBreakdown = s.threat_intensity != null || s.specificity != null || s.deadline_specified != null;
+        let breakdown = '';
+        if (hasBreakdown) {
+          const axes = [
+            { label: '위협 강도', val: s.threat_intensity, w: 40, color: CL.rose },
+            { label: '구체성', val: s.specificity, w: 30, color: CL.orange },
+            { label: '시한 명시', val: s.deadline_specified, w: 30, color: CL.amber },
+          ];
+          breakdown = `<div class="stmt-breakdown">${axes.map(a => {
+            const v = a.val == null ? '—' : Number(a.val).toFixed(0);
+            const pct = a.val == null ? 0 : Math.min(100, Math.max(0, a.val));
+            return `<div class="bd-item">
+              <div class="bd-label">${a.label} <span class="bd-weight">w=${a.w}%</span></div>
+              <div class="bd-val" style="color:${a.color};">${v}</div>
+              <div class="bd-bar"><div style="width:${pct}%; background:${a.color};"></div></div>
+            </div>`;
+          }).join('')}</div>`;
+        }
+
+        // 태그
+        const tags = (s.topic_tags && s.topic_tags.length)
+          ? `<div class="stmt-tags">${s.topic_tags.map(t => `<span class="stmt-tag">#${escapeHtml(t)}</span>`).join('')}</div>`
+          : '';
+
+        // 산정 근거
+        const rationale = s.rationale
+          ? `<div class="stmt-rationale"><strong>AI 산정 근거:</strong> ${escapeHtml(s.rationale)}</div>`
+          : '';
+
+        li.innerHTML = `
+          <div class="ko">${badge}${ko}${link}</div>
+          ${origSnippet ? `<div class="orig">원문: ${origSnippet}</div>` : ''}
+          ${breakdown}
+          ${rationale}
+          ${tags}
+        `;
         ul.appendChild(li);
       }
     }
 
     function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    // intro 토글
+    (function() {
+      const btn = document.getElementById('intro-toggle');
+      const body = document.getElementById('intro-body');
+      if (!btn || !body) return;
+      const saved = localStorage.getItem('rumptaco.intro.collapsed');
+      if (saved === '1') { body.classList.add('collapsed'); btn.textContent = '펼치기 ▼'; btn.setAttribute('aria-expanded', 'false'); }
+      btn.addEventListener('click', () => {
+        const collapsed = body.classList.toggle('collapsed');
+        btn.textContent = collapsed ? '펼치기 ▼' : '접기 ▲';
+        btn.setAttribute('aria-expanded', String(!collapsed));
+        localStorage.setItem('rumptaco.intro.collapsed', collapsed ? '1' : '0');
+      });
+    })();
 
     main();
   </script>

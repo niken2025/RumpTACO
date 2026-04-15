@@ -55,6 +55,9 @@ def write_snapshot(
                 "content": s.get("content", "")[:500],
                 "translated": s.get("translated"),
                 "aggression_score": s.get("aggression_score"),
+                "threat_intensity": s.get("threat_intensity"),
+                "specificity": s.get("specificity"),
+                "deadline_specified": s.get("deadline_specified"),
                 "topic_tags": s.get("topic_tags"),
                 "rationale": s.get("rationale"),
             }
