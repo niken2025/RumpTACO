@@ -58,8 +58,8 @@ def score_statement(content: str, *, precise: bool = False) -> dict[str, Any]:
     precise=True: Gemini 1.5 Pro (정밀·느림·유료 많음)
     """
     _ensure_configured()
-    default_light = "gemini-1.5-flash"
-    default_main = "gemini-1.5-pro"
+    default_light = "gemini-2.5-flash"
+    default_main = "gemini-2.5-pro"
     model_name = os.getenv("MODEL_MAIN" if precise else "MODEL_LIGHT") or (
         default_main if precise else default_light
     )
@@ -69,7 +69,7 @@ def score_statement(content: str, *, precise: bool = False) -> dict[str, Any]:
         system_instruction=_system_prompt(),
         generation_config={
             "temperature": 0.2,
-            "max_output_tokens": 600,
+            "max_output_tokens": 4096,
             "response_mime_type": "application/json",
         },
     )
