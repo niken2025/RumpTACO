@@ -34,7 +34,15 @@ description: 트럼프의 정책 관련 발언을 받아 위협 강도/구체성
 `aggression = 0.4 * threat + 0.3 * specificity + 0.3 * deadline`
 
 ## 토픽 태그 (복수 선택)
-`tariffs`, `immigration`, `foreign_policy`, `trade`, `military`, `election`, `crypto`, `energy`, `fed`, `other`
+`tariffs`, `immigration`, `foreign_policy`, `trade`, `military`, `war`, `iran`, `israel`,
+`russia`, `china`, `north_korea`, `middle_east`, `nuclear`, `sanctions`, `election`,
+`crypto`, `energy`, `fed`, `other`
+
+**지정학 발언 채점 가이드**:
+- "이란과 전쟁 불사"/"Tehran strike" 등 군사 충돌 직접 언급 → threat_intensity 70+
+- "missile 발사/배치", 특정 무기체계 언급 → specificity 70+
+- "이번 주 내", 구체 작전 날짜 명시 → deadline 90+
+- 단순 압박·경고성 수사("respect us") → threat_intensity 20~40
 
 ## 출력 포맷 — 반드시 JSON 한 덩어리만
 

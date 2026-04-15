@@ -104,19 +104,41 @@ def collect_recent(hours: int = 24) -> list[Statement]:
             print(f"[statements] X RSS 실패: {e}")
 
     if not items:
-        items = _tavily_search(
-            'Trump said OR announced OR threatened OR "Truth Social" '
+        # 여러 도메인으로 병렬 검색 — 경제정책 + 지정학/군사 + 대외강경 발언을 모두 포착
+        queries = [
+            # 경제·무역·규제 정책
+            'Trump said OR announced OR threatened '
             '(tariff OR sanction OR deal OR policy OR "will impose" OR "executive order")',
-            since_days=max(1, hours // 24),
-        )
-        # Trump이 주어로 등장하는 기사만 통과 (휴리스틱)
-        items = [
-            s for s in items
-            if any(kw in s.content.lower() for kw in ["trump said", "trump announced",
-                                                        "trump threatened", "trump will",
-                                                        "trump's", "president trump",
-                                                        "trump signed", "trump's plan"])
+            # 지정학·군사 (이란·러시아·중국·북한·중동)
+            'Trump said OR warned OR vowed OR threatened '
+            '(Iran OR Israel OR Russia OR China OR "North Korea" OR Ukraine '
+            'OR military OR strike OR war OR nuclear OR missile OR Tehran OR Putin OR Xi)',
+            # Truth Social / 공식 성명
+            '"Trump" "Truth Social" OR "White House statement"',
         ]
+        collected: list[Statement] = []
+        seen_urls: set = set()
+        for q in queries:
+            try:
+                res = _tavily_search(q, since_days=max(1, hours // 24))
+            except Exception as e:  # noqa: BLE001
+                print(f"[statements] Tavily 쿼리 실패 ({q[:40]}...): {e}")
+                continue
+            for s in res:
+                key = s.url or s.content[:80]
+                if key in seen_urls:
+                    continue
+                seen_urls.add(key)
+                collected.append(s)
+        items = collected
+
+        # Trump이 주어·주체로 등장하는 기사만 통과 (영어 휴리스틱)
+        subj_kw = [
+            "trump said", "trump announced", "trump threatened", "trump warned",
+            "trump vowed", "trump will", "trump's", "president trump",
+            "trump signed", "trump's plan", "trump ordered", "trump declared",
+        ]
+        items = [s for s in items if any(kw in s.content.lower() for kw in subj_kw)]
 
     # 중복 제거 (URL 기준)
     seen = set()
