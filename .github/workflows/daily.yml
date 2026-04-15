@@ -1,0 +1,52 @@
+name: TACO Daily Report
+
+on:
+  schedule:
+    # KST 06:00 = UTC 21:00 (전날)
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "수집 윈도우(시간)"
+        required: false
+        default: "24"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      TRUTH_SOCIAL_RSS: ${{ secrets.TRUTH_SOCIAL_RSS }}
+      X_RSS: ${{ secrets.X_RSS }}
+      MODEL_MAIN: claude-opus-4-6
+      MODEL_LIGHT: claude-haiku-4-5-20251001
+      TZ: Asia/Seoul
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        run: python cli.py daily --hours ${{ inputs.hours || 24 }}
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: taco-report-${{ github.run_id }}
+          path: reports/
+          retention-days: 30
