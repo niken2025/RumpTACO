@@ -24,15 +24,16 @@ INDICATORS: dict[str, tuple[float, bool]] = {
 }
 
 # 히스토리 부족 시 쓰는 정적 fallback: (대략적 수준, 대략적 1σ)
+# 2026-04 기준. 히스토리가 10일 이상 쌓이면 자동으로 실제 30일 평균/σ로 대체됨.
 FALLBACK_BASELINE: dict[str, tuple[float, float]] = {
-    "treasury_10y": (4.2, 0.3),
-    "sp500":        (5200.0, 150.0),
-    "djia":         (39000.0, 1000.0),
-    "nasdaq":       (16500.0, 500.0),
-    "vix":          (15.0, 4.0),
-    "wti_usd":      (80.0, 5.0),
-    "breakeven_5y": (2.4, 0.2),
-    "btc_usd":      (65000.0, 5000.0),
+    "treasury_10y": (4.30, 0.25),
+    "sp500":        (6900.0, 200.0),
+    "djia":         (48000.0, 1200.0),
+    "nasdaq":       (23000.0, 700.0),
+    "vix":          (17.0, 4.0),
+    "wti_usd":      (85.0, 6.0),
+    "breakeven_5y": (2.50, 0.20),
+    "btc_usd":      (72000.0, 6000.0),
     "trump_approval": (45.0, 2.0),
 }
 
