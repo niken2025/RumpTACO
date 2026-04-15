@@ -33,6 +33,7 @@ from scoring.translator import translate_batch
 from models.rule_based import predict as rule_predict
 from notify.telegram import format_daily_report, send_message, save_report
 from dashboard.export import write_snapshot
+from db import supabase_client as sbdb
 
 
 load_dotenv()
@@ -103,6 +104,25 @@ def daily(hours: int = 24, send: bool = True):
     pred = rule_predict(max_agg, pain.pain_index)
 
     top = translate_batch(top[:5])
+
+    # --- Supabase 저장 (진실의 원천) ---
+    if sbdb.is_enabled():
+        rprint("[cyan]Supabase 저장 시작...[/]")
+        sbdb.upsert_market_snapshot(snap)
+        stmt_ids = sbdb.insert_statements(top)
+        trigger_id = stmt_ids[0] if stmt_ids else None
+        pred_id = sbdb.insert_prediction(
+            taco_probability=pred.taco_probability,
+            expected_window_hours=pred.expected_window_hours,
+            aggression_score=pred.aggression_score,
+            pain_index=pain.pain_index,
+            model_version=pred.model_version,
+            explanation=pred.explanation,
+            trigger_statement_id=trigger_id,
+        )
+        rprint(f"[green]Supabase: predictions={pred_id}, statements={len(stmt_ids)}건[/]")
+    else:
+        rprint("[yellow]Supabase 미설정 — DB 저장 생략 (JSON만 사용)[/]")
 
     report = format_daily_report(
         prediction=pred, top_statements=top, market_snapshot=snap, pain_result=pain,
