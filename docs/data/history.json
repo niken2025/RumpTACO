@@ -1,9 +1,1082 @@
 [
   {
+    "date": "2026-02-15",
+    "generated_at": "2026-02-15T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 69765.59638824302,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-16",
+    "generated_at": "2026-02-16T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 68716.58337486399,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-17",
+    "generated_at": "2026-02-17T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.05,
+      "breakeven_5y": 2.39,
+      "sp500": 6843.22021484375,
+      "djia": 49533.19140625,
+      "nasdaq": 22578.380859375,
+      "vix": 20.290000915527344,
+      "wti_usd": 62.33000183105469,
+      "btc_usd": 68907.78353606178,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-18",
+    "generated_at": "2026-02-18T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.09,
+      "breakeven_5y": 2.43,
+      "sp500": 6881.31005859375,
+      "djia": 49662.66015625,
+      "nasdaq": 22753.630859375,
+      "vix": 19.6200008392334,
+      "wti_usd": 65.19000244140625,
+      "btc_usd": 67489.45540267964,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-19",
+    "generated_at": "2026-02-19T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.08,
+      "breakeven_5y": 2.43,
+      "sp500": 6861.89013671875,
+      "djia": 49395.16015625,
+      "nasdaq": 22682.73046875,
+      "vix": 20.229999542236328,
+      "wti_usd": 66.43000030517578,
+      "btc_usd": 66456.3537620677,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-20",
+    "generated_at": "2026-02-20T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.08,
+      "breakeven_5y": 2.43,
+      "sp500": 6909.509765625,
+      "djia": 49625.96875,
+      "nasdaq": 22886.0703125,
+      "vix": 19.09000015258789,
+      "wti_usd": 66.38999938964844,
+      "btc_usd": 66918.68417467622,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-21",
+    "generated_at": "2026-02-21T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 67970.29403133177,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-22",
+    "generated_at": "2026-02-22T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 67977.90904199042,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-23",
+    "generated_at": "2026-02-23T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.03,
+      "breakeven_5y": 2.4,
+      "sp500": 6837.75,
+      "djia": 48804.05859375,
+      "nasdaq": 22627.26953125,
+      "vix": 21.010000228881836,
+      "wti_usd": 66.30999755859375,
+      "btc_usd": 67585.11718938159,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-24",
+    "generated_at": "2026-02-24T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.04,
+      "breakeven_5y": 2.4,
+      "sp500": 6890.06982421875,
+      "djia": 49174.5,
+      "nasdaq": 22863.6796875,
+      "vix": 19.549999237060547,
+      "wti_usd": 65.62999725341797,
+      "btc_usd": 64577.553200674425,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-25",
+    "generated_at": "2026-02-25T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.05,
+      "breakeven_5y": 2.42,
+      "sp500": 6946.1298828125,
+      "djia": 49482.1484375,
+      "nasdaq": 23152.080078125,
+      "vix": 17.93000030517578,
+      "wti_usd": 65.41999816894531,
+      "btc_usd": 64074.11098528222,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-26",
+    "generated_at": "2026-02-26T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.02,
+      "breakeven_5y": 2.43,
+      "sp500": 6908.85986328125,
+      "djia": 49499.19921875,
+      "nasdaq": 22878.380859375,
+      "vix": 18.6299991607666,
+      "wti_usd": 65.20999908447266,
+      "btc_usd": 67947.39185585188,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-27",
+    "generated_at": "2026-02-27T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 3.97,
+      "breakeven_5y": 2.4,
+      "sp500": 6878.8798828125,
+      "djia": 48977.921875,
+      "nasdaq": 22668.2109375,
+      "vix": 19.860000610351562,
+      "wti_usd": 67.0199966430664,
+      "btc_usd": 67469.06040327046,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-02-28",
+    "generated_at": "2026-02-28T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 65883.99096235317,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-01",
+    "generated_at": "2026-03-01T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 67008.45435746174,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-02",
+    "generated_at": "2026-03-02T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.05,
+      "breakeven_5y": 2.46,
+      "sp500": 6881.6201171875,
+      "djia": 48904.78125,
+      "nasdaq": 22748.859375,
+      "vix": 21.440000534057617,
+      "wti_usd": 71.2300033569336,
+      "btc_usd": 65713.4989891121,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-03",
+    "generated_at": "2026-03-03T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.06,
+      "breakeven_5y": 2.46,
+      "sp500": 6816.6298828125,
+      "djia": 48501.26953125,
+      "nasdaq": 22516.689453125,
+      "vix": 23.56999969482422,
+      "wti_usd": 74.55999755859375,
+      "btc_usd": 68864.03691918531,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-04",
+    "generated_at": "2026-03-04T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.09,
+      "breakeven_5y": 2.46,
+      "sp500": 6869.5,
+      "djia": 48739.41015625,
+      "nasdaq": 22807.48046875,
+      "vix": 21.149999618530273,
+      "wti_usd": 74.66000366210938,
+      "btc_usd": 68321.6178484252,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "generated_at": "2026-03-05T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.13,
+      "breakeven_5y": 2.51,
+      "sp500": 6830.7099609375,
+      "djia": 47954.73828125,
+      "nasdaq": 22748.990234375,
+      "vix": 23.75,
+      "wti_usd": 81.01000213623047,
+      "btc_usd": 72669.7701652216,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "generated_at": "2026-03-06T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.15,
+      "breakeven_5y": 2.56,
+      "sp500": 6740.02001953125,
+      "djia": 47501.55078125,
+      "nasdaq": 22387.6796875,
+      "vix": 29.489999771118164,
+      "wti_usd": 90.9000015258789,
+      "btc_usd": 70874.98687140146,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "generated_at": "2026-03-07T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 68148.28339966535,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "generated_at": "2026-03-08T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 67271.1907777184,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-09",
+    "generated_at": "2026-03-09T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.12,
+      "breakeven_5y": 2.56,
+      "sp500": 6795.990234375,
+      "djia": 47740.80078125,
+      "nasdaq": 22695.94921875,
+      "vix": 25.5,
+      "wti_usd": 94.7699966430664,
+      "btc_usd": 66036.15782362667,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "generated_at": "2026-03-10T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.15,
+      "breakeven_5y": 2.53,
+      "sp500": 6781.47998046875,
+      "djia": 47706.51171875,
+      "nasdaq": 22697.099609375,
+      "vix": 24.93000030517578,
+      "wti_usd": 83.44999694824219,
+      "btc_usd": 68459.31537095344,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "generated_at": "2026-03-11T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.21,
+      "breakeven_5y": 2.58,
+      "sp500": 6775.7998046875,
+      "djia": 47417.26953125,
+      "nasdaq": 22716.130859375,
+      "vix": 24.229999542236328,
+      "wti_usd": 87.25,
+      "btc_usd": 69883.00887579883,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-12",
+    "generated_at": "2026-03-12T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.27,
+      "breakeven_5y": 2.63,
+      "sp500": 6672.6201171875,
+      "djia": 46677.8515625,
+      "nasdaq": 22311.98046875,
+      "vix": 27.290000915527344,
+      "wti_usd": 95.7300033569336,
+      "btc_usd": 70226.818790692,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-13",
+    "generated_at": "2026-03-13T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.28,
+      "breakeven_5y": 2.61,
+      "sp500": 6632.18994140625,
+      "djia": 46558.46875,
+      "nasdaq": 22105.359375,
+      "vix": 27.190000534057617,
+      "wti_usd": 98.70999908447266,
+      "btc_usd": 70544.42535461926,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-14",
+    "generated_at": "2026-03-14T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 70965.28228600459,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-15",
+    "generated_at": "2026-03-15T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 71217.1010283798,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-16",
+    "generated_at": "2026-03-16T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.23,
+      "breakeven_5y": 2.58,
+      "sp500": 6699.3798828125,
+      "djia": 46946.41015625,
+      "nasdaq": 22374.1796875,
+      "vix": 23.510000228881836,
+      "wti_usd": 93.5,
+      "btc_usd": 72681.9132538886,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-17",
+    "generated_at": "2026-03-17T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.2,
+      "breakeven_5y": 2.62,
+      "sp500": 6716.08984375,
+      "djia": 46993.26171875,
+      "nasdaq": 22479.529296875,
+      "vix": 22.3700008392334,
+      "wti_usd": 96.20999908447266,
+      "btc_usd": 74858.14870100339,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-18",
+    "generated_at": "2026-03-18T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.26,
+      "breakeven_5y": 2.66,
+      "sp500": 6624.7001953125,
+      "djia": 46225.1484375,
+      "nasdaq": 22152.419921875,
+      "vix": 25.09000015258789,
+      "wti_usd": 96.31999969482422,
+      "btc_usd": 73926.27899152413,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-19",
+    "generated_at": "2026-03-19T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.25,
+      "breakeven_5y": 2.61,
+      "sp500": 6606.490234375,
+      "djia": 46021.4296875,
+      "nasdaq": 22090.689453125,
+      "vix": 24.059999465942383,
+      "wti_usd": 96.13999938964844,
+      "btc_usd": 71255.86350265636,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-20",
+    "generated_at": "2026-03-20T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.39,
+      "breakeven_5y": 2.63,
+      "sp500": 6506.47998046875,
+      "djia": 45577.46875,
+      "nasdaq": 21647.609375,
+      "vix": 26.780000686645508,
+      "wti_usd": 98.31999969482422,
+      "btc_usd": 69871.4514796119,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-21",
+    "generated_at": "2026-03-21T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 70552.62530009366,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-22",
+    "generated_at": "2026-03-22T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 68733.54779458739,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-23",
+    "generated_at": "2026-03-23T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.34,
+      "breakeven_5y": 2.53,
+      "sp500": 6581.0,
+      "djia": 46208.46875,
+      "nasdaq": 21946.759765625,
+      "vix": 26.149999618530273,
+      "wti_usd": 88.12999725341797,
+      "btc_usd": 67848.87605821833,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-24",
+    "generated_at": "2026-03-24T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.39,
+      "breakeven_5y": 2.55,
+      "sp500": 6556.3701171875,
+      "djia": 46124.05859375,
+      "nasdaq": 21761.890625,
+      "vix": 26.950000762939453,
+      "wti_usd": 92.3499984741211,
+      "btc_usd": 70892.82823994374,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-25",
+    "generated_at": "2026-03-25T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.33,
+      "breakeven_5y": 2.51,
+      "sp500": 6591.89990234375,
+      "djia": 46429.48828125,
+      "nasdaq": 21929.8203125,
+      "vix": 25.329999923706055,
+      "wti_usd": 90.31999969482422,
+      "btc_usd": 70524.51175942823,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-26",
+    "generated_at": "2026-03-26T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.42,
+      "breakeven_5y": 2.56,
+      "sp500": 6477.16015625,
+      "djia": 45960.109375,
+      "nasdaq": 21408.080078125,
+      "vix": 27.440000534057617,
+      "wti_usd": 94.4800033569336,
+      "btc_usd": 71309.26403856269,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-27",
+    "generated_at": "2026-03-27T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.44,
+      "breakeven_5y": 2.56,
+      "sp500": 6368.85009765625,
+      "djia": 45166.640625,
+      "nasdaq": 20948.359375,
+      "vix": 31.049999237060547,
+      "wti_usd": 99.63999938964844,
+      "btc_usd": 68791.11093800364,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-28",
+    "generated_at": "2026-03-28T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 66321.016242762,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-29",
+    "generated_at": "2026-03-29T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 66321.06539994745,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-30",
+    "generated_at": "2026-03-30T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.35,
+      "breakeven_5y": 2.57,
+      "sp500": 6343.72021484375,
+      "djia": 45216.140625,
+      "nasdaq": 20794.640625,
+      "vix": 30.610000610351562,
+      "wti_usd": 102.87999725341797,
+      "btc_usd": 65970.42899513361,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-03-31",
+    "generated_at": "2026-03-31T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.3,
+      "breakeven_5y": 2.54,
+      "sp500": 6528.52001953125,
+      "djia": 46341.51171875,
+      "nasdaq": 21590.630859375,
+      "vix": 25.25,
+      "wti_usd": 101.37999725341797,
+      "btc_usd": 66699.27436893585,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-01",
+    "generated_at": "2026-04-01T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.33,
+      "breakeven_5y": 2.55,
+      "sp500": 6575.31982421875,
+      "djia": 46565.73828125,
+      "nasdaq": 21840.94921875,
+      "vix": 24.540000915527344,
+      "wti_usd": 100.12000274658203,
+      "btc_usd": 68231.83047993251,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-02",
+    "generated_at": "2026-04-02T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.31,
+      "breakeven_5y": 2.57,
+      "sp500": 6582.68994140625,
+      "djia": 46504.671875,
+      "nasdaq": 21879.1796875,
+      "vix": 23.8700008392334,
+      "wti_usd": 111.54000091552734,
+      "btc_usd": 68089.0553821667,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-03",
+    "generated_at": "2026-04-03T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.35,
+      "breakeven_5y": 2.61,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 66891.6645686824,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-04",
+    "generated_at": "2026-04-04T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 66939.69121715311,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-05",
+    "generated_at": "2026-04-05T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 67304.24955635444,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-06",
+    "generated_at": "2026-04-06T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.34,
+      "breakeven_5y": 2.6,
+      "sp500": 6611.830078125,
+      "djia": 46669.87890625,
+      "nasdaq": 21996.33984375,
+      "vix": 24.170000076293945,
+      "wti_usd": 112.41000366210938,
+      "btc_usd": 68985.52642694542,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-07",
+    "generated_at": "2026-04-07T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.33,
+      "breakeven_5y": 2.61,
+      "sp500": 6616.85009765625,
+      "djia": 46584.4609375,
+      "nasdaq": 22017.849609375,
+      "vix": 25.780000686645508,
+      "wti_usd": 112.94999694824219,
+      "btc_usd": 68864.23452757328,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-08",
+    "generated_at": "2026-04-08T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.29,
+      "breakeven_5y": 2.56,
+      "sp500": 6782.81005859375,
+      "djia": 47909.921875,
+      "nasdaq": 22634.990234375,
+      "vix": 21.040000915527344,
+      "wti_usd": 94.41000366210938,
+      "btc_usd": 71975.62171045873,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-09",
+    "generated_at": "2026-04-09T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.29,
+      "breakeven_5y": 2.56,
+      "sp500": 6824.66015625,
+      "djia": 48185.80078125,
+      "nasdaq": 22822.419921875,
+      "vix": 19.489999771118164,
+      "wti_usd": 97.87000274658203,
+      "btc_usd": 71117.07713411814,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-10",
+    "generated_at": "2026-04-10T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.31,
+      "breakeven_5y": 2.58,
+      "sp500": 6816.89013671875,
+      "djia": 47916.5703125,
+      "nasdaq": 22902.890625,
+      "vix": 19.229999542236328,
+      "wti_usd": 96.56999969482422,
+      "btc_usd": 71770.7468500515,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-11",
+    "generated_at": "2026-04-11T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 72972.70823557042,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-12",
+    "generated_at": "2026-04-12T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 73053.88808483821,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-13",
+    "generated_at": "2026-04-13T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": 4.3,
+      "breakeven_5y": 2.61,
+      "sp500": 6886.240234375,
+      "djia": 48218.25,
+      "nasdaq": 23183.740234375,
+      "vix": 19.1200008392334,
+      "wti_usd": 99.08000183105469,
+      "btc_usd": 70756.75105500016,
+      "trump_approval": null
+    }
+  },
+  {
+    "date": "2026-04-14",
+    "generated_at": "2026-04-14T00:00:00+09:00",
+    "taco_probability": null,
+    "aggression_score": null,
+    "pain_index": null,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": 2.59,
+      "sp500": 6967.3798828125,
+      "djia": 48535.98828125,
+      "nasdaq": 23639.083984375,
+      "vix": 18.360000610351562,
+      "wti_usd": 91.25,
+      "btc_usd": 74514.63006655,
+      "trump_approval": null
+    }
+  },
+  {
     "date": "2026-04-15",
     "generated_at": "2026-04-15T11:57:01.058880+09:00",
     "taco_probability": 14.98,
     "aggression_score": 21.0,
-    "pain_index": 0.09
+    "pain_index": 0.09,
+    "market": {
+      "treasury_10y": null,
+      "breakeven_5y": null,
+      "sp500": null,
+      "djia": null,
+      "nasdaq": null,
+      "vix": null,
+      "wti_usd": null,
+      "btc_usd": 74323.27436597721,
+      "trump_approval": null
+    }
   }
 ]

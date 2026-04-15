@@ -5,153 +5,332 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RumpTACO Dashboard</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌮%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root {
-      --bg: #0f1115;
-      --panel: #181b22;
-      --panel-2: #1f232c;
-      --border: #2a2f3a;
-      --text: #e7e9ee;
-      --muted: #8a93a6;
-      --accent: #7cc4ff;
-      --low: #4ade80;
-      --med: #facc15;
-      --high: #fb923c;
-      --crit: #ef4444;
+      --bg-0: #070913;
+      --bg-1: #0d1021;
+      --bg-2: #131733;
+      --panel: rgba(23, 27, 56, 0.72);
+      --panel-strong: rgba(31, 36, 74, 0.9);
+      --border: rgba(124, 196, 255, 0.12);
+      --border-glow: rgba(124, 196, 255, 0.4);
+      --text: #e9ecff;
+      --text-dim: #b4b8d6;
+      --muted: #7b82a8;
+      --cyan: #22d3ee;
+      --blue: #60a5fa;
+      --violet: #a78bfa;
+      --pink: #f472b6;
+      --rose: #fb7185;
+      --orange: #fb923c;
+      --amber: #fbbf24;
+      --lime: #a3e635;
+      --emerald: #34d399;
+      --red: #ef4444;
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; }
-    .wrap { max-width: 1280px; margin: 0 auto; padding: 24px; }
-    header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
-    header h1 { margin: 0; font-size: 28px; letter-spacing: -0.5px; }
-    header h1 .emoji { margin-right: 8px; }
-    header .meta { color: var(--muted); font-size: 13px; }
-    .disclaimer { background: #2a1c1c; border: 1px solid #5a2d2d; color: #ffb4b4; font-size: 12px; padding: 8px 12px; border-radius: 8px; margin-bottom: 16px; }
+    html, body {
+      margin: 0; padding: 0;
+      background: radial-gradient(1200px 700px at 10% -10%, rgba(167, 139, 250, 0.15), transparent 60%),
+                  radial-gradient(900px 600px at 95% 0%, rgba(34, 211, 238, 0.12), transparent 55%),
+                  radial-gradient(1000px 700px at 50% 120%, rgba(244, 114, 182, 0.10), transparent 60%),
+                  var(--bg-0);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+      letter-spacing: -0.01em;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1320px; margin: 0 auto; padding: 28px 24px 48px; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 12px; }
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--cyan) 0%, var(--violet) 50%, var(--pink) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.03em;
+    }
+    header h1 .emoji {
+      -webkit-text-fill-color: initial;
+      filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.5));
+      margin-right: 10px;
+    }
+    header .meta {
+      color: var(--text-dim);
+      font-size: 13px;
+      font-family: "JetBrains Mono", monospace;
+      background: var(--panel);
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .disclaimer {
+      background: linear-gradient(90deg, rgba(239, 68, 68, 0.15), rgba(251, 146, 60, 0.1));
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #ffd4d4;
+      font-size: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
-    .card h2 { margin: 0 0 12px; font-size: 14px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-    .big { font-size: 44px; font-weight: 700; letter-spacing: -1px; }
-    .big .unit { font-size: 20px; color: var(--muted); margin-left: 4px; }
+    .card {
+      background: var(--panel);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .card:hover { border-color: var(--border-glow); }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(124, 196, 255, 0.5), transparent);
+    }
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card h2 .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
     .col-3 { grid-column: span 3; }
     .col-4 { grid-column: span 4; }
     .col-6 { grid-column: span 6; }
     .col-8 { grid-column: span 8; }
     .col-12 { grid-column: span 12; }
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
+      .col-3, .col-4 { grid-column: span 6; }
+      .col-6, .col-8 { grid-column: span 12; }
+    }
+    @media (max-width: 640px) {
       .col-3, .col-4, .col-6, .col-8 { grid-column: span 12; }
     }
-    .label-low { color: var(--low); } .label-med { color: var(--med); }
-    .label-high { color: var(--high); } .label-crit { color: var(--crit); }
-    .bar { height: 8px; background: var(--panel-2); border-radius: 4px; overflow: hidden; margin-top: 12px; }
-    .bar > div { height: 100%; transition: width 0.5s ease; }
-    .sub { font-size: 13px; color: var(--muted); margin-top: 6px; }
-    .statements { list-style: none; padding: 0; margin: 0; }
-    .statements li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; line-height: 1.55; }
-    .statements li:last-child { border-bottom: none; }
-    .statements .orig { color: var(--muted); font-size: 12px; margin-top: 4px; line-height: 1.4; }
-    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-right: 8px; }
-    .gauge-wrap { position: relative; height: 180px; display: flex; justify-content: center; align-items: center; }
-    .gauge-val { position: absolute; top: 50%; left: 50%; transform: translate(-50%, 10px); text-align: center; }
-    .gauge-val .num { font-size: 36px; font-weight: 700; }
-    .gauge-val .sub2 { font-size: 12px; color: var(--muted); }
-    .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+    /* 상단 3카드 공통 */
+    .hero-card { min-height: 260px; display: flex; flex-direction: column; }
+    .gauge-wrap {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 0;
+    }
+    .gauge-center {
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      pointer-events: none;
+    }
+    .gauge-center .num {
+      font-size: 42px;
+      font-weight: 800;
+      font-family: "Inter", sans-serif;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      text-shadow: 0 0 24px currentColor;
+    }
+    .gauge-center .unit { font-size: 20px; font-weight: 600; margin-left: 2px; opacity: 0.6; }
+    .gauge-center .lbl {
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .hero-card .footnote {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* 시장지표 그리드 */
+    .market-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
     @media (max-width: 900px) { .market-grid { grid-template-columns: repeat(2, 1fr); } }
-    .market-item { background: var(--panel-2); border-radius: 8px; padding: 10px 12px; }
-    .market-item .title { font-size: 12px; color: var(--muted); }
-    .market-item .val { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; margin-top: 2px; }
-    .market-item .delta { font-size: 11px; margin-left: 6px; font-weight: 500; }
-    .market-item canvas { margin-top: 6px; }
-    .contrib-tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
-    .contrib-tbl td, .contrib-tbl th { padding: 8px 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
-    .contrib-tbl th { font-size: 11px; color: var(--muted); text-transform: uppercase; font-weight: 600; }
-    .contrib-tbl .w { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; width: 60px; }
-    .contrib-tbl .val-col { font-variant-numeric: tabular-nums; text-align: right; width: 80px; font-weight: 600; }
-    .contrib-tbl .desc { color: var(--muted); font-size: 12px; line-height: 1.45; }
-    .contrib-tbl .dir { font-size: 10px; padding: 1px 6px; border-radius: 3px; margin-left: 4px; color: var(--bg); font-weight: 600; }
-    .dir-up { background: var(--crit); }
-    .dir-down { background: var(--low); }
-    footer { margin-top: 32px; color: var(--muted); font-size: 12px; text-align: center; }
-    footer a { color: var(--accent); text-decoration: none; }
-    .loading { text-align: center; padding: 60px; color: var(--muted); }
+    @media (max-width: 480px) { .market-grid { grid-template-columns: 1fr; } }
+    .mitem {
+      background: linear-gradient(160deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 12px 14px 8px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s ease, transform 0.2s ease;
+    }
+    .mitem:hover { border-color: var(--border-glow); transform: translateY(-2px); }
+    .mitem .title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+    .mitem .title .weight { margin-left: 6px; color: var(--blue); font-size: 10px; }
+    .mitem .val {
+      font-size: 22px; font-weight: 700; margin-top: 4px;
+      font-family: "JetBrains Mono", monospace;
+      letter-spacing: -0.02em;
+    }
+    .mitem .delta { font-size: 11px; margin-left: 6px; font-weight: 600; }
+    .mitem .chart-box { height: 46px; margin-top: 6px; }
+
+    /* 고통 기여도 바차트 */
+    .contrib-card .chart-box { height: 340px; }
+    .contrib-tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .contrib-tbl td, .contrib-tbl th { padding: 7px 6px; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: left; }
+    .contrib-tbl th { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+    .contrib-tbl .num { font-family: "JetBrains Mono", monospace; text-align: right; font-variant-numeric: tabular-nums; }
+    .contrib-tbl .dir-badge {
+      font-size: 9px; padding: 1px 6px; border-radius: 3px;
+      color: var(--bg-0); font-weight: 700; margin-left: 6px;
+    }
+    .dir-up { background: var(--rose); }
+    .dir-down { background: var(--emerald); }
+
+    /* 발언 */
+    .statements { list-style: none; padding: 0; margin: 0; }
+    .statements li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      line-height: 1.6;
+    }
+    .statements li:last-child { border-bottom: none; }
+    .statements .ko { font-size: 15px; color: var(--text); font-weight: 500; }
+    .statements .orig { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: "JetBrains Mono", monospace;
+      margin-right: 10px;
+    }
+    .src-link { color: var(--cyan); text-decoration: none; font-size: 12px; margin-left: 8px; }
+    .src-link:hover { text-decoration: underline; }
+
+    footer { margin-top: 36px; color: var(--muted); font-size: 12px; text-align: center; }
+    footer a { color: var(--cyan); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .loading { text-align: center; padding: 80px; color: var(--muted); }
+
+    /* 범례 */
+    .legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; font-size: 11px; color: var(--muted); }
+    .legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .legend i { width: 12px; height: 3px; border-radius: 2px; display: inline-block; }
+
+    .chart-box { position: relative; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1><span class="emoji">🌮</span>RumpTACO Dashboard</h1>
+      <h1><span class="emoji">🌮</span>RumpTACO</h1>
       <div class="meta" id="meta">Loading...</div>
     </header>
 
-    <div class="disclaimer">⚠️ 투자 권유 아님. 정보 제공 목적. 실험적 룰베이스 v0.1.</div>
+    <div class="disclaimer">⚠️ 투자 권유 아님 · 정보 제공 목적 · 실험적 룰베이스 모델 v0.1</div>
 
-    <div id="app" class="loading">데이터를 불러오는 중입니다...</div>
+    <div id="app" class="loading">데이터를 불러오는 중입니다…</div>
 
     <template id="tpl">
       <div class="grid">
+        <!-- ROW 1: 3개 동일 크기 게이지 -->
+        <div class="card hero-card col-4" id="hero-taco">
+          <h2><span class="dot" style="background:var(--cyan);"></span>TACO 확률</h2>
+          <div class="gauge-wrap"><canvas id="gauge-taco" width="260" height="180"></canvas>
+            <div class="gauge-center" id="taco-center"></div>
+          </div>
+          <div class="footnote" id="taco-window"></div>
+        </div>
+
+        <div class="card hero-card col-4" id="hero-agg">
+          <h2><span class="dot" style="background:var(--orange);"></span>공격 지수 (Aggression)</h2>
+          <div class="gauge-wrap"><canvas id="gauge-agg" width="260" height="180"></canvas>
+            <div class="gauge-center" id="agg-center"></div>
+          </div>
+          <div class="footnote">오늘 발언 중 최고 점수</div>
+        </div>
+
+        <div class="card hero-card col-4" id="hero-pain">
+          <h2><span class="dot" style="background:var(--pink);"></span>고통 지수 (Pain)</h2>
+          <div class="gauge-wrap"><canvas id="gauge-pain" width="260" height="180"></canvas>
+            <div class="gauge-center" id="pain-center"></div>
+          </div>
+          <div class="footnote">9개 지표 Z-score 가중합 sigmoid</div>
+        </div>
+
+        <!-- ROW 2: 임계점 + TACO 추이 동일 크기 -->
         <div class="card col-6">
-          <h2>TACO 확률</h2>
-          <div class="gauge-wrap">
-            <canvas id="gauge-taco" width="260" height="160"></canvas>
-            <div class="gauge-val"><div class="num" id="taco-prob">--</div><div class="sub2" id="taco-label">--</div></div>
+          <h2><span class="dot" style="background:var(--violet);"></span>회항 임계점 (Aggression × Pain)</h2>
+          <div class="chart-box" style="height:260px;"><canvas id="chart-threshold"></canvas></div>
+          <div class="legend">
+            <span><i style="background:var(--orange);"></i>임계 60%</span>
+            <span><i style="background:var(--red);"></i>임계 80%</span>
+            <span><i style="background:var(--cyan);border-radius:50%;width:8px;height:8px;"></i>오늘 위치</span>
           </div>
-          <div class="sub" id="taco-window" style="text-align:center;">예상 윈도우: --</div>
         </div>
 
-        <div class="card col-3">
-          <h2>공격 지수 (Aggression)</h2>
-          <div class="gauge-wrap">
-            <canvas id="gauge-agg" width="220" height="160"></canvas>
-            <div class="gauge-val"><div class="num" id="agg">--</div><div class="sub2">/ 100</div></div>
+        <div class="card col-6">
+          <h2><span class="dot" style="background:var(--emerald);"></span>TACO 추이 (최근 60일)</h2>
+          <div class="chart-box" style="height:260px;"><canvas id="chart-history"></canvas></div>
+        </div>
+
+        <!-- ROW 3: 고통 기여도 바차트 + 테이블 -->
+        <div class="card col-6 contrib-card">
+          <h2><span class="dot" style="background:var(--pink);"></span>고통 지수 기여도</h2>
+          <div class="chart-box"><canvas id="chart-contrib"></canvas></div>
+          <div class="footnote" style="text-align:left;margin-top:8px;">각 지표의 <strong>가중치 × Z-score</strong> (부호 반영). 양수(붉은색) = 고통을 높이는 방향, 음수(초록색) = 완화.</div>
+        </div>
+
+        <div class="card col-6">
+          <h2><span class="dot" style="background:var(--amber);"></span>지표별 가중치 & 기여도</h2>
+          <table class="contrib-tbl">
+            <thead>
+              <tr><th>지표</th><th class="num">가중치</th><th class="num">기여도</th><th class="num">비중</th></tr>
+            </thead>
+            <tbody id="contrib-tbl"></tbody>
+          </table>
+          <div class="footnote" style="text-align:left;margin-top:10px;line-height:1.6;">
+            <strong>가중치 합계 = 100%</strong>. 각 지표는 30일 평균 대비 <strong>Z-score</strong>로 정규화.
+            방향(상승=고통↑/하락=고통↑)에 따라 부호 조정. <strong>기여도 비중</strong>은 전체 |기여도| 합 대비 해당 지표가 차지하는 %.
           </div>
-          <div class="sub" style="text-align:center;">오늘 발언 중 최고점</div>
         </div>
 
-        <div class="card col-3">
-          <h2>고통 지수 (Pain)</h2>
-          <div class="gauge-wrap">
-            <canvas id="gauge-pain" width="220" height="160"></canvas>
-            <div class="gauge-val"><div class="num" id="pain">--</div><div class="sub2">/ 100</div></div>
-          </div>
-          <div class="sub" style="text-align:center;">9개 지표 Z-score 가중합 sigmoid</div>
-        </div>
-
-        <div class="card col-8">
-          <h2>회항 임계점 (Aggression × Pain)</h2>
-          <canvas id="chart-threshold" height="240"></canvas>
-          <div class="sub" id="threshold-explain">점선: TACO 확률 60%/80% 임계선. 현재(파란 점)가 임계선 위쪽으로 갈수록 번복 가능성 증가.</div>
-        </div>
-
-        <div class="card col-4">
-          <h2>📈 TACO 확률 추이 (최근 60일)</h2>
-          <canvas id="chart-history" height="240"></canvas>
-        </div>
-
+        <!-- ROW 4: 시장 지표 추이 -->
         <div class="card col-12">
-          <h2>📊 시장 지표 추이</h2>
+          <h2><span class="dot" style="background:var(--cyan);"></span>📈 시장 지표 추이 (최근 60일)</h2>
           <div class="market-grid" id="market-grid"></div>
         </div>
 
+        <!-- ROW 5: 발언 -->
         <div class="card col-12">
-          <h2>⚙️ 고통 지수 기여도 — 각 지표 의미와 가중치</h2>
-          <table class="contrib-tbl">
-            <thead>
-              <tr>
-                <th>지표</th>
-                <th style="width:45%;">의미 / 방향</th>
-                <th class="w">가중치</th>
-                <th class="val-col">기여도</th>
-              </tr>
-            </thead>
-            <tbody id="pain-contrib"></tbody>
-          </table>
-          <div class="sub" style="margin-top:10px;">
-            * 각 지표는 30일 평균 대비 Z-score로 정규화. 방향이 "상승=고통"이면 그대로, "하락=고통"이면 부호 반전. 가중치 곱해 합산 후 sigmoid로 0~100 매핑.
-          </div>
-        </div>
-
-        <div class="card col-12">
-          <h2>🗣 주요 발언 Top 5 <span style="color: var(--muted); font-weight: 400; font-size: 12px;">· 한국어 번역 + 원문</span></h2>
+          <h2><span class="dot" style="background:var(--lime);"></span>🗣 주요 발언 Top 5 · 한국어 + 원문</h2>
           <ul class="statements" id="statements"></ul>
         </div>
       </div>
@@ -163,91 +342,66 @@
   </div>
 
   <script>
-    const COLORS = {
-      low: '#4ade80', med: '#facc15', high: '#fb923c', crit: '#ef4444',
-      muted: '#8a93a6', accent: '#7cc4ff', panel2: '#1f232c',
-    };
+    const CSS = getComputedStyle(document.documentElement);
+    const CL = {};
+    ['cyan','blue','violet','pink','rose','orange','amber','lime','emerald','red','muted','text','text-dim']
+      .forEach(n => CL[n] = CSS.getPropertyValue('--' + n).trim());
 
     function probColor(p) {
-      if (p >= 80) return COLORS.crit;
-      if (p >= 60) return COLORS.high;
-      if (p >= 40) return COLORS.med;
-      return COLORS.low;
+      if (p >= 80) return CL.red;
+      if (p >= 60) return CL.orange;
+      if (p >= 40) return CL.amber;
+      if (p >= 20) return CL.lime;
+      return CL.emerald;
     }
     function probLabel(p) {
       if (p >= 80) return '매우 높음';
       if (p >= 60) return '높음';
       if (p >= 40) return '중간';
-      return '낮음';
+      if (p >= 20) return '낮음';
+      return '매우 낮음';
     }
 
-    // 각 지표의 한글 라벨, 의미(=왜 고통과 관계있나), 방향, 가중치
     const INDICATOR_META = {
-      treasury_10y: {
-        label: '10년 미 국채 수익률',
-        short: '10Y T',
-        weight: 0.15, up: true,
-        desc: '장기 금리. 상승하면 정부·기업 차입비용·모기지 부담 ↑, 주식·채권 동반 하락 유발.',
-      },
-      sp500: {
-        label: 'S&P 500',
-        short: 'S&P',
-        weight: 0.10, up: false,
-        desc: '미 대형주 500개 지수. 하락하면 정책 불확실성·경기 둔화 우려 → 정치적 압박.',
-      },
-      djia: {
-        label: '다우존스 산업평균',
-        short: 'DJIA',
-        weight: 0.08, up: false,
-        desc: '30개 블루칩 지수. 트럼프가 재임 중 자주 인용. 하락 시 여론 악화 신호.',
-      },
-      nasdaq: {
-        label: '나스닥 종합',
-        short: 'NASDAQ',
-        weight: 0.08, up: false,
-        desc: '기술주 중심. AI·테크 섹터의 기대/공포를 반영. 하락 시 시장 심리 악화.',
-      },
-      vix: {
-        label: 'VIX (변동성지수)',
-        short: 'VIX',
-        weight: 0.15, up: true,
-        desc: 'S&P 30일 내재 변동성. "공포 게이지". 상승 = 시장 불안정성 ↑.',
-      },
-      wti_usd: {
-        label: 'WTI 원유',
-        short: 'WTI',
-        weight: 0.07, up: true,
-        desc: '미 서부텍사스 원유 선물. 상승 시 휘발유·인플레이션 → 정치적 비용 증가.',
-      },
-      breakeven_5y: {
-        label: '5년 기대인플레이션',
-        short: '5Y BEI',
-        weight: 0.10, up: true,
-        desc: '5년물 TIPS-국채 스프레드. 시장이 예상하는 평균 인플레이션. 상승 시 Fed 압박.',
-      },
-      btc_usd: {
-        label: '비트코인',
-        short: 'BTC',
-        weight: 0.07, up: false,
-        desc: '암호자산 대표. 위험자산 센티먼트 프록시. 하락 시 친-크립토 지지층 동요.',
-      },
-      trump_approval: {
-        label: '트럼프 지지율',
-        short: '지지율',
-        weight: 0.20, up: false,
-        desc: '538/RCP 평균. 하락은 정책 후퇴 유인을 직접 제공. 가중치가 가장 높음.',
-      },
+      treasury_10y: { label: '10Y 미 국채', short: '10Y T', weight: 0.15, up: true,
+        desc: '장기 금리. 상승 시 차입비용·모기지 부담 ↑.' },
+      sp500: { label: 'S&P 500', short: 'S&P', weight: 0.10, up: false,
+        desc: '미 대형주 500. 하락 시 정책 불확실성.' },
+      djia: { label: 'Dow Jones', short: 'DJIA', weight: 0.08, up: false,
+        desc: '30개 블루칩. 트럼프가 자주 인용.' },
+      nasdaq: { label: 'NASDAQ', short: 'NASDAQ', weight: 0.08, up: false,
+        desc: '기술주 중심. AI·테크 심리 반영.' },
+      vix: { label: 'VIX', short: 'VIX', weight: 0.15, up: true,
+        desc: '공포 게이지. 상승 시 시장 불안정.' },
+      wti_usd: { label: 'WTI 원유', short: 'WTI', weight: 0.07, up: true,
+        desc: '서부텍사스 원유. 상승 시 휘발유·인플레 부담.' },
+      breakeven_5y: { label: '5Y 기대인플레', short: '5Y BEI', weight: 0.10, up: true,
+        desc: '5년 TIPS 스프레드. 상승 시 Fed 압박.' },
+      btc_usd: { label: '비트코인', short: 'BTC', weight: 0.07, up: false,
+        desc: '위험자산 센티먼트 프록시.' },
+      trump_approval: { label: '트럼프 지지율', short: '지지율', weight: 0.20, up: false,
+        desc: '538/RCP 평균. 직접적인 정치 압박.' },
+    };
+
+    // 색상 팔레트 — 지표별 고유 색
+    const IND_COLOR = {
+      treasury_10y: CL.violet,
+      sp500: CL.cyan,
+      djia: CL.blue,
+      nasdaq: CL.lime,
+      vix: CL.rose,
+      wti_usd: CL.orange,
+      breakeven_5y: CL.amber,
+      btc_usd: '#f7931a',
+      trump_approval: CL.pink,
     };
 
     async function main() {
       let data, history;
       try {
-        const res = await fetch('data/latest.json?' + Date.now());
-        if (!res.ok) throw new Error('latest 로드 실패');
-        data = await res.json();
+        data = await (await fetch('data/latest.json?' + Date.now())).json();
       } catch {
-        document.getElementById('app').innerHTML =
-          '<div class="card"><h2>데이터 없음</h2><p>아직 리포트가 생성되지 않았습니다.</p></div>';
+        document.getElementById('app').innerHTML = '<div class="card"><h2>데이터 없음</h2></div>';
         return;
       }
       try {
@@ -257,234 +411,284 @@
 
       const tpl = document.getElementById('tpl').content.cloneNode(true);
       const app = document.getElementById('app');
-      app.innerHTML = '';
-      app.classList.remove('loading');
+      app.innerHTML = ''; app.classList.remove('loading');
       app.appendChild(tpl);
 
       document.getElementById('meta').textContent =
-        `${data.date} · ${new Date(data.generated_at).toLocaleString('ko-KR')} · 모델 ${data.model_version}`;
+        `${data.date} · ${new Date(data.generated_at).toLocaleString('ko-KR')}`;
 
-      // Gauges
-      const prob = data.taco_probability || 0;
-      const agg = data.aggression_score || 0;
-      const pain = data.pain_index || 0;
+      const prob = +data.taco_probability || 0;
+      const agg = +data.aggression_score || 0;
+      const pain = +data.pain_index || 0;
 
-      document.getElementById('taco-prob').textContent = prob.toFixed(1) + '%';
-      document.getElementById('taco-prob').style.color = probColor(prob);
-      document.getElementById('taco-label').textContent = probLabel(prob);
-      document.getElementById('taco-label').style.color = probColor(prob);
+      renderGauge('gauge-taco', 'taco-center', prob, '%', probLabel(prob), probColor(prob));
+      renderGauge('gauge-agg', 'agg-center', agg, '', probLabel(agg), probColor(agg));
+      renderGauge('gauge-pain', 'pain-center', pain, '', probLabel(pain), probColor(pain));
+
       const win = data.expected_window_hours;
       document.getElementById('taco-window').textContent =
         win ? `예상 윈도우: ${win[0].toFixed(0)}~${win[1].toFixed(0)}시간` : '예상 윈도우: 임계점 미도달';
 
-      document.getElementById('agg').textContent = agg.toFixed(1);
-      document.getElementById('agg').style.color = probColor(agg);
-      document.getElementById('pain').textContent = pain.toFixed(1);
-      document.getElementById('pain').style.color = probColor(pain);
-
-      drawGauge('gauge-taco', prob);
-      drawGauge('gauge-agg', agg);
-      drawGauge('gauge-pain', pain);
-
-      // Threshold scatter
       drawThreshold(data);
-
-      // TACO history line
       if (history && history.length) drawHistory(history);
-
-      // Market trend mini-charts
+      drawContribChart(data.pain?.contributions || {});
+      drawContribTable(data.pain?.contributions || {});
       drawMarketGrid(data.market_snapshot || {}, history || []);
-
-      // Pain contributions
-      drawContribs(data.pain?.contributions || {});
-
-      // Statements (Korean first)
       drawStatements(data.top_statements || []);
     }
 
-    function drawGauge(canvasId, value) {
+    function renderGauge(canvasId, centerId, value, unit, label, color) {
       const v = Math.max(0, Math.min(100, value));
-      const color = probColor(v);
       new Chart(document.getElementById(canvasId), {
         type: 'doughnut',
         data: {
           datasets: [{
             data: [v, 100 - v],
-            backgroundColor: [color, COLORS.panel2],
+            backgroundColor: [color, 'rgba(255,255,255,0.06)'],
             borderWidth: 0,
-            circumference: 180,
-            rotation: 270,
-            cutout: '72%',
+            circumference: 220,
+            rotation: 250,
+            cutout: '76%',
           }],
         },
         options: {
           responsive: false,
           plugins: { legend: { display: false }, tooltip: { enabled: false } },
+          animation: { animateRotate: true, duration: 900 },
         },
       });
+      const center = document.getElementById(centerId);
+      center.innerHTML =
+        `<div class="num" style="color:${color};">${v.toFixed(1)}<span class="unit">${unit}</span></div>
+         <div class="lbl" style="color:${color};background:${color}22;border:1px solid ${color}55;">${label}</div>`;
     }
 
     function drawThreshold(data) {
       const ctx = document.getElementById('chart-threshold');
-      const current = { x: data.aggression_score || 0, y: data.pain_index || 0 };
-      const highCurve = [], critCurve = [];
+      const current = { x: +data.aggression_score || 0, y: +data.pain_index || 0 };
+      const c60 = [], c80 = [];
       for (let a = 0; a <= 100; a += 2) {
-        for (const [curve, target] of [[highCurve, 0.651], [critCurve, 0.897]]) {
+        for (const [arr, t] of [[c60, 0.651], [c80, 0.897]]) {
           const A = a / 100;
-          const P = (target - 0.55 * A) / (0.45 + 0.6 * A);
-          if (P >= 0 && P <= 1) curve.push({ x: a, y: P * 100 });
+          const P = (t - 0.55 * A) / (0.45 + 0.6 * A);
+          if (P >= 0 && P <= 1) arr.push({ x: a, y: P * 100 });
         }
       }
       new Chart(ctx, {
         type: 'scatter',
         data: {
           datasets: [
-            { label: '임계 60%', data: highCurve, showLine: true, borderColor: COLORS.high,
+            { label: '임계 60%', data: c60, showLine: true, borderColor: CL.orange,
               backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, borderDash: [6, 4] },
-            { label: '임계 80%', data: critCurve, showLine: true, borderColor: COLORS.crit,
+            { label: '임계 80%', data: c80, showLine: true, borderColor: CL.red,
               backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, borderDash: [6, 4] },
-            { label: '오늘', data: [current], backgroundColor: COLORS.accent,
-              borderColor: '#fff', borderWidth: 2, pointRadius: 9 },
+            { label: '오늘', data: [current], backgroundColor: CL.cyan,
+              borderColor: '#fff', borderWidth: 2, pointRadius: 10, pointHoverRadius: 12 },
           ],
         },
         options: {
-          plugins: { legend: { labels: { color: COLORS.muted } } },
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
           scales: {
-            x: { min: 0, max: 100, title: { display: true, text: 'Aggression', color: COLORS.muted },
-                 ticks: { color: COLORS.muted }, grid: { color: '#2a2f3a' } },
-            y: { min: 0, max: 100, title: { display: true, text: 'Pain Index', color: COLORS.muted },
-                 ticks: { color: COLORS.muted }, grid: { color: '#2a2f3a' } },
+            x: { min: 0, max: 100, title: { display: true, text: 'Aggression', color: CL.muted, font: {size:11} },
+                 ticks: { color: CL.muted }, grid: { color: 'rgba(255,255,255,0.05)' } },
+            y: { min: 0, max: 100, title: { display: true, text: 'Pain Index', color: CL.muted, font: {size:11} },
+                 ticks: { color: CL.muted }, grid: { color: 'rgba(255,255,255,0.05)' } },
           },
         },
       });
     }
 
     function drawHistory(hist) {
+      const scored = hist.filter(h => h.taco_probability != null);
       new Chart(document.getElementById('chart-history'), {
         type: 'line',
         data: {
-          labels: hist.map(h => h.date.slice(5)),
+          labels: scored.map(h => h.date.slice(5)),
           datasets: [
-            { label: 'TACO', data: hist.map(h => h.taco_probability), borderColor: COLORS.accent,
-              backgroundColor: COLORS.accent + '30', tension: 0.3, fill: true, borderWidth: 2, pointRadius: 2 },
-            { label: 'Agg', data: hist.map(h => h.aggression_score), borderColor: COLORS.high,
-              backgroundColor: 'transparent', tension: 0.3, borderDash: [4, 4], borderWidth: 1.5, pointRadius: 0 },
-            { label: 'Pain', data: hist.map(h => h.pain_index), borderColor: COLORS.med,
-              backgroundColor: 'transparent', tension: 0.3, borderDash: [4, 4], borderWidth: 1.5, pointRadius: 0 },
+            { label: 'TACO', data: scored.map(h => h.taco_probability),
+              borderColor: CL.cyan, backgroundColor: CL.cyan + '33',
+              tension: 0.35, fill: true, borderWidth: 2.5, pointRadius: 3, pointBackgroundColor: CL.cyan },
+            { label: 'Aggression', data: scored.map(h => h.aggression_score),
+              borderColor: CL.orange, backgroundColor: 'transparent',
+              tension: 0.35, borderDash: [5, 4], borderWidth: 1.5, pointRadius: 0 },
+            { label: 'Pain', data: scored.map(h => h.pain_index),
+              borderColor: CL.pink, backgroundColor: 'transparent',
+              tension: 0.35, borderDash: [5, 4], borderWidth: 1.5, pointRadius: 0 },
           ],
         },
         options: {
-          plugins: { legend: { labels: { color: COLORS.muted, boxWidth: 10 } } },
+          maintainAspectRatio: false,
+          plugins: { legend: { labels: { color: CL.muted, boxWidth: 12, font: {size: 11} }, position: 'top', align: 'end' } },
           scales: {
-            x: { ticks: { color: COLORS.muted, maxTicksLimit: 6 }, grid: { display: false } },
-            y: { min: 0, max: 100, ticks: { color: COLORS.muted }, grid: { color: '#2a2f3a' } },
+            x: { ticks: { color: CL.muted, maxTicksLimit: 6 }, grid: { display: false } },
+            y: { min: 0, max: 100, ticks: { color: CL.muted, stepSize: 25 }, grid: { color: 'rgba(255,255,255,0.05)' } },
           },
         },
       });
+    }
+
+    function drawContribChart(contribs) {
+      // Sort by absolute contribution descending
+      const entries = Object.entries(INDICATOR_META)
+        .map(([k, m]) => ({ k, meta: m, v: contribs[k] }))
+        .sort((a, b) => Math.abs(b.v || 0) - Math.abs(a.v || 0));
+
+      const labels = entries.map(e => e.meta.label);
+      const values = entries.map(e => e.v == null ? 0 : e.v);
+      const colors = values.map(v => v > 0 ? CL.rose : v < 0 ? CL.emerald : 'rgba(255,255,255,0.15)');
+
+      new Chart(document.getElementById('chart-contrib'), {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: '기여도 (가중치 × Z-score)',
+            data: values,
+            backgroundColor: colors,
+            borderColor: colors.map(c => c),
+            borderWidth: 0,
+            borderRadius: 4,
+          }],
+        },
+        options: {
+          indexAxis: 'y',
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false },
+            tooltip: { callbacks: { label: c => `기여도: ${c.parsed.x.toFixed(4)}` } } },
+          scales: {
+            x: { ticks: { color: CL.muted, font: {size: 10} }, grid: { color: 'rgba(255,255,255,0.05)' },
+                 title: { display: true, text: '고통 방향 (+) ← → 완화 방향 (−)', color: CL.muted, font: {size: 10} } },
+            y: { ticks: { color: CL['text-dim'], font: {size: 11} }, grid: { display: false } },
+          },
+        },
+      });
+    }
+
+    function drawContribTable(contribs) {
+      const tbody = document.getElementById('contrib-tbl');
+      // 비중 계산: |각 기여도| / 총합
+      const total = Object.values(contribs).reduce((s, v) => s + Math.abs(v || 0), 0) || 1;
+
+      const rows = Object.entries(INDICATOR_META)
+        .map(([k, m]) => ({ k, m, v: contribs[k] }))
+        .sort((a, b) => Math.abs(b.v || 0) - Math.abs(a.v || 0));
+
+      for (const r of rows) {
+        const v = r.v;
+        const pct = v == null ? null : (Math.abs(v) / total) * 100;
+        const color = v == null ? CL.muted : (v >= 0 ? CL.rose : CL.emerald);
+        const sign = v == null ? '—' : (v >= 0 ? '+' : '');
+        const valStr = v == null ? '—' : `${sign}${v.toFixed(3)}`;
+        const pctStr = pct == null ? '—' : `${pct.toFixed(1)}%`;
+        const dir = r.m.up
+          ? `<span class="dir-badge dir-up">상승=고통↑</span>`
+          : `<span class="dir-badge dir-down">하락=고통↑</span>`;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong style="color:${IND_COLOR[r.k]};">${r.m.label}</strong>${dir}
+              <div style="color:${CL.muted};font-size:11px;margin-top:3px;">${r.m.desc}</div></td>
+          <td class="num">${(r.m.weight * 100).toFixed(0)}%</td>
+          <td class="num" style="color:${color};font-weight:700;">${valStr}</td>
+          <td class="num" style="color:${color};">${pctStr}</td>
+        `;
+        tbody.appendChild(tr);
+      }
     }
 
     function drawMarketGrid(today, history) {
       const grid = document.getElementById('market-grid');
       for (const [key, meta] of Object.entries(INDICATOR_META)) {
         const val = today[key];
-        const series = history.map(h => ({ d: h.date, v: h.market?.[key] })).filter(x => x.v != null);
-        // fallback: today 값만 있음
-        if (val != null && !series.find(s => s.v === val)) {
-          series.push({ d: (history[history.length-1]?.date) || '', v: val });
-        }
+        const series = history
+          .map(h => ({ d: h.date, v: h.market?.[key] }))
+          .filter(x => x.v != null);
 
-        const first = series.find(s => s.v != null)?.v;
-        const last = series[series.length - 1]?.v ?? val;
+        const first = series.length ? series[0].v : null;
+        const last = series.length ? series[series.length - 1].v : val;
         let deltaPct = null;
         if (first != null && last != null && first !== 0) {
           deltaPct = ((last - first) / first) * 100;
         }
 
+        const color = IND_COLOR[key];
         const card = document.createElement('div');
-        card.className = 'market-item';
+        card.className = 'mitem';
         const deltaStr = deltaPct == null ? '' :
-          `<span class="delta" style="color: ${deltaPct >= 0 ? COLORS.low : COLORS.crit};">${deltaPct >= 0 ? '+' : ''}${deltaPct.toFixed(1)}%</span>`;
-        const valStr = val == null ? '—' : (Math.abs(val) >= 1000 ? val.toLocaleString('en-US', { maximumFractionDigits: 2 }) : val.toFixed(2));
+          `<span class="delta" style="color:${deltaPct >= 0 ? CL.emerald : CL.rose};">${deltaPct >= 0 ? '▲' : '▼'} ${Math.abs(deltaPct).toFixed(1)}%</span>`;
+        const valStr = val == null ? '—' :
+          (Math.abs(val) >= 1000 ? val.toLocaleString('en-US', { maximumFractionDigits: 2 }) : val.toFixed(2));
         card.innerHTML = `
-          <div class="title">${meta.label} <span style="color:${COLORS.muted};font-size:10px;">(w=${meta.weight})</span></div>
-          <div class="val">${valStr}${deltaStr}</div>
-          <canvas height="50"></canvas>
+          <div class="title">${meta.label} <span class="weight">w=${(meta.weight*100).toFixed(0)}%</span></div>
+          <div class="val" style="color:${color};">${valStr}${deltaStr}</div>
+          <div class="chart-box"><canvas></canvas></div>
         `;
         grid.appendChild(card);
 
-        const canvas = card.querySelector('canvas');
         if (series.length >= 2) {
+          const canvas = card.querySelector('canvas');
+          const gradId = `grad-${key}`;
+          const ctx = canvas.getContext('2d');
+          const grad = ctx.createLinearGradient(0, 0, 0, 50);
+          grad.addColorStop(0, color + '88');
+          grad.addColorStop(1, color + '00');
           new Chart(canvas, {
             type: 'line',
             data: {
               labels: series.map(s => s.d),
               datasets: [{
                 data: series.map(s => s.v),
-                borderColor: COLORS.accent,
-                backgroundColor: COLORS.accent + '20',
-                fill: true, tension: 0.35, pointRadius: 0, borderWidth: 1.5,
+                borderColor: color,
+                backgroundColor: grad,
+                fill: true, tension: 0.35, pointRadius: 0, borderWidth: 2,
               }],
             },
             options: {
-              plugins: { legend: { display: false }, tooltip: { enabled: true } },
+              maintainAspectRatio: false,
+              plugins: { legend: { display: false },
+                tooltip: {
+                  displayColors: false,
+                  callbacks: {
+                    title: items => items[0].label,
+                    label: ctx => Math.abs(ctx.parsed.y) >= 1000
+                      ? ctx.parsed.y.toLocaleString('en-US', {maximumFractionDigits:2})
+                      : ctx.parsed.y.toFixed(2),
+                  },
+                },
+              },
               scales: { x: { display: false }, y: { display: false } },
               elements: { point: { radius: 0 } },
+              interaction: { intersect: false, mode: 'index' },
             },
           });
         } else {
-          canvas.style.display = 'none';
+          card.querySelector('.chart-box').style.display = 'none';
         }
-      }
-    }
-
-    function drawContribs(contribs) {
-      const tbody = document.getElementById('pain-contrib');
-      const rows = Object.entries(INDICATOR_META).map(([key, meta]) => ({
-        key, meta, val: contribs[key],
-      })).sort((a, b) => Math.abs(b.val || 0) - Math.abs(a.val || 0));
-
-      for (const r of rows) {
-        const tr = document.createElement('tr');
-        const v = r.val;
-        const color = v == null ? COLORS.muted : (v >= 0 ? COLORS.crit : COLORS.low);
-        const sign = v == null ? '—' : (v >= 0 ? '+' : '');
-        const valStr = v == null ? '—' : `${sign}${v.toFixed(3)}`;
-        const dirBadge = r.meta.up
-          ? `<span class="dir dir-up">상승=고통↑</span>`
-          : `<span class="dir dir-down">하락=고통↑</span>`;
-        tr.innerHTML = `
-          <td><strong>${r.meta.label}</strong>${dirBadge}</td>
-          <td class="desc">${r.meta.desc}</td>
-          <td class="w">${r.meta.weight}</td>
-          <td class="val-col" style="color:${color};">${valStr}</td>
-        `;
-        tbody.appendChild(tr);
       }
     }
 
     function drawStatements(items) {
       const ul = document.getElementById('statements');
       if (!items.length) {
-        ul.innerHTML = '<li style="color: var(--muted);">(수집된 발언 없음)</li>';
+        ul.innerHTML = '<li style="color:var(--muted);">(수집된 발언 없음)</li>';
         return;
       }
       for (const s of items) {
         const li = document.createElement('li');
-        const score = s.aggression_score ?? 0;
-        const badge = `<span class="badge" style="background: ${probColor(score)}20; color: ${probColor(score)}; border: 1px solid ${probColor(score)};">${score.toFixed(0)}</span>`;
-        const link = s.url ? ` <a href="${s.url}" target="_blank" style="color: var(--accent); text-decoration: none;">출처↗</a>` : '';
-        const ko = s.translated && s.translated.length ? escapeHtml(s.translated) : '<span style="color:var(--muted);">(번역 없음)</span>';
-        const orig = s.content ? `<div class="orig">원문: ${escapeHtml(s.content.slice(0, 220))}${s.content.length > 220 ? '…' : ''}</div>` : '';
-        li.innerHTML = `<div>${badge}${ko}${link}</div>${orig}`;
+        const score = +s.aggression_score || 0;
+        const col = probColor(score);
+        const badge = `<span class="badge" style="background:${col}22;color:${col};border:1px solid ${col}66;">AGG ${score.toFixed(0)}</span>`;
+        const link = s.url ? `<a class="src-link" href="${s.url}" target="_blank">출처 ↗</a>` : '';
+        const ko = s.translated && s.translated.length && s.translated !== s.content
+          ? escapeHtml(s.translated) : '<span style="color:var(--muted);">(번역 대기 중 · 내일 CI 실행 시 자동 번역)</span>';
+        const origSnippet = s.content ? escapeHtml(s.content.slice(0, 260)) + (s.content.length > 260 ? '…' : '') : '';
+        li.innerHTML = `<div class="ko">${badge}${ko}${link}</div>
+                        ${origSnippet ? `<div class="orig">원문: ${origSnippet}</div>` : ''}`;
         ul.appendChild(li);
       }
     }
 
-    function escapeHtml(s) {
-      const d = document.createElement('div');
-      d.textContent = s;
-      return d.innerHTML;
-    }
+    function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
     main();
   </script>
