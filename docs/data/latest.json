@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-15T15:21:08.158215+09:00",
-  "date": "2026-04-15",
-  "taco_probability": 92.74,
-  "aggression_score": 83.5,
-  "pain_index": 76.52,
+  "generated_at": "2026-04-16T06:57:05.029693+09:00",
+  "date": "2026-04-16",
+  "taco_probability": 94.84,
+  "aggression_score": 96.0,
+  "pain_index": 73.06,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-15T06:21:01.690487+00:00",
-    "treasury_10y": 4.3,
-    "sp500": 6967.3798828125,
-    "vix": 18.360000610351562,
-    "djia": 48535.98828125,
-    "nasdaq": 23639.080078125,
-    "wti_usd": 91.05999755859375,
-    "breakeven_5y": 2.59,
-    "btc_usd": 74015.0,
+    "ts": "2026-04-15T21:51:26.787423+00:00",
+    "treasury_10y": 4.26,
+    "sp500": 7022.9501953125,
+    "vix": 18.170000076293945,
+    "djia": 48463.71875,
+    "nasdaq": 24016.017578125,
+    "wti_usd": 91.38999938964844,
+    "breakeven_5y": 2.61,
+    "btc_usd": 74751.0,
     "trump_approval": 39.1
   },
   "pain": {
-    "index": 76.52,
-    "weighted_z": 0.5907,
+    "index": 73.06,
+    "weighted_z": 0.4988,
     "contributions": {
-      "treasury_10y": 0.0,
-      "sp500": -0.0337,
-      "djia": -0.0357,
-      "nasdaq": -0.073,
-      "vix": 0.051,
-      "wti_usd": 0.0707,
-      "breakeven_5y": 0.045,
-      "btc_usd": -0.0235,
+      "treasury_10y": -0.024,
+      "sp500": -0.0615,
+      "djia": -0.0309,
+      "nasdaq": -0.1161,
+      "vix": 0.0439,
+      "wti_usd": 0.0745,
+      "breakeven_5y": 0.055,
+      "btc_usd": -0.0321,
       "trump_approval": 0.59
     },
     "missing": []
@@ -45,100 +45,88 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.nytimes.com/live/2026/04/14/world/iran-war-oil-hormuz",
-      "content": "Iran War Live Updates: U.S. and Iran Trade Proposals on Nuclear Restrictions - The New York Times\n\nPresident Trump announced a U.S. naval blockade of Iranian ports along the strait after high-level negotiations with Iran broke down over the weekend, and said that other countries would join in. An Iran-linked tanker appeared to travel through the Strait of Hormuz on Monday after the United States imposed a blockade on vessels entering or leaving Iranian ports, according to tracking data from Mari",
-      "translated": "미국과 이란이 핵 제한 조치를 놓고 협상을 진행 중이며, 트럼프 대통령은 협상 결렬 시 이란 항구 봉쇄를 발표했다.",
-      "aggression_score": 83.5,
-      "threat_intensity": 85,
-      "specificity": 70,
-      "deadline_specified": 90,
+      "url": "https://www.clinicalleader.com/doc/u-s-pharma-tariffs-and-mfn-become-law-after-april-update-0001",
+      "content": "U.S. Pharma Tariffs And MFN Become Law After April 2 Update - Clinical Leader\n\n# U.S. Pharma Tariffs And MFN Become Law After April 2 Update. By Mathini Ilancheran, senior delivery lead - research, R&D, Beroe Inc. On April 2, 2026, President Trump signed a sweeping executive order converting over a year of tariff threats into binding trade law. Trump Bolsters National Security and Strengthens U.S. Supply Chains by Imposing Tariffs on Patented Pharmaceutical Products,\" April 2, 2026. 3. CNBC, \"Tr",
+      "translated": "트럼프 대통령이 2026년 4월 2일, 1년 넘게 예고되었던 제약 산업 관세와 최혜국 대우 관련 행정명령에 서명하여 무역법으로 발효되었습니다.",
+      "aggression_score": 96.0,
+      "threat_intensity": 90,
+      "specificity": 100,
+      "deadline_specified": 100,
       "topic_tags": [
-        "military",
-        "war",
-        "iran",
-        "sanctions",
         "tariffs",
-        "foreign_policy",
-        "energy"
+        "trade"
       ],
-      "rationale": "이란 항구 봉쇄라는 구체적인 군사적 조치를 명시하고, 월요일 발효라는 명확한 시한을 제시했으며, 이는 즉각적인 해상 운송 차단이라는 높은 수준의 위협을 나타냅니다."
+      "rationale": "트럼프가 100% 관세를 부과하는 행정명령에 서명하여 즉시 법으로 발효되었으며, 대상, 조치, 수치, 발효일이 모두 명확하게 명시됨."
     },
     {
       "source": "news",
-      "url": "https://fortune.com/2026/04/14/man-charged-in-arson-attack-on-sam-altman-ai-ceo-kill-list-prosecutors-say/",
-      "content": "Man charged in arson attack on Sam Altman’s house had AI CEO kill list, prosecutors say - Fortune\n\nA 20-year-old man has been charged with attempted murder and arson after a Molotov cocktail attack on OpenAI CEO Sam Altman’s house last week, according to the U.S. Department of Justice. **Yesterday, President Trump said** on social media, “If any of these ships come anywhere close to our BLOCKADE, they will be immediately ELIMINATED, using the same system of kill that we use against the drug deal",
-      "translated": "샘 올트먼의 집에 방화 공격을 한 남성이 인공지능 최고경영자 살해 명단을 가지고 있었다고 검찰이 밝혔다. 트럼프 대통령은 소셜 미디어에 \"만약 이 배들 중 어느 것이라도 우리 봉쇄선에 가까이 온다면\"이라고 말했다.",
-      "aggression_score": 71.5,
-      "threat_intensity": 85,
-      "specificity": 70,
-      "deadline_specified": 40,
+      "url": "https://www.bioprocessonline.com/doc/u-s-pharma-tariffs-and-mfn-become-law-after-april-update-0001",
+      "content": "U.S. Pharma Tariffs And MFN Become Law After April 2 Update - Bioprocess Online\n\n# U.S. Pharma Tariffs And MFN Become Law After April 2 Update. By Mathini Ilancheran, senior delivery lead - research, R&D, Beroe Inc. On April 2, 2026, President Trump signed a sweeping executive order converting over a year of tariff threats into binding trade law. Trump Bolsters National Security and Strengthens U.S. Supply Chains by Imposing Tariffs on Patented Pharmaceutical Products,\" April 2, 2026. 3. CNBC, \"",
+      "translated": "트럼프 대통령이 4월 2일, 1년 넘게 이어져 온 관세 위협을 구속력 있는 무역법으로 전환하는 행정명령에 서명했습니다.",
+      "aggression_score": 94.5,
+      "threat_intensity": 90,
+      "specificity": 95,
+      "deadline_specified": 100,
       "topic_tags": [
-        "military",
-        "war",
-        "iran",
-        "middle_east",
-        "sanctions",
-        "foreign_policy"
+        "tariffs",
+        "trade"
       ],
-      "rationale": "이란 관련 발언은 아니지만, 'BLOCKADE'에 접근하는 선박에 대한 즉각적이고 완전한 제거(ELIMINATED)를 경고하며, 이는 군사적 위협의 강도가 높고(85점), 'kill system'이라는 구체적인 조치를 언급했으나(70점), 시한은 'immediately'로 모호하여(40점) 총점 71.5점을 기록했습니다."
+      "rationale": "트럼프가 2026년 4월 2일 특정 제약 제품에 대해 최대 100% 관세를 부과하는 행정명령에 서명하여 즉시 발효되었음을 명확히 언급하고 있어 위협 강도, 구체성, 시한 명시 모두 최고 수준이다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.theguardian.com/us-news/2026/apr/14/trump-news-at-a-glance-latest-updates-today",
+      "content": "Trump news at a glance: president hints at second round of talks with Iran as temporary ceasefire ticks down - The Guardian\n\n# Trump news at a glance: president hints at second round of talks with Iran as temporary ceasefire ticks down. Collapse of weekend negotiations prompted Trump to impose a blockade on Iranian ports – key US politics stories from 14 April at a glance. Donald Trump has hinted that US-Iranian peace talks could resume in Islamabad over the next two days, and complimented the w",
+      "translated": "트럼프 대통령이 임시 휴전 만료를 앞두고 이란과의 2차 회담 가능성을 시사했습니다.",
+      "aggression_score": 67.5,
+      "threat_intensity": 60,
+      "specificity": 65,
+      "deadline_specified": 80,
+      "topic_tags": [
+        "foreign_policy",
+        "iran",
+        "sanctions",
+        "trade"
+      ],
+      "rationale": "트럼프의 직접 발언은 '무언가 일어날 수 있다'며 모호하지만, 이란 항구 봉쇄 조치가 이미 발효되었음이 언급되어 위협 강도와 구체성을 높임. '향후 이틀 내'라는 구체적인 시한이 명시됨."
     },
     {
       "source": "news",
       "url": "https://www.huffpost.com/entry/us-iran-war-talks-blockade-trump_n_69dec27ee4b05c8319cd65ac",
       "content": "U.S., Iran May Resume Talks This Week Despite Port Blockade - HuffPost\n\n# U.S., Iran May Resume Talks This Week Despite Port Blockade. Talks to end the Iran war could resume in Pakistan over the next two days, Trump said on Tuesday. ISLAMABAD/WASHINGTON/DUBAI, April 14 (Reuters) - Talks to end the Iran war could resume in Pakistan over the next two days, U.S. President Donald Trump said on Tuesday, after the collapse of weekend negotiations prompted Washington to impose a blockade on Iranian por",
-      "translated": "트럼프 대통령은 항구 봉쇄에도 불구하고 미국과 이란이 이번 주 파키스탄에서 전쟁 종식 협상을 재개할 수 있다고 밝혔다.",
-      "aggression_score": 67.0,
-      "threat_intensity": 70,
-      "specificity": 60,
-      "deadline_specified": 70,
+      "translated": "U.S., Iran May Resume Talks This Week Despite Port Blockade - HuffPost\n\n# U.S., Iran May Resume Talks This Week Despite Port Blockade. Talks to end the Iran war could resume in Pakistan over the next two days, Trump said on Tuesday. ISLAMABAD/WASHINGTON/DUBAI, April 14 (Reuters) - Talks to end the Iran war could resume in Pakistan over the next two days, U.S. President Donald Trump said on Tuesday, after the collapse of weekend negotiations prompted Washington to impose a blockade on Iranian ports. Gulf, Pakistani and Iranian officials also said negotiating teams from the U.S. and Iran could return to Pakistan later this week, though one senior Iranian source said no date had been set. Centcom said more than a dozen U.S. warships were involved in the blockade, which only applies to ships going to or from Iran. With the war unpopular at home and rising energy prices causing political blowback, Trump paused the U.S.-Israeli bombing campaign last week after threatening to destroy Iran’s “whole civilisation” unless it reopened the strait.",
+      "aggression_score": 56.5,
+      "threat_intensity": 85,
+      "specificity": 75,
+      "deadline_specified": 0,
       "topic_tags": [
-        "war",
-        "iran",
-        "military",
-        "sanctions",
-        "tariffs",
-        "foreign_policy"
-      ],
-      "rationale": "이란과의 전쟁 종식을 위한 협상이 임박했음을 언급하며, 이란 항구 봉쇄와 '이란 문명 전체를 파괴하겠다'는 위협을 포함하고 있어 위협 강도가 높음. 협상 재개 시한을 '이틀 내', '이번 주 내'로 명시하여 구체성이 높음. 다만, 봉쇄 조치 자체는 구체적이나 '이란 문명 파괴'는 수사적 표현으로 간주하여 위협 강도와 구체성 점수를 조정함."
-    },
-    {
-      "source": "news",
-      "url": "https://www.marinelink.com/blogs/blog/us-and-iran-could-resume-war-talks-next-week-despite-the-port-104560",
-      "content": "US and Iran could resume war talks next week despite the port blockade - Marine Link\n\n# US and Iran could resume war talks next week despite the port blockade. teams of the U.S., Iran, and other countries could return to Islamabad to resume the talks on ending the war this week, after the weekend's negotiations failed, prompting Washington to impose an? U.S. president Donald Trump said Iran was in contact on Monday, and that they wanted to reach a deal. A military spokesperson in Iran called U.S",
-      "translated": "미국과 이란은 항구 봉쇄에도 불구하고 다음 주에 전쟁 협상을 재개할 수 있습니다.",
-      "aggression_score": 59.5,
-      "threat_intensity": 55,
-      "specificity": 60,
-      "deadline_specified": 70,
-      "topic_tags": [
-        "iran",
-        "military",
-        "war",
-        "sanctions",
         "foreign_policy",
+        "military",
+        "war",
+        "iran",
+        "sanctions",
         "trade"
       ],
-      "rationale": "이란과의 전쟁 재개 가능성 및 항구 봉쇄 언급은 위협 강도를 높이며, 봉쇄 대상과 지역이 구체적으로 명시되어 구체성 점수가 높음. 'next week'이라는 시한 명시는 중간 정도의 점수를 부여함."
+      "rationale": "트럼프 행정부는 이란 항구 봉쇄라는 구체적인 제재 조치를 시행 중이며, 과거 '이란 문명 전체 파괴'라는 극단적인 위협을 가한 바 있어 위협 강도와 구체성이 높다. 다만, 이러한 위협이나 조치에 대한 명확한 시한은 제시되지 않았다."
     },
     {
       "source": "news",
-      "url": "https://www.vpm.org/npr-news/2026-04-14/eric-swalwell-will-resign-from-congress-and-trump-feuds-with-pope-leo-over-iran-war",
-      "content": "Eric Swalwell will resign from Congress. And, Trump feuds with Pope Leo over Iran War - VPM\n\n* ➡️ **Swalwell is not the only lawmaker leaving his congressional seat.** U.S. Rep. Tony Gonzales announced yesterday that he will resign after accusations that he had a sexual relationship with a staffer who later took her own life. In times of crisis, nations typically lean on their allies for support, but President Trump has alienated many U.S. allies by failing to consult them. * 🎧 **NPR's Danielle ",
-      "translated": "에릭 스웰웰 의원이 의회직을 사임할 예정이며, 토니 곤잘레스 의원도 직원과의 부적절한 관계로 인해 사임한다고 발표했습니다.",
-      "aggression_score": 55.0,
-      "threat_intensity": 70,
-      "specificity": 60,
-      "deadline_specified": 40,
+      "url": "https://www.usatoday.com/story/news/politics/2026/04/15/senate-war-powers-vote-results-iran/89625461007/",
+      "content": "Senate again votes against ending Iran war. But tougher votes are coming - USA Today\n\nSenate again votes against ending Iran war. # Senate again votes against ending Iran war. ## Sen. Tammy Duckworth, D-Illinois, a veteran who lost her legs serving in Iraq, pleaded with Republicans to \"finally end this illegal war.\". President Trump says US may 'stop by Cuba' after it finishes Iran war. President Donald Trump said the U.S. may \"stop by Cuba after we're finished\" with the war in Iran. WASHINGTON ",
+      "translated": "상원은 이란 전쟁 종식을 또다시 부결했지만, 더 어려운 표결이 다가오고 있다.",
+      "aggression_score": 53.5,
+      "threat_intensity": 85,
+      "specificity": 65,
+      "deadline_specified": 0,
       "topic_tags": [
         "foreign_policy",
-        "trade",
-        "military",
+        "war",
         "iran",
-        "sanctions"
+        "middle_east",
+        "other"
       ],
-      "rationale": "이란 항구 봉쇄 및 선박 차단 언급은 구체적 제재를 예고하나, 시한이 모호하고 '이란 전쟁' 관련 언급은 맥락상 트럼프와 교황 간의 논쟁으로 해석되어 직접적인 군사 행동 위협 강도는 중간 수준으로 평가됨."
+      "rationale": "트럼프의 과거 '문명 파괴' 위협이 언급되고 '이란 전쟁'이 지속될 수 있음을 시사하며 높은 위협 강도를 보임. 이란과 쿠바라는 대상은 명확하나, '전쟁' 외 구체적 조치나 시한은 불분명함."
     }
   ],
-  "explanation": "[매우 높음] Aggression 83.5 × Pain 76.5 → composite=0.804, interaction=0.383, raw=1.187. 룰베이스 공식 rule-based-v0.1 적용.",
-  "notes": "Aggression/Top5는 13:40 KST 캐시 재사용. Pain=9개 지표(지지율 Wiki 집계 + FRED 국채/BEI + Yahoo 주가 + CoinGecko BTC) 전부 수집."
+  "explanation": "[매우 높음] Aggression 96.0 × Pain 73.1 → composite=0.857, interaction=0.421, raw=1.278. 룰베이스 공식 rule-based-v0.1 적용."
 }
