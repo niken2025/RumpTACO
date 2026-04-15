@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.2"/></filter>
+  </defs>
+
+  <rect width="120" height="120" rx="22" fill="url(#bg)"/>
+  <rect x="0" y="0" width="120" height="120" rx="22" fill="url(#red)" opacity="0.18"/>
+
+  <!-- chicken body -->
+  <g transform="translate(22 34)">
+    <ellipse cx="28" cy="32" rx="26" ry="22" fill="url(#yellow)" filter="url(#glow)" opacity="0.85"/>
+    <ellipse cx="28" cy="32" rx="26" ry="22" fill="url(#yellow)"/>
+    <!-- comb -->
+    <path d="M18 8 Q22 0 26 8 Q30 0 34 8 Q38 0 42 8 L42 14 L18 14 Z" fill="#dc2626"/>
+    <!-- head -->
+    <circle cx="30" cy="18" r="12" fill="#fcd34d"/>
+    <!-- eye -->
+    <circle cx="33" cy="17" r="2.2" fill="#111"/>
+    <circle cx="33.7" cy="16.3" r="0.7" fill="#fff"/>
+    <!-- beak -->
+    <path d="M42 19 L48 22 L42 23 Z" fill="#f97316"/>
+    <!-- wing -->
+    <path d="M16 32 Q22 42 30 44 Q22 38 18 30 Z" fill="#f59e0b" opacity="0.7"/>
+    <!-- feet -->
+    <path d="M22 52 L22 58 M20 58 L24 58" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+    <path d="M34 52 L34 58 M32 58 L36 58" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- TACO badge -->
+  <g transform="translate(60 78)">
+    <rect x="-28" y="0" width="56" height="22" rx="6" fill="#dc2626"/>
+    <text x="0" y="16" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="2">TACO</text>
+  </g>
+</svg>
