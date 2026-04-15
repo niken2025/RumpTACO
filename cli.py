@@ -26,6 +26,7 @@ from dotenv import load_dotenv
 from rich import print as rprint
 
 from collectors.market import collect_snapshot, snapshot_dict
+from collectors.polls import fetch_trump_approval
 from collectors.statements import collect_recent, to_dicts
 from scoring.aggression import score_batch, score_statement
 from scoring.pain import compute_pain
@@ -43,7 +44,7 @@ app = typer.Typer(add_completion=False, no_args_is_help=True)
 @app.command()
 def collect(hours: int = 24):
     """시장 스냅샷 + 최근 발언 수집 후 stdout 출력."""
-    snap = collect_snapshot()
+    snap = collect_snapshot(trump_approval=fetch_trump_approval())
     rprint("[bold cyan]Market Snapshot[/]")
     rprint(snapshot_dict(snap))
 
@@ -65,7 +66,7 @@ def score(hours: int = 24, threshold: float = 50.0):
 @app.command()
 def predict(hours: int = 24):
     """수집→점수화→Pain→TACO 확률 산출 후 출력."""
-    snap = snapshot_dict(collect_snapshot())
+    snap = snapshot_dict(collect_snapshot(trump_approval=fetch_trump_approval()))
     items = to_dicts(collect_recent(hours=hours))
     scored = score_batch(items) if items else []
     top = sorted(
@@ -90,7 +91,7 @@ def predict(hours: int = 24):
 @app.command()
 def daily(hours: int = 24, send: bool = True):
     """전체 파이프라인 + 텔레그램 발송 + 리포트 파일 저장."""
-    snap = snapshot_dict(collect_snapshot())
+    snap = snapshot_dict(collect_snapshot(trump_approval=fetch_trump_approval()))
     items = to_dicts(collect_recent(hours=hours))
     scored = score_batch(items) if items else []
     top = sorted(

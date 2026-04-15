@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-15T14:31:03.647766+09:00",
+  "generated_at": "2026-04-15T15:17:34.548588+09:00",
   "date": "2026-04-15",
-  "taco_probability": 82.56,
+  "taco_probability": 93.84,
   "aggression_score": 83.5,
-  "pain_index": 50.42,
+  "pain_index": 81.14,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,32 +15,32 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-15T05:30:49.570439+00:00",
-    "treasury_10y": 4.3,
+    "ts": "2026-04-15T06:17:32.277204+00:00",
+    "treasury_10y": null,
     "sp500": 6967.3798828125,
     "vix": 18.360000610351562,
     "djia": 48535.98828125,
     "nasdaq": 23639.080078125,
-    "wti_usd": 91.5999984741211,
-    "breakeven_5y": 2.59,
-    "btc_usd": 74041.0,
-    "trump_approval": null
+    "wti_usd": 91.1500015258789,
+    "breakeven_5y": null,
+    "btc_usd": 73978.0,
+    "trump_approval": 39.1
   },
   "pain": {
-    "index": 50.42,
-    "weighted_z": 0.0084,
+    "index": 81.14,
+    "weighted_z": 0.7296,
     "contributions": {
-      "treasury_10y": 0.0,
       "sp500": -0.0337,
       "djia": -0.0357,
       "nasdaq": -0.073,
       "vix": 0.051,
-      "wti_usd": 0.077,
-      "breakeven_5y": 0.045,
-      "btc_usd": -0.0238
+      "wti_usd": 0.0718,
+      "btc_usd": -0.0231,
+      "trump_approval": 0.59
     },
     "missing": [
-      "trump_approval"
+      "treasury_10y",
+      "breakeven_5y"
     ]
   },
   "top_statements": [
@@ -140,6 +140,6 @@
       "rationale": "이란 항구 봉쇄 및 선박 차단 언급은 구체적 제재를 예고하나, 시한이 모호하고 '이란 전쟁' 관련 언급은 맥락상 트럼프와 교황 간의 논쟁으로 해석되어 직접적인 군사 행동 위협 강도는 중간 수준으로 평가됨."
     }
   ],
-  "explanation": "[매우 높음] Aggression 83.5 × Pain 50.4 → composite=0.686, interaction=0.253, raw=0.939. 룰베이스 공식 rule-based-v0.1 적용.",
-  "notes": "Aggression/top_statements는 Gemini 쿼터 소진으로 직전 캐시(2026-04-15 13:40 KST) 재사용. Pain/시장지표는 최신."
+  "explanation": "[매우 높음] Aggression 83.5 × Pain 81.1 → composite=0.824, interaction=0.407, raw=1.231. 룰베이스 공식 rule-based-v0.1 적용.",
+  "notes": "Aggression/Top5는 직전 캐시 재사용 (Gemini 쿼터 소진). Pain은 최신 시장+Wiki 지지율 집계."
 }
