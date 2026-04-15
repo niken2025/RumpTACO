@@ -105,9 +105,18 @@ def collect_recent(hours: int = 24) -> list[Statement]:
 
     if not items:
         items = _tavily_search(
-            "Donald Trump statement OR threat OR announcement tariffs OR policy",
+            'Trump said OR announced OR threatened OR "Truth Social" '
+            '(tariff OR sanction OR deal OR policy OR "will impose" OR "executive order")',
             since_days=max(1, hours // 24),
         )
+        # Trump이 주어로 등장하는 기사만 통과 (휴리스틱)
+        items = [
+            s for s in items
+            if any(kw in s.content.lower() for kw in ["trump said", "trump announced",
+                                                        "trump threatened", "trump will",
+                                                        "trump's", "president trump",
+                                                        "trump signed", "trump's plan"])
+        ]
 
     # 중복 제거 (URL 기준)
     seen = set()

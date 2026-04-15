@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-04-15T11:51:34.218614+09:00",
+  "date": "2026-04-15",
+  "taco_probability": 15.27,
+  "aggression_score": 22.0,
+  "pain_index": 0.09,
+  "expected_window_hours": null,
+  "model_version": "rule-based-v0.1",
+  "threshold": {
+    "very_high": 80,
+    "high": 60,
+    "medium": 40
+  },
+  "market_snapshot": {
+    "ts": "2026-04-15T02:50:40.808345+00:00",
+    "treasury_10y": 4.3,
+    "sp500": 6967.3798828125,
+    "vix": 18.360000610351562,
+    "djia": 48535.98828125,
+    "nasdaq": 23639.083984375,
+    "wti_usd": 91.16000366210938,
+    "breakeven_5y": 2.59,
+    "btc_usd": 74273.0,
+    "trump_approval": null
+  },
+  "pain": {
+    "index": 0.09,
+    "weighted_z": -3.4825,
+    "contributions": {
+      "treasury_10y": 0.05,
+      "sp500": -1.1783,
+      "djia": -0.7629,
+      "nasdaq": -1.1423,
+      "vix": 0.126,
+      "wti_usd": 0.1562,
+      "breakeven_5y": 0.095,
+      "btc_usd": -0.1298
+    },
+    "missing": [
+      "trump_approval"
+    ]
+  },
+  "top_statements": [
+    {
+      "source": "news",
+      "url": "https://variety.com/2026/tv/news/colbert-kimmel-trump-attacks-pope-leo-1236721185/",
+      "content": "Colbert, Kimmel Slam Trump's Attack on Pope Leo - Variety\n\n# Trump’s Attack on the Pope Leaves Colbert, Kimmel in Disbelief: ‘Not Even Hitler or Mussolini Attacked the Pope So Directly and Publicly, According to One Historian’. Donald Trump‘s social media post attacking Pope Leo XIV as “weak” left late-night hosts Stephen Colbert and Jimmy Kimmel in disbelief during their respective April 13 episodes. Pope Leo has publicly opposed the war in Iran as well as Trump’s immigration policy, which prom",
+      "aggression_score": 22.0,
+      "topic_tags": [
+        "foreign_policy"
+      ],
+      "rationale": "트럼프의 발언은 교황 레오 14세에 대한 강한 비판과 정책적 불만을 표출하지만, 구체적인 위협이나 조치, 시한은 전혀 명시되지 않아 전반적인 위협 강도는 낮다. 발언의 대상은 명확하나 트럼프가 취할 구체적인 행동은 언급되지 않았다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.greenwichtime.com/news/politics/article/the-trump-and-leo-chronicles-a-president-and-a-22205147.php",
+      "content": "The Trump and Leo chronicles: A president and a pope square off over Iran and its aftermath - Greenwich Time\n\n“I’m not afraid of the Trump administration,” Leo said Monday on the way to Africa, “or of speaking out loudly about the message of the Gospel, which is what the Church works for.”. By Monday, he was using Truth Social to take credit for Leo's election: “He wasn’t on any list to be Pope, and was only put there by the Church because he was an American, and they thought that would be the b",
+      "aggression_score": 20.0,
+      "topic_tags": [
+        "other"
+      ],
+      "rationale": "트럼프의 발언은 교황에 대한 강한 비판과 역할에 대한 지시이지만, 구체적인 정책 위협이나 제재, 시한을 포함하지 않아 전반적인 위협 강도가 낮다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.chicagotribune.com/2026/04/14/editorial-pope-leo-donald-trump-iran-war-criticism/",
+      "content": "Editorial: On President Trump’s war of words with Pope Leo - Chicago Tribune\n\n# Editorial: On President Trump’s war of words with Pope Leo. Actually, we don’t have to work too hard to imagine such a thing, because Trump on Sunday decided to pick a fight with Chicago-born Pope Leo XIV over Leo’s utterly unsurprising criticism of the war on Iran prosecuted jointly by the U.S. and Israel. Having thankfully not followed through on those civilization-killing threats, Trump in a Truth Social post said",
+      "aggression_score": 7.0,
+      "topic_tags": [
+        "foreign_policy"
+      ],
+      "rationale": "트럼프의 발언은 교황에 대한 일반적인 비판과 인물 평가에 불과하며, 특정 대상에 대한 구체적인 정책 위협이나 조치, 시한이 전혀 명시되지 않아 위협 강도가 매우 낮다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.foxnews.com/politics/trump-endorses-neighboring-state-lieutenant-governors-re-election",
+      "content": "Trump endorses neighboring state lieutenant governors for re-election - Fox News\n\n* #### House Dem reveals why his party should challenge Trump on Iran as gas prices soar $1 per gallon. * #### Swalwell announces resignation from Congress after sexual misconduct allegations torpedoed gubernatorial bid. * #### Trump says Iran’s navy ‘obliterated’ as US enforces Hormuz blockade — but key threat remains. # Trump endorses neighboring state lieutenant governors for re-election. President Donald Trump ",
+      "aggression_score": 0.0,
+      "topic_tags": [
+        "election"
+      ],
+      "rationale": "해당 발언은 특정 인물에 대한 재선 지지 선언으로, 정책 위협의 강도를 평가하는 기준(위협 강도, 구체성, 시한 명시)에 해당하지 않아 모든 점수가 0점 처리되었습니다."
+    }
+  ],
+  "insight": "(인사이트 생성 실패: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 25.984977378s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 25\n}\n])",
+  "explanation": "[낮음] Aggression 22.0 × Pain 0.1 → composite=0.121, interaction=0.000, raw=0.122. 룰베이스 공식 rule-based-v0.1 적용."
+}
