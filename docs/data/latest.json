@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-15T15:17:34.548588+09:00",
+  "generated_at": "2026-04-15T15:21:08.158215+09:00",
   "date": "2026-04-15",
-  "taco_probability": 93.84,
+  "taco_probability": 92.74,
   "aggression_score": 83.5,
-  "pain_index": 81.14,
+  "pain_index": 76.52,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,33 +15,32 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-15T06:17:32.277204+00:00",
-    "treasury_10y": null,
+    "ts": "2026-04-15T06:21:01.690487+00:00",
+    "treasury_10y": 4.3,
     "sp500": 6967.3798828125,
     "vix": 18.360000610351562,
     "djia": 48535.98828125,
     "nasdaq": 23639.080078125,
-    "wti_usd": 91.1500015258789,
-    "breakeven_5y": null,
-    "btc_usd": 73978.0,
+    "wti_usd": 91.05999755859375,
+    "breakeven_5y": 2.59,
+    "btc_usd": 74015.0,
     "trump_approval": 39.1
   },
   "pain": {
-    "index": 81.14,
-    "weighted_z": 0.7296,
+    "index": 76.52,
+    "weighted_z": 0.5907,
     "contributions": {
+      "treasury_10y": 0.0,
       "sp500": -0.0337,
       "djia": -0.0357,
       "nasdaq": -0.073,
       "vix": 0.051,
-      "wti_usd": 0.0718,
-      "btc_usd": -0.0231,
+      "wti_usd": 0.0707,
+      "breakeven_5y": 0.045,
+      "btc_usd": -0.0235,
       "trump_approval": 0.59
     },
-    "missing": [
-      "treasury_10y",
-      "breakeven_5y"
-    ]
+    "missing": []
   },
   "top_statements": [
     {
@@ -140,6 +139,6 @@
       "rationale": "이란 항구 봉쇄 및 선박 차단 언급은 구체적 제재를 예고하나, 시한이 모호하고 '이란 전쟁' 관련 언급은 맥락상 트럼프와 교황 간의 논쟁으로 해석되어 직접적인 군사 행동 위협 강도는 중간 수준으로 평가됨."
     }
   ],
-  "explanation": "[매우 높음] Aggression 83.5 × Pain 81.1 → composite=0.824, interaction=0.407, raw=1.231. 룰베이스 공식 rule-based-v0.1 적용.",
-  "notes": "Aggression/Top5는 직전 캐시 재사용 (Gemini 쿼터 소진). Pain은 최신 시장+Wiki 지지율 집계."
+  "explanation": "[매우 높음] Aggression 83.5 × Pain 76.5 → composite=0.804, interaction=0.383, raw=1.187. 룰베이스 공식 rule-based-v0.1 적용.",
+  "notes": "Aggression/Top5는 13:40 KST 캐시 재사용. Pain=9개 지표(지지율 Wiki 집계 + FRED 국채/BEI + Yahoo 주가 + CoinGecko BTC) 전부 수집."
 }
