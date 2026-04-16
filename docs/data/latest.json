@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-16T06:57:05.029693+09:00",
-  "date": "2026-04-16",
-  "taco_probability": 94.84,
-  "aggression_score": 96.0,
-  "pain_index": 73.06,
+  "generated_at": "2026-04-17T06:43:07.555152+09:00",
+  "date": "2026-04-17",
+  "taco_probability": 91.87,
+  "aggression_score": 85.5,
+  "pain_index": 71.24,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-15T21:51:26.787423+00:00",
-    "treasury_10y": 4.26,
-    "sp500": 7022.9501953125,
-    "vix": 18.170000076293945,
-    "djia": 48463.71875,
-    "nasdaq": 24016.017578125,
-    "wti_usd": 91.38999938964844,
-    "breakeven_5y": 2.61,
-    "btc_usd": 74751.0,
+    "ts": "2026-04-16T21:41:42.237199+00:00",
+    "treasury_10y": 4.29,
+    "sp500": 7041.27978515625,
+    "vix": 17.940000534057617,
+    "djia": 48578.71875,
+    "nasdaq": 24102.703125,
+    "wti_usd": 89.6500015258789,
+    "breakeven_5y": 2.6,
+    "btc_usd": 74966.0,
     "trump_approval": 39.1
   },
   "pain": {
-    "index": 73.06,
-    "weighted_z": 0.4988,
+    "index": 71.24,
+    "weighted_z": 0.4537,
     "contributions": {
-      "treasury_10y": -0.024,
-      "sp500": -0.0615,
-      "djia": -0.0309,
-      "nasdaq": -0.1161,
-      "vix": 0.0439,
-      "wti_usd": 0.0745,
-      "breakeven_5y": 0.055,
-      "btc_usd": -0.0321,
+      "treasury_10y": -0.006,
+      "sp500": -0.0706,
+      "djia": -0.0386,
+      "nasdaq": -0.126,
+      "vix": 0.0353,
+      "wti_usd": 0.0543,
+      "breakeven_5y": 0.05,
+      "btc_usd": -0.0346,
       "trump_approval": 0.59
     },
     "missing": []
@@ -45,88 +45,95 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.clinicalleader.com/doc/u-s-pharma-tariffs-and-mfn-become-law-after-april-update-0001",
-      "content": "U.S. Pharma Tariffs And MFN Become Law After April 2 Update - Clinical Leader\n\n# U.S. Pharma Tariffs And MFN Become Law After April 2 Update. By Mathini Ilancheran, senior delivery lead - research, R&D, Beroe Inc. On April 2, 2026, President Trump signed a sweeping executive order converting over a year of tariff threats into binding trade law. Trump Bolsters National Security and Strengthens U.S. Supply Chains by Imposing Tariffs on Patented Pharmaceutical Products,\" April 2, 2026. 3. CNBC, \"Tr",
-      "translated": "트럼프 대통령이 2026년 4월 2일, 1년 넘게 예고되었던 제약 산업 관세와 최혜국 대우 관련 행정명령에 서명하여 무역법으로 발효되었습니다.",
-      "aggression_score": 96.0,
-      "threat_intensity": 90,
-      "specificity": 100,
+      "url": "https://nypost.com/2026/04/16/us-news/us-announces-aggressive-expansion-of-iran-blockade-warns-regime-to-choose-wisely/",
+      "content": "US announces aggressive expansion of Iran blockade, warns regime to ‘choose wisely’ - New York Post\n\nWASHINGTON — The US military will “actively pursue” any Iranian-flagged vessels or any ships attempting to support the regime elsewhere in the world, Gen. Dan Caine Chairman of the Joint Chiefs of Staff, announced Thursday — in an expansion of the blockade of Iranian ports in the Strait of Hormuz. “The joint force, through operations and activities in other areas of responsibility, like the Pacif",
+      "translated": "미국이 이란 항구 봉쇄를 확대하며, 이란 정권에 \"현명하게 선택하라\"고 경고했다. 미군은 이란 국적 선박이나 이란 정권을 지원하는 선박을 적극적으로 추적할 것이라고 밝혔다.",
+      "aggression_score": 85.5,
+      "threat_intensity": 75,
+      "specificity": 85,
       "deadline_specified": 100,
-      "topic_tags": [
-        "tariffs",
-        "trade"
-      ],
-      "rationale": "트럼프가 100% 관세를 부과하는 행정명령에 서명하여 즉시 법으로 발효되었으며, 대상, 조치, 수치, 발효일이 모두 명확하게 명시됨."
-    },
-    {
-      "source": "news",
-      "url": "https://www.bioprocessonline.com/doc/u-s-pharma-tariffs-and-mfn-become-law-after-april-update-0001",
-      "content": "U.S. Pharma Tariffs And MFN Become Law After April 2 Update - Bioprocess Online\n\n# U.S. Pharma Tariffs And MFN Become Law After April 2 Update. By Mathini Ilancheran, senior delivery lead - research, R&D, Beroe Inc. On April 2, 2026, President Trump signed a sweeping executive order converting over a year of tariff threats into binding trade law. Trump Bolsters National Security and Strengthens U.S. Supply Chains by Imposing Tariffs on Patented Pharmaceutical Products,\" April 2, 2026. 3. CNBC, \"",
-      "translated": "트럼프 대통령이 4월 2일, 1년 넘게 이어져 온 관세 위협을 구속력 있는 무역법으로 전환하는 행정명령에 서명했습니다.",
-      "aggression_score": 94.5,
-      "threat_intensity": 90,
-      "specificity": 95,
-      "deadline_specified": 100,
-      "topic_tags": [
-        "tariffs",
-        "trade"
-      ],
-      "rationale": "트럼프가 2026년 4월 2일 특정 제약 제품에 대해 최대 100% 관세를 부과하는 행정명령에 서명하여 즉시 발효되었음을 명확히 언급하고 있어 위협 강도, 구체성, 시한 명시 모두 최고 수준이다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.theguardian.com/us-news/2026/apr/14/trump-news-at-a-glance-latest-updates-today",
-      "content": "Trump news at a glance: president hints at second round of talks with Iran as temporary ceasefire ticks down - The Guardian\n\n# Trump news at a glance: president hints at second round of talks with Iran as temporary ceasefire ticks down. Collapse of weekend negotiations prompted Trump to impose a blockade on Iranian ports – key US politics stories from 14 April at a glance. Donald Trump has hinted that US-Iranian peace talks could resume in Islamabad over the next two days, and complimented the w",
-      "translated": "트럼프 대통령이 임시 휴전 만료를 앞두고 이란과의 2차 회담 가능성을 시사했습니다.",
-      "aggression_score": 67.5,
-      "threat_intensity": 60,
-      "specificity": 65,
-      "deadline_specified": 80,
       "topic_tags": [
         "foreign_policy",
+        "trade",
+        "military",
         "iran",
-        "sanctions",
-        "trade"
+        "sanctions"
       ],
-      "rationale": "트럼프의 직접 발언은 '무언가 일어날 수 있다'며 모호하지만, 이란 항구 봉쇄 조치가 이미 발효되었음이 언급되어 위협 강도와 구체성을 높임. '향후 이틀 내'라는 구체적인 시한이 명시됨."
+      "rationale": "이란 선박 및 이란을 지원하는 모든 선박에 대한 미군의 적극적인 추적 및 봉쇄 조치가 이미 '완전히 이행'되었음을 명확히 밝혀 위협 강도와 구체성이 높다. 시한 또한 이미 발효되었음을 명시하여 최고 점수를 부여했다."
     },
     {
       "source": "news",
-      "url": "https://www.huffpost.com/entry/us-iran-war-talks-blockade-trump_n_69dec27ee4b05c8319cd65ac",
-      "content": "U.S., Iran May Resume Talks This Week Despite Port Blockade - HuffPost\n\n# U.S., Iran May Resume Talks This Week Despite Port Blockade. Talks to end the Iran war could resume in Pakistan over the next two days, Trump said on Tuesday. ISLAMABAD/WASHINGTON/DUBAI, April 14 (Reuters) - Talks to end the Iran war could resume in Pakistan over the next two days, U.S. President Donald Trump said on Tuesday, after the collapse of weekend negotiations prompted Washington to impose a blockade on Iranian por",
-      "translated": "U.S., Iran May Resume Talks This Week Despite Port Blockade - HuffPost\n\n# U.S., Iran May Resume Talks This Week Despite Port Blockade. Talks to end the Iran war could resume in Pakistan over the next two days, Trump said on Tuesday. ISLAMABAD/WASHINGTON/DUBAI, April 14 (Reuters) - Talks to end the Iran war could resume in Pakistan over the next two days, U.S. President Donald Trump said on Tuesday, after the collapse of weekend negotiations prompted Washington to impose a blockade on Iranian ports. Gulf, Pakistani and Iranian officials also said negotiating teams from the U.S. and Iran could return to Pakistan later this week, though one senior Iranian source said no date had been set. Centcom said more than a dozen U.S. warships were involved in the blockade, which only applies to ships going to or from Iran. With the war unpopular at home and rising energy prices causing political blowback, Trump paused the U.S.-Israeli bombing campaign last week after threatening to destroy Iran’s “whole civilisation” unless it reopened the strait.",
-      "aggression_score": 56.5,
-      "threat_intensity": 85,
-      "specificity": 75,
-      "deadline_specified": 0,
+      "url": "https://www.nbcnews.com/politics/national-security/hegseth-says-iran-digging-missile-launchers-rcna332161",
+      "content": "Hegseth says Iran is digging out missile launchers - NBC News\n\nWASHINGTON — A week ago, Defense Secretary Pete Hegseth said that Iran’s missile program was “functionally destroyed,” with stockpiles depleted, decimated and ineffective. While peace talks stall and the U.S. expanded its efforts to block Iranian ports at the critical Strait of Hormuz, the Trump administration has been seeking to showcase that its military prowess caused devastation to Iran’s capabilities. U.S. intelligence reporting",
+      "translated": "헤그세스는 이란이 미사일 발사대를 꺼내고 있다고 말했습니다.",
+      "aggression_score": 54.0,
+      "threat_intensity": 65,
+      "specificity": 55,
+      "deadline_specified": 40,
       "topic_tags": [
+        "military",
+        "iran",
+        "china",
+        "sanctions",
+        "tariffs",
+        "trade",
+        "foreign_policy"
+      ],
+      "rationale": "이란의 미사일 발사대 동향을 언급하며 군사적 압박을 시사하고, 이란 관련 선박 추적 및 제재 가능성을 내비쳤으나 구체적인 제재 수치나 발효 시점은 명시되지 않았습니다. 중국의 무기 지원 중단을 언급하며 외교적 압박도 포함되었습니다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.nytimes.com/live/2026/04/16/world/iran-war-trump-lebanon-news",
+      "content": "Iran War Live Updates: Hegseth Says U.S. Is Poised to Resume Combat if Talks Fail - The New York Times\n\nSpeaking at a news conference at the Pentagon, Mr. Hegseth repeatedly urged Iran’s leaders to “choose wisely” and said an American naval blockade of Iranian ports would continue “as long as it takes.” The Trump administration has alternated between assuring that a peace deal was within reach and threatening Iran’s leadership if it does not comply, as the war’s economic toll puts President Trum",
+      "translated": "미국은 협상이 실패할 경우 전투 재개를 준비하고 있으며, 이란 지도자들에게 현명한 선택을 촉구하며 해상 봉쇄를 계속할 것이라고 밝혔습니다.",
+      "aggression_score": 52.5,
+      "threat_intensity": 65,
+      "specificity": 50,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "war",
+        "iran",
         "foreign_policy",
         "military",
-        "war",
-        "iran",
-        "sanctions",
-        "trade"
+        "sanctions"
       ],
-      "rationale": "트럼프 행정부는 이란 항구 봉쇄라는 구체적인 제재 조치를 시행 중이며, 과거 '이란 문명 전체 파괴'라는 극단적인 위협을 가한 바 있어 위협 강도와 구체성이 높다. 다만, 이러한 위협이나 조치에 대한 명확한 시한은 제시되지 않았다."
+      "rationale": "이란에 대한 군사적 압박(해상 봉쇄 지속)과 외교적 압박을 병행하며, 협상 실패 시 전투 재개 가능성을 시사하고 있습니다. 구체적인 제재 수치나 발효 시점은 명시되지 않았으나, 'as long as it takes'와 같은 표현으로 지속적인 압박 의지를 보입니다."
     },
     {
       "source": "news",
-      "url": "https://www.usatoday.com/story/news/politics/2026/04/15/senate-war-powers-vote-results-iran/89625461007/",
-      "content": "Senate again votes against ending Iran war. But tougher votes are coming - USA Today\n\nSenate again votes against ending Iran war. # Senate again votes against ending Iran war. ## Sen. Tammy Duckworth, D-Illinois, a veteran who lost her legs serving in Iraq, pleaded with Republicans to \"finally end this illegal war.\". President Trump says US may 'stop by Cuba' after it finishes Iran war. President Donald Trump said the U.S. may \"stop by Cuba after we're finished\" with the war in Iran. WASHINGTON ",
-      "translated": "상원은 이란 전쟁 종식을 또다시 부결했지만, 더 어려운 표결이 다가오고 있다.",
-      "aggression_score": 53.5,
-      "threat_intensity": 85,
-      "specificity": 65,
+      "url": "https://www.newsweek.com/irans-toughest-battle-has-only-just-begun-11835603",
+      "content": "Iran’s Toughest Battle Has Only Just Begun - Newsweek\n\nAfter outlasting a joint U.S.-Israeli military campaign, Iran now finds itself contending with an even more menacing threat in the form of a blockade ordered by President Donald Trump to sever the Islamic Republic's remaining economic lifelines. \"These figures imply that only about 25 percent of Iranian households, mainly those with managerial positions, highly skilled private-sector jobs, or relatively protected public-sector employment, ar",
+      "translated": "이란의 가장 힘든 싸움은 이제 막 시작되었으며, 트럼프 대통령의 경제 봉쇄로 인해 이란은 더욱 위협적인 상황에 직면했다.",
+      "aggression_score": 44.0,
+      "threat_intensity": 70,
+      "specificity": 50,
       "deadline_specified": 0,
       "topic_tags": [
-        "foreign_policy",
-        "war",
+        "sanctions",
         "iran",
-        "middle_east",
-        "other"
+        "foreign_policy",
+        "military",
+        "trade"
       ],
-      "rationale": "트럼프의 과거 '문명 파괴' 위협이 언급되고 '이란 전쟁'이 지속될 수 있음을 시사하며 높은 위협 강도를 보임. 이란과 쿠바라는 대상은 명확하나, '전쟁' 외 구체적 조치나 시한은 불분명함."
+      "rationale": "트럼프의 이란 경제 봉쇄 명령 언급은 구체적인 제재를 시사하지만, 발효 시점이나 구체적인 수치 언급이 없어 위협 강도와 구체성이 중간 수준이며 시한은 명시되지 않았습니다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.washingtonpost.com/politics/2026/04/16/trump-iran-nuclear/",
+      "content": "Trump says Iran agrees to hand over ‘nuclear dust’ - The Washington Post\n\n# Trump says Iran agrees to hand over ‘nuclear dust’. Iran has not confirmed Trump’s claim. President Donald Trump said Thursday that Iran has agreed to hand over “nuclear dust” that was buried by last year’s U.S. airstrikes on key Iranian nuclear facilities, a claim that, if accurate, would be a significant step in U.S. efforts to reduce Tehran’s ability to produce a nuclear weapon. Trump tests loyalty of Christian suppor",
+      "translated": "트럼프 대통령은 이란이 핵 시설에 대한 미국의 공습으로 묻힌 '핵 먼지'를 넘기기로 합의했다고 밝혔으나, 이란 측은 이를 확인하지 않았다.",
+      "aggression_score": 35.0,
+      "threat_intensity": 50,
+      "specificity": 60,
+      "deadline_specified": 0,
+      "topic_tags": [
+        "iran",
+        "nuclear",
+        "foreign_policy",
+        "sanctions"
+      ],
+      "rationale": "이란이 핵물질을 넘기기로 했다는 주장은 구체적인 조치를 언급하지만, 이란 측의 확인이 없고 시한이 명시되지 않아 위협 강도가 중간 수준으로 평가됨."
     }
   ],
-  "explanation": "[매우 높음] Aggression 96.0 × Pain 73.1 → composite=0.857, interaction=0.421, raw=1.278. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[매우 높음] Aggression 85.5 × Pain 71.2 → composite=0.791, interaction=0.365, raw=1.156. 룰베이스 공식 rule-based-v0.1 적용."
 }
