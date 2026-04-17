@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-17T06:43:07.555152+09:00",
-  "date": "2026-04-17",
-  "taco_probability": 91.87,
-  "aggression_score": 85.5,
-  "pain_index": 71.24,
+  "generated_at": "2026-04-18T06:42:06.613076+09:00",
+  "date": "2026-04-18",
+  "taco_probability": 75.24,
+  "aggression_score": 61.5,
+  "pain_index": 59.78,
   "expected_window_hours": [
-    24.0,
-    48.0
+    48.0,
+    96.0
   ],
   "model_version": "rule-based-v0.1",
   "threshold": {
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-16T21:41:42.237199+00:00",
-    "treasury_10y": 4.29,
-    "sp500": 7041.27978515625,
-    "vix": 17.940000534057617,
-    "djia": 48578.71875,
-    "nasdaq": 24102.703125,
-    "wti_usd": 89.6500015258789,
-    "breakeven_5y": 2.6,
-    "btc_usd": 74966.0,
+    "ts": "2026-04-17T21:40:14.340265+00:00",
+    "treasury_10y": 4.32,
+    "sp500": 7126.06005859375,
+    "vix": 17.479999542236328,
+    "djia": 49447.4296875,
+    "nasdaq": 24468.48046875,
+    "wti_usd": 84.0,
+    "breakeven_5y": 2.56,
+    "btc_usd": 77384.0,
     "trump_approval": 39.1
   },
   "pain": {
-    "index": 71.24,
-    "weighted_z": 0.4537,
+    "index": 59.78,
+    "weighted_z": 0.1982,
     "contributions": {
-      "treasury_10y": -0.006,
-      "sp500": -0.0706,
-      "djia": -0.0386,
-      "nasdaq": -0.126,
-      "vix": 0.0353,
-      "wti_usd": 0.0543,
-      "breakeven_5y": 0.05,
-      "btc_usd": -0.0346,
+      "treasury_10y": 0.012,
+      "sp500": -0.113,
+      "djia": -0.0965,
+      "nasdaq": -0.1678,
+      "vix": 0.018,
+      "wti_usd": -0.0117,
+      "breakeven_5y": 0.03,
+      "btc_usd": -0.0628,
       "trump_approval": 0.59
     },
     "missing": []
@@ -45,95 +45,95 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://nypost.com/2026/04/16/us-news/us-announces-aggressive-expansion-of-iran-blockade-warns-regime-to-choose-wisely/",
-      "content": "US announces aggressive expansion of Iran blockade, warns regime to ‘choose wisely’ - New York Post\n\nWASHINGTON — The US military will “actively pursue” any Iranian-flagged vessels or any ships attempting to support the regime elsewhere in the world, Gen. Dan Caine Chairman of the Joint Chiefs of Staff, announced Thursday — in an expansion of the blockade of Iranian ports in the Strait of Hormuz. “The joint force, through operations and activities in other areas of responsibility, like the Pacif",
-      "translated": "미국이 이란 항구 봉쇄를 확대하며, 이란 정권에 \"현명하게 선택하라\"고 경고했다. 미군은 이란 국적 선박이나 이란 정권을 지원하는 선박을 적극적으로 추적할 것이라고 밝혔다.",
-      "aggression_score": 85.5,
-      "threat_intensity": 75,
-      "specificity": 85,
-      "deadline_specified": 100,
+      "url": "https://www.axios.com/2026/04/17/trump-iran-deal-interview-pakistan-talks",
+      "content": "Trump expects Iran deal \"in a day or two,\" he tells Axios - Axios\n\n# Trump tells Axios he expects Iran deal \"in a day or two\". President Trump told Axios that U.S. and Iranian negotiators will probably meet this weekend, and he expects them to hammer out a final deal to end the war. **Driving the news:** Axios reported on Friday that one element of the deal under discussion would be the U.S. releasing $20 billion in frozen Iranian funds in return for Iran giving up its stockpile of enriched uran",
+      "translated": "트럼프 대통령은 악시오스와의 인터뷰에서 이란과의 핵 합의가 \"하루 이틀 안에\" 타결될 것으로 예상한다고 밝혔다.",
+      "aggression_score": 61.5,
+      "threat_intensity": 30,
+      "specificity": 75,
+      "deadline_specified": 90,
       "topic_tags": [
         "foreign_policy",
         "trade",
-        "military",
         "iran",
-        "sanctions"
-      ],
-      "rationale": "이란 선박 및 이란을 지원하는 모든 선박에 대한 미군의 적극적인 추적 및 봉쇄 조치가 이미 '완전히 이행'되었음을 명확히 밝혀 위협 강도와 구체성이 높다. 시한 또한 이미 발효되었음을 명시하여 최고 점수를 부여했다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.nbcnews.com/politics/national-security/hegseth-says-iran-digging-missile-launchers-rcna332161",
-      "content": "Hegseth says Iran is digging out missile launchers - NBC News\n\nWASHINGTON — A week ago, Defense Secretary Pete Hegseth said that Iran’s missile program was “functionally destroyed,” with stockpiles depleted, decimated and ineffective. While peace talks stall and the U.S. expanded its efforts to block Iranian ports at the critical Strait of Hormuz, the Trump administration has been seeking to showcase that its military prowess caused devastation to Iran’s capabilities. U.S. intelligence reporting",
-      "translated": "헤그세스는 이란이 미사일 발사대를 꺼내고 있다고 말했습니다.",
-      "aggression_score": 54.0,
-      "threat_intensity": 65,
-      "specificity": 55,
-      "deadline_specified": 40,
-      "topic_tags": [
-        "military",
-        "iran",
-        "china",
+        "israel",
         "sanctions",
-        "tariffs",
-        "trade",
-        "foreign_policy"
+        "nuclear"
       ],
-      "rationale": "이란의 미사일 발사대 동향을 언급하며 군사적 압박을 시사하고, 이란 관련 선박 추적 및 제재 가능성을 내비쳤으나 구체적인 제재 수치나 발효 시점은 명시되지 않았습니다. 중국의 무기 지원 중단을 언급하며 외교적 압박도 포함되었습니다."
+      "rationale": "발언은 이란과의 합의 기대를 표명하며, 기존 해상 봉쇄를 합의 전까지 유지하겠다는 조건부 압박을 포함. 합의 내용(200억 달러 동결 자금 해제, 농축 우라늄 포기)과 시한('in a day or two')이 매우 구체적임."
     },
     {
       "source": "news",
-      "url": "https://www.nytimes.com/live/2026/04/16/world/iran-war-trump-lebanon-news",
-      "content": "Iran War Live Updates: Hegseth Says U.S. Is Poised to Resume Combat if Talks Fail - The New York Times\n\nSpeaking at a news conference at the Pentagon, Mr. Hegseth repeatedly urged Iran’s leaders to “choose wisely” and said an American naval blockade of Iranian ports would continue “as long as it takes.” The Trump administration has alternated between assuring that a peace deal was within reach and threatening Iran’s leadership if it does not comply, as the war’s economic toll puts President Trum",
-      "translated": "미국은 협상이 실패할 경우 전투 재개를 준비하고 있으며, 이란 지도자들에게 현명한 선택을 촉구하며 해상 봉쇄를 계속할 것이라고 밝혔습니다.",
-      "aggression_score": 52.5,
-      "threat_intensity": 65,
-      "specificity": 50,
-      "deadline_specified": 40,
-      "topic_tags": [
-        "war",
-        "iran",
-        "foreign_policy",
-        "military",
-        "sanctions"
-      ],
-      "rationale": "이란에 대한 군사적 압박(해상 봉쇄 지속)과 외교적 압박을 병행하며, 협상 실패 시 전투 재개 가능성을 시사하고 있습니다. 구체적인 제재 수치나 발효 시점은 명시되지 않았으나, 'as long as it takes'와 같은 표현으로 지속적인 압박 의지를 보입니다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.newsweek.com/irans-toughest-battle-has-only-just-begun-11835603",
-      "content": "Iran’s Toughest Battle Has Only Just Begun - Newsweek\n\nAfter outlasting a joint U.S.-Israeli military campaign, Iran now finds itself contending with an even more menacing threat in the form of a blockade ordered by President Donald Trump to sever the Islamic Republic's remaining economic lifelines. \"These figures imply that only about 25 percent of Iranian households, mainly those with managerial positions, highly skilled private-sector jobs, or relatively protected public-sector employment, ar",
-      "translated": "이란의 가장 힘든 싸움은 이제 막 시작되었으며, 트럼프 대통령의 경제 봉쇄로 인해 이란은 더욱 위협적인 상황에 직면했다.",
-      "aggression_score": 44.0,
+      "url": "https://www.facebook.com/SkyNewsAustralia/videos/donald-trump-expands-global-crackdown-as-us-targets-iranian-vessels-worldwide/1708076983706048/",
+      "content": "Sky News Australia. . US President Donald Trump has dramatically expanded the Iran blockade, with American forces now targeting Iranian-linked vessels worldwide. - Facebook\n\n# US President Donald Trump has dramatically expanded the Iran blockade, with American forces now targeting Iranian-linked vessels worldwide. # Video. Donald Trump expands global crackdown as US targets Iranian vessels worldwide. US President Donald Trump has dramatically expanded the Iran blockade, with American forces now ",
+      "translated": "트럼프 미국 대통령이 전 세계 이란 관련 선박을 겨냥하며 이란 봉쇄 조치를 대폭 확대했습니다.",
+      "aggression_score": 49.0,
       "threat_intensity": 70,
-      "specificity": 50,
-      "deadline_specified": 0,
-      "topic_tags": [
-        "sanctions",
-        "iran",
-        "foreign_policy",
-        "military",
-        "trade"
-      ],
-      "rationale": "트럼프의 이란 경제 봉쇄 명령 언급은 구체적인 제재를 시사하지만, 발효 시점이나 구체적인 수치 언급이 없어 위협 강도와 구체성이 중간 수준이며 시한은 명시되지 않았습니다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.washingtonpost.com/politics/2026/04/16/trump-iran-nuclear/",
-      "content": "Trump says Iran agrees to hand over ‘nuclear dust’ - The Washington Post\n\n# Trump says Iran agrees to hand over ‘nuclear dust’. Iran has not confirmed Trump’s claim. President Donald Trump said Thursday that Iran has agreed to hand over “nuclear dust” that was buried by last year’s U.S. airstrikes on key Iranian nuclear facilities, a claim that, if accurate, would be a significant step in U.S. efforts to reduce Tehran’s ability to produce a nuclear weapon. Trump tests loyalty of Christian suppor",
-      "translated": "트럼프 대통령은 이란이 핵 시설에 대한 미국의 공습으로 묻힌 '핵 먼지'를 넘기기로 합의했다고 밝혔으나, 이란 측은 이를 확인하지 않았다.",
-      "aggression_score": 35.0,
-      "threat_intensity": 50,
       "specificity": 60,
       "deadline_specified": 0,
       "topic_tags": [
+        "military",
         "iran",
-        "nuclear",
+        "sanctions",
+        "foreign_policy"
+      ],
+      "rationale": "이란 관련 선박을 전 세계적으로 표적으로 삼는다는 발언은 군사적 행동을 시사하며 위협 강도가 높지만, 구체적인 제재 수치나 발효 시한이 명시되지 않아 구체성과 시한 명시 점수가 낮음."
+    },
+    {
+      "source": "news",
+      "url": "https://www.reuters.com/world/middle-east/trump-says-israel-banned-bombing-lebanon-2026-04-17/",
+      "content": "Trump says Israel banned from bombing Lebanon - Reuters\n\nREUTERS/Saleh Salem TPX IMAGES OF THE DAY Purchase Licensing Rights, opens new tab. WASHINGTON, April 17 (Reuters) - U.S. President Donald Trump said on ​Friday that the United States has banned ‌Israel from further bombing in Lebanon, using an atypically harsher tone than usual with the ​longtime U.S. ally Israel. Our Standards: The Thomson Reuters Trust Principles., opens new tab. *   28 mins agoAsia Pacific categoryIran says Hormuz Stra",
+      "translated": "트럼프 대통령은 미국이 이스라엘의 레바논 추가 폭격을 금지했다고 밝혔습니다.",
+      "aggression_score": 43.0,
+      "threat_intensity": 50,
+      "specificity": 40,
+      "deadline_specified": 40,
+      "topic_tags": [
         "foreign_policy",
+        "middle_east",
+        "iran",
+        "israel",
         "sanctions"
       ],
-      "rationale": "이란이 핵물질을 넘기기로 했다는 주장은 구체적인 조치를 언급하지만, 이란 측의 확인이 없고 시한이 명시되지 않아 위협 강도가 중간 수준으로 평가됨."
+      "rationale": "트럼프가 이스라엘의 레바논 폭격을 금지했다고 언급했으나, 이는 이스라엘에 대한 직접적인 위협보다는 외교적 압박에 가까우며, 구체적인 제재나 시한이 명시되지 않아 점수가 높지 않음."
+    },
+    {
+      "source": "news",
+      "url": "https://nypost.com/2026/04/17/us-news/trump-issues-sharply-worded-notice-to-israel-enough-is-enough/",
+      "content": "Trump issues sharply-worded notice to Israel: ‘Enough is enough!’ - New York Post\n\n# Trump issues sharply worded notice to Israel: ‘Enough is enough!’. President Trump had stern words for Israel as he made clear that the US is in the driver’s seat for the 10-day cease-fire between the Jewish state and Lebanon. They are PROHIBITED from doing so by the U.S.A. Enough is enough!!!” the president wrote in a sharply worded Truth Social post Friday. Trump also threw cold water on a cash component being",
+      "translated": "트럼프 대통령이 이스라엘에 \"이제는 충분하다\"는 강력한 경고를 보냈으며, 미국이 이스라엘과 레바논 간 10일 휴전의 주도권을 쥐고 있다고 밝혔다.",
+      "aggression_score": 36.5,
+      "threat_intensity": 55,
+      "specificity": 40,
+      "deadline_specified": 0,
+      "topic_tags": [
+        "foreign_policy",
+        "middle_east",
+        "iran",
+        "israel",
+        "sanctions"
+      ],
+      "rationale": "이스라엘에 대한 '충분하다'는 표현은 강한 불만을 나타내지만, 구체적인 제재나 군사적 조치를 명시하지는 않았습니다. 또한, 시한이 명시되지 않아 점수가 낮게 산정되었습니다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.modernghana.com/amp/videonews/637231",
+      "content": "President Trump announces 10 day ceasefire between Israel and Lebanon | BBC News - Modern Ghana\n\nHome  › BBC       17.04.2026. # President Trump announces 10 day ceasefire between Israel and Lebanon | BBC News. President Trump has announced that a 10 day ceasefire has begun in Lebanon. It was welcomed by Lebanon's president, while Israel's Prime Minister Benjamin Netanyahu said it presented an \"historic\" opportunity for peace. Trump said that the militia group Hezbollah, which is supported by Ir",
+      "translated": "트럼프 대통령이 이스라엘과 레바논 간 10일 휴전을 발표했습니다.",
+      "aggression_score": 35.0,
+      "threat_intensity": 30,
+      "specificity": 50,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "foreign_policy",
+        "middle_east",
+        "iran",
+        "israel",
+        "war",
+        "sanctions"
+      ],
+      "rationale": "트럼프가 이스라엘과 레바논 간 10일 휴전을 발표했지만, 이는 군사적 위협보다는 외교적 중재에 가깝습니다. 휴전의 구체적인 대상(이스라엘, 레바논, 헤즈볼라)은 명시되었으나, 헤즈볼라의 불참 가능성으로 인해 실행력은 불확실합니다. 시한은 '10일'로 명시되었으나, 발효 시점은 불분명하여 모호한 시한으로 간주됩니다."
     }
   ],
-  "explanation": "[매우 높음] Aggression 85.5 × Pain 71.2 → composite=0.791, interaction=0.365, raw=1.156. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[높음] Aggression 61.5 × Pain 59.8 → composite=0.607, interaction=0.221, raw=0.828. 룰베이스 공식 rule-based-v0.1 적용."
 }
