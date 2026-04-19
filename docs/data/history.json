@@ -77,6 +77,24 @@
     "taco_probability": 87.64,
     "aggression_score": 86.5,
     "pain_index": 58.21,
+    "market": {
+      "treasury_10y": 4.32,
+      "sp500": 7126.06005859375,
+      "vix": 17.479999542236328,
+      "djia": 49447.4296875,
+      "nasdaq": 24468.48046875,
+      "wti_usd": 82.58999633789062,
+      "breakeven_5y": 2.56,
+      "btc_usd": 74763.0,
+      "trump_approval": 39.6
+    }
+  },
+  {
+    "date": "2026-04-20",
+    "generated_at": "2026-04-19T21:37:07.337268+00:00",
+    "taco_probability": 86.56,
+    "aggression_score": 84.0,
+    "pain_index": 58.04,
     "market": {}
   }
 ]

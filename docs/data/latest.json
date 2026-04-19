@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-19T06:36:08.248717+09:00",
-  "date": "2026-04-19",
-  "taco_probability": 87.64,
-  "aggression_score": 86.5,
-  "pain_index": 58.21,
+  "generated_at": "2026-04-20T06:37:08.102658+09:00",
+  "date": "2026-04-20",
+  "taco_probability": 86.56,
+  "aggression_score": 84.0,
+  "pain_index": 58.04,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-18T21:33:56.091221+00:00",
+    "ts": "2026-04-19T21:35:02.465245+00:00",
     "treasury_10y": 4.32,
     "sp500": 7126.06005859375,
     "vix": 17.479999542236328,
     "djia": 49447.4296875,
     "nasdaq": 24468.48046875,
-    "wti_usd": 83.8499984741211,
+    "wti_usd": 82.58999633789062,
     "breakeven_5y": 2.56,
-    "btc_usd": 75737.0,
+    "btc_usd": 74763.0,
     "trump_approval": 39.6
   },
   "pain": {
-    "index": 58.21,
-    "weighted_z": 0.1656,
+    "index": 58.04,
+    "weighted_z": 0.1623,
     "contributions": {
       "treasury_10y": 0.012,
       "sp500": -0.113,
       "djia": -0.0965,
       "nasdaq": -0.1678,
       "vix": 0.018,
-      "wti_usd": -0.0134,
+      "wti_usd": -0.0281,
       "breakeven_5y": 0.03,
-      "btc_usd": -0.0436,
+      "btc_usd": -0.0322,
       "trump_approval": 0.54
     },
     "missing": []
@@ -45,91 +45,92 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.ynetnews.com/article/sye009cltwe",
-      "content": "Trump says US may not extend ceasefire if no Iran deal reached by Wednesday - ynetnews\n\nU.S. President Donald Trump said late Friday that if there is no deal with Iran by Wednesday, the United States may not extend the ceasefire and could resume military action. “Maybe I won't extend it,” Trump told reporters aboard Air Force One when asked about his deadline for the talks, adding that the blockade on Iranian ports \"is going to remain\" and \"we're going to have to start dropping bombs again.”. It",
-      "translated": "트럼프 대통령은 수요일까지 이란과의 합의가 이루어지지 않으면 휴전 연장이 없을 수 있다고 밝혔다.",
-      "aggression_score": 86.5,
-      "threat_intensity": 85,
-      "specificity": 75,
-      "deadline_specified": 100,
-      "topic_tags": [
-        "foreign_policy",
-        "military",
-        "iran",
-        "middle_east"
-      ],
-      "rationale": "수요일까지 이란과의 합의 불발 시 군사 행동 재개 및 폭격 가능성을 직접적으로 언급하며, 구체적인 시한을 명시했기 때문에 높은 점수를 부여함."
-    },
-    {
-      "source": "news",
-      "url": "https://www.cnn.com/2026/04/17/politics/video/kc-apr17-digvid",
-      "content": "Trump announces US blockade on Iranian ports throughout the Strait of Hormuz - CNN\n\nElections 2026   Trump   Facts First   CNN Polls   Redistricting Tracker   Epstein Files. # Trump announces US blockade on Iranian ports throughout the Strait of Hormuz. Trump announces US blockade on Iranian ports throughout the Strait of Hormuz. President Trump sends the US navy to the Strait of Hormuz to block Iranian oil shipments. Trump adds fuel to an ongoing feud with Pope Leo. CNN’s Kaitlan Collins report",
-      "translated": "트럼프 대통령이 호르무즈 해협을 통한 이란 항구에 대한 미국의 봉쇄를 발표했습니다.",
-      "aggression_score": 75.0,
+      "url": "https://heathercoxrichardson.substack.com/p/april-18-2026?utm_source=substack&utm_medium=email&utm_content=share&action=share",
+      "content": "April 18, 2026 - Letters from an American | Heather Cox Richardson | Substack\n\nThis morning, Trump said Iran wanted “to close up the strait again, you know, as they’ve been doing for years, and they can’t blackmail us.” In fact, the strait was open until Trump began to bomb Iran on February 28. The damage from Trump’s attack on Iran “has inflicted the kind of damage that takes months, if not years, to repair,” Elliott wrote. Gordon, and Costas Paris of the *Wall Street Journal* report that the U",
+      "translated": "트럼프는 이란이 호르무즈 해협을 다시 봉쇄하려 한다고 주장했지만, 실제로는 트럼프가 이란을 폭격한 이후 해협이 폐쇄되었다.",
+      "aggression_score": 84.0,
       "threat_intensity": 90,
       "specificity": 90,
-      "deadline_specified": 40,
-      "topic_tags": [
-        "iran",
-        "military",
-        "foreign_policy",
-        "trade",
-        "sanctions"
-      ],
-      "rationale": "이란 항구 봉쇄 및 호르무즈 해협 내 유조선 차단을 위한 미 해군 파견 발표는 특정 국가에 대한 매우 구체적인 군사적/경제적 압박 조치이며, 즉각적인 실행을 암시한다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.greenwichtime.com/business/article/the-latest-trump-hints-at-resuming-attacks-if-22213238.php",
-      "content": "The Latest: Trump hints at resuming attacks if ceasefire with Iran expires without a deal - Greenwich Time\n\nU.S. President Donald Trump said the blockade of the Strait of Hormuz will remain and attacks will resume if no agreement is reached with Iran, after Tehran said it had fully reopened the strait to commercial vessels but threatened to close it again over the U.S. blockade. Asked by a reporter Friday night what he will do if there’s no deal when a ceasefire with Iran expires next week, Trum",
-      "translated": "트럼프 대통령은 이란과의 합의가 무산될 경우 호르무즈 해협 봉쇄를 유지하고 공격을 재개할 것이라고 시사했습니다.",
-      "aggression_score": 63.5,
-      "threat_intensity": 65,
-      "specificity": 55,
       "deadline_specified": 70,
       "topic_tags": [
         "foreign_policy",
-        "iran",
         "military",
+        "war",
+        "iran",
         "middle_east"
       ],
-      "rationale": "발언은 이란과의 협상 결렬 시 '공격 재개' 및 '봉쇄 유지'를 언급하며 군사적 위협을 시사하지만, 트럼프 본인이 '모르겠다'고 말해 위협의 구체적인 실행 의지가 다소 불분명해졌다. '다음 주'라는 시한은 명시되었으나 구체적인 날짜는 아니다."
+      "rationale": "트럼프의 이란 폭격이라는 실제 군사 행동과 이란 선박 나포 준비 등 구체적인 군사/경제적 압박 조치가 명확히 언급되었으며, 일부 조치에는 'in coming days'와 같은 시한이 명시되어 위협 강도와 구체성이 매우 높음."
     },
     {
       "source": "news",
-      "url": "https://www.washingtonpost.com/business/2026/04/18/iran-israel-us-lebanon-latest-april-18-2026/807db87e-3ae3-11f1-90c4-9772c7fabc03_story.html",
-      "content": "The Latest: Trump hints at resuming attacks if ceasefire with Iran expires without a deal - The Washington Post\n\n# The Latest: Trump hints at resuming attacks if ceasefire with Iran expires without a deal. President Donald Trump says the blockade of the Strait of Hormuz will remain and attacks will resume if no agreement is reached with Iran. A local resident walks among debris inside a mosque destroyed in an Israeli airstrike in Jibchit, southern Lebanon, Friday, April 17, 2026, following a cea",
-      "translated": "트럼프 대통령은 이란과의 합의가 없을 경우 호르무즈 해협 봉쇄를 유지하고 공격을 재개할 것이라고 시사했습니다.",
-      "aggression_score": 53.5,
-      "threat_intensity": 70,
-      "specificity": 65,
-      "deadline_specified": 20,
-      "topic_tags": [
-        "foreign_policy",
-        "military",
-        "iran",
-        "trade"
-      ],
-      "rationale": "이란에 대한 공격 재개 및 호르무즈 해협 봉쇄 유지 위협은 구체적이지만, 공격의 종류나 봉쇄의 규모가 명확하지 않고, 시한 또한 '합의 불발 시'라는 조건부여서 구체성이 낮음."
-    },
-    {
-      "source": "news",
-      "url": "https://finance.yahoo.com/sectors/energy/articles/trump-says-iran-suspend-nuclear-170817581.html",
-      "content": "Trump Says Iran to Suspend Nuclear Program, Won’t Get Funds - Yahoo Finance\n\n(Bloomberg) -- President Donald Trump said Iran has agreed to suspend its nuclear program indefinitely, fueling optimism that a deal to end their war is in reach after Tehran announced the Strait of Hormuz was open again. In a Friday phone interview, Trump asserted that any moratorium on Iran’s nuclear activities would not expire, saying it would be “unlimited.”. Trump withdrew from the Obama-era agreement in 2018, call",
-      "translated": "트럼프 대통령은 이란이 핵 프로그램을 무기한 중단하기로 합의했으며, 이는 전쟁 종식을 위한 합의에 도달할 수 있다는 낙관론을 불러일으켰다고 밝혔다.",
-      "aggression_score": 47.0,
-      "threat_intensity": 50,
-      "specificity": 60,
+      "url": "https://www.forbes.com/sites/zacharyfolk/2026/04/19/trump-threatens-iran-again-amid-claim-he-wants-iran-to-think-hes-unstable/",
+      "content": "Trump Announces Iran Peace Talks—Threatening A Bombing Campaign If They Fail - Forbes\n\nImage 20: Republican Lawmaker Says Trump ‘Almost A Second Coming’ Of Jesus. Image 14: Joe Rogan—Iran War Critic—Joins Trump At White House As He Loosens Restrictions On Psychedelics. Image 15: Pope Leo Says It Is ‘Not In My Interest’ To Debate Trump Amid Washington-Vatican Clash. Image 16: Trump Says Iran ‘Can’t Blackmail Us’ As It Reimposes ‘Strict Control’ Over Strait Of Hormuz (Live Updates). Image 19: Cryp",
+      "translated": "트럼프 대통령이 이란과의 평화 협상을 발표하며 실패 시 폭격 가능성을 시사했습니다.\n공화당 의원은 트럼프 대통령을 예수에 비유했으며, 교황은 워싱턴-바티칸 충돌 속에서 트럼프와의 논쟁이 자신에게 이익이 되지 않는다고 말했습니다.",
+      "aggression_score": 64.5,
+      "threat_intensity": 75,
+      "specificity": 75,
       "deadline_specified": 40,
       "topic_tags": [
         "iran",
-        "nuclear",
-        "sanctions",
         "foreign_policy",
-        "trade"
+        "military",
+        "war"
       ],
-      "rationale": "이란의 핵 프로그램 무기한 중단을 주장하며, 자금 지원 중단을 언급했습니다. 구체적인 제재 수치나 발효 시점은 명시되지 않았으나, 핵 프로그램 중단이라는 구체적인 조치와 '무기한'이라는 표현으로 중간 수준의 공격성을 보입니다."
+      "rationale": "트럼프가 이란의 발전소와 교량에 대한 군사적 위협을 가했으며, 이는 구체적인 대상과 조치를 포함하지만, 실행 시기는 평화 회담의 실패 여부에 달려 있어 모호함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.ynetnews.com/article/rklnnlfa11l",
+      "content": "Witkoff, Kushner head to Pakistan as Trump warns Iran 'no more Mr. Nice Guy' - ynetnews\n\n# Witkoff, Kushner head to Pakistan as Trump warns Iran 'no more Mr. Nice Guy'. ## US envoys to hold new talks in Islamabad as Trump threatens to destroy Iranian power plants and bridges if Tehran rejects deal; says Iran violated ceasefire in Strait of Hormuz but US 'loses nothing' from standoff. U.S. President Donald Trump said Sunday that his envoys, Steve Witkoff and Jared Kushner, will travel to Pakistan",
+      "translated": "트럼프 대통령이 이란에 \"더 이상 친절한 척하지 않겠다\"고 경고하며 위트코프와 쿠슈너가 파키스탄으로 향한다.",
+      "aggression_score": 61.5,
+      "threat_intensity": 90,
+      "specificity": 85,
+      "deadline_specified": 0,
+      "topic_tags": [
+        "foreign_policy",
+        "military",
+        "war",
+        "iran",
+        "middle_east"
+      ],
+      "rationale": "트럼프가 이란의 모든 발전소와 다리를 파괴하겠다고 명확히 언급하며 극단적인 군사 행동을 위협했으나, 실행 시기는 명시하지 않았다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.haaretz.com/middle-east-news/iran/2026-04-19/ty-article/iran-isnt-sending-delegation-to-talks-with-u-s-as-trump-threatens-new-strikes/0000019d-a5d2-d31c-a1df-afd3f9ab0000",
+      "content": "Report: Iran Not Delegation to Talks With U.S.; Trump Threatens New Strikes - Haaretz\n\n# Report: Iran Not Delegation to Talks With U.S.; Trump Threatens New Strikes. Trump said Iran's closure of the Strait of Hormuz is a 'serious violation' of the cease-fire. Iran is not sending a negotiating delegation to Pakistan \"as long as there is a naval blockade,\" its ⁠Tasnim news agency reported on Sunday, several hours after U.S. President Donald Trump threatened to strike all of Iran's power plants and",
+      "translated": "이란이 해상 봉쇄가 지속되는 한 미국과의 협상단 파견을 거부했으며, 트럼프 대통령은 새로운 공습을 위협했다.",
+      "aggression_score": 52.5,
+      "threat_intensity": 75,
+      "specificity": 75,
+      "deadline_specified": 0,
+      "topic_tags": [
+        "iran",
+        "military",
+        "foreign_policy",
+        "war"
+      ],
+      "rationale": "트럼프가 이란의 모든 발전소와 교량 타격을 위협하며 구체적인 군사 행동 대상을 명시했으나, 실행 시한은 조건부로만 언급되어 점수가 낮아짐."
+    },
+    {
+      "source": "news",
+      "url": "https://www.politico.com/news/2026/04/19/negotiations-iran-monday-pakistan-00880018",
+      "content": "Trump says US-Iran talks to continue Monday in Pakistan - Politico\n\n# Trump says US-Iran talks to continue Monday in Pakistan. \"We’re offering a very fair and reasonable DEAL,\" President Trump said in a social media post Sunday. President Donald Trump on Sunday called Iran's announcement “strange,” saying the U.S. blockade already has the strait closed. President Donald Trump on Sunday announced the U.S. will continue peace talks with Iranian representatives in Pakistan on Monday — even as he co",
+      "translated": "트럼프 대통령은 미국과 이란의 협상이 월요일 파키스탄에서 계속될 것이라고 밝혔으며, 매우 공정하고 합리적인 거래를 제안한다고 덧붙였습니다.",
+      "aggression_score": 49.5,
+      "threat_intensity": 75,
+      "specificity": 65,
+      "deadline_specified": 0,
+      "topic_tags": [
+        "foreign_policy",
+        "middle_east",
+        "iran",
+        "military",
+        "sanctions"
+      ],
+      "rationale": "트럼프는 이란과의 협상 재개를 언급하면서도, 합의 불발 시 '민간 기반 시설 타격' 및 '해야 할 일'을 하겠다고 위협하여 높은 위협 강도를 보임. 그러나 구체적인 조치나 시한은 명확하지 않음."
     }
   ],
-  "explanation": "[매우 높음] Aggression 86.5 × Pain 58.2 → composite=0.738, interaction=0.302, raw=1.040. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[매우 높음] Aggression 84.0 × Pain 58.0 → composite=0.723, interaction=0.293, raw=1.016. 룰베이스 공식 rule-based-v0.1 적용."
 }
