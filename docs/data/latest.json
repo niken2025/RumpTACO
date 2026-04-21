@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-21T06:46:07.477889+09:00",
-  "date": "2026-04-21",
-  "taco_probability": 85.52,
-  "aggression_score": 78.5,
-  "pain_index": 61.04,
+  "generated_at": "2026-04-22T06:45:08.165417+09:00",
+  "date": "2026-04-22",
+  "taco_probability": 92.62,
+  "aggression_score": 91.5,
+  "pain_index": 67.97,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-20T21:44:34.918134+00:00",
+    "ts": "2026-04-21T21:43:41.993087+00:00",
     "treasury_10y": 4.26,
-    "sp500": 7109.14013671875,
-    "vix": 18.8700008392334,
-    "djia": 49442.55859375,
-    "nasdaq": 24404.392578125,
-    "wti_usd": 85.88999938964844,
-    "breakeven_5y": 2.57,
-    "btc_usd": 75925.0,
+    "sp500": 7064.009765625,
+    "vix": 19.5,
+    "djia": 49149.37890625,
+    "nasdaq": 24259.96484375,
+    "wti_usd": 90.22000122070312,
+    "breakeven_5y": 2.6,
+    "btc_usd": 75595.0,
     "trump_approval": 39.6
   },
   "pain": {
-    "index": 61.04,
-    "weighted_z": 0.2245,
+    "index": 67.97,
+    "weighted_z": 0.3761,
     "contributions": {
       "treasury_10y": -0.024,
-      "sp500": -0.1046,
-      "djia": -0.0962,
-      "nasdaq": -0.1605,
-      "vix": 0.0701,
-      "wti_usd": 0.0104,
-      "breakeven_5y": 0.035,
-      "btc_usd": -0.0458,
+      "sp500": -0.082,
+      "djia": -0.0766,
+      "nasdaq": -0.144,
+      "vix": 0.0938,
+      "wti_usd": 0.0609,
+      "breakeven_5y": 0.05,
+      "btc_usd": -0.0419,
       "trump_approval": 0.54
     },
     "missing": []
@@ -45,95 +45,92 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.foxnews.com/politics/supreme-court-blow-trump-admin-launches-166b-tariff-refund-portal",
-      "content": "After Supreme Court blow, Trump admin launches $166B tariff refund portal - Fox News\n\n# After Supreme Court blow, Trump admin launches $166B tariff refund portal. Reed Smith partner Michael Lowell says tariffs have endured across multiple administrations and aren’t expected to disappear anytime soon, even amid ongoing legal challenges. The Trump administration on Monday launched a new system to begin refunding $166 billion in tariffs to U.S. importers after the Supreme Court ruled the levies unl",
-      "translated": "트럼프 행정부가 연방대법원의 결정 이후 1,660억 달러 규모의 관세 환급 시스템을 개시했습니다.",
-      "aggression_score": 78.5,
-      "threat_intensity": 65,
-      "specificity": 75,
+      "url": "https://www.thedailybeast.com/trump-insiders-privately-admit-the-79-year-old-is-unraveling/",
+      "content": "Trump Insiders Privately Admit the 79-Year-Old Is Unraveling - The Daily Beast\n\nThe president posted on his Truth Social account on Sunday morning about negotiations with Iran, threatening to “knock out every single Power Plant, and every single Bridge in Iran” if they didn’t accept a deal on offer from the U.S. But just days earlier, on Friday afternoon, Trump had told CBS that Iran had “agreed to everything,” including working with the U.S. to remove their enriched uranium. Trump officials tol",
+      "translated": "트럼프 측근들은 그가 불안정한 상태라고 인정하며, 이란과의 협상에서 이란의 모든 발전소와 다리를 파괴하겠다고 위협했다.",
+      "aggression_score": 91.5,
+      "threat_intensity": 90,
+      "specificity": 85,
       "deadline_specified": 100,
       "topic_tags": [
-        "tariffs",
+        "foreign_policy",
+        "military",
+        "war",
+        "iran",
+        "middle_east"
+      ],
+      "rationale": "트럼프는 이란과의 협상 결렬 시 이란의 모든 발전소와 다리를 파괴하겠다고 위협했으며, 휴전 만료 시 '많은 폭탄이 터질 것'이라고 구체적인 요일(화요일)을 언급하며 군사 행동을 예고했다. 이는 매우 높은 수준의 위협 강도와 구체성을 가지며, 시한까지 명시되었다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.cnn.com/2026/04/21/world/live-news/iran-war-us-trump-israel",
+      "content": "Live updates: Trump says he expects ‘to be bombing’ if negotiators can’t reach deal with Iran - CNN\n\n**• Ceasefire deadline looms:** US President Donald Trump reiterated today that he does not want to extend the new Iran ceasefire deadline of Wednesday evening ET and said he expects “to be bombing” if a deal isn’t reached. * Trump said he expects to continue bombing Iran if the US and Iran cannot reach a deal to extend the ceasefire by tomorrow evening’s deadline, saying that the US military is ",
+      "translated": "트럼프 대통령은 이란과의 협상이 결렬될 경우 공습을 재개할 것이라고 밝혔습니다.",
+      "aggression_score": 79.5,
+      "threat_intensity": 75,
+      "specificity": 65,
+      "deadline_specified": 100,
+      "topic_tags": [
+        "foreign_policy",
+        "military",
+        "war",
+        "iran",
+        "middle_east"
+      ],
+      "rationale": "트럼프가 이란과의 협상 결렬 시 '폭격'을 예상한다고 직접적으로 언급하며 군사 행동 위협을 명확히 했고, '수요일 저녁'이라는 구체적인 시한을 제시했기 때문에 높은 점수를 부여함. 폭격의 구체적인 범위나 대상은 명시되지 않아 구체성 점수는 중간 수준."
+    },
+    {
+      "source": "news",
+      "url": "https://www.politico.com/news/2026/04/21/trump-iran-ceasefire-strikes-00883121",
+      "content": "Trump threatens more US strikes in Iran as ceasefire deadline looms - Politico\n\n# Trump threatens more US strikes in Iran as ceasefire deadline looms - POLITICO. ## GLOBAL POLITICS & POLICY. # Trump threatens more US strikes in Iran as ceasefire deadline looms. Image 1: US President Donald Trump speaks after signing an executive order in the Oval Office of the White House. US President Donald Trump speaks after signing an executive order in the Oval Office of the White House in Washington, DC on",
+      "translated": "트럼프 대통령이 휴전 마감 시한이 다가옴에 따라 이란에 대한 추가적인 미군 공격을 위협하고 있다고 정치 전문 매체 폴리티코가 보도했다.",
+      "aggression_score": 78.0,
+      "threat_intensity": 75,
+      "specificity": 60,
+      "deadline_specified": 100,
+      "topic_tags": [
+        "foreign_policy",
+        "military",
+        "war",
+        "iran",
+        "middle_east",
         "trade"
       ],
-      "rationale": "트럼프 행정부의 관세 정책 지속 의지를 명확히 밝히고 있으며, 특정 날짜(2025년 4월 2일)에 새로운 관세 부과를 예고하여 위협의 구체성과 시한 명시가 높음."
+      "rationale": "이란에 대한 군사 행동(폭격)을 직접적으로 언급하며, 휴전 만료 시 '수요일'에 재개될 수 있음을 명시하여 위협 강도와 시한 명확성이 높음. 다만 구체적인 공격 대상이나 수단은 명시되지 않아 구체성은 중간 수준."
     },
     {
       "source": "news",
-      "url": "https://www.nbcnews.com/video/president-trump-says-u-s-struck-seized-iranian-tanker-261681221686",
-      "content": "President Trump says U.S. struck & seized Iranian tanker - NBC News\n\nPresident Trump says U.S. struck & seized Iranian tanker. ## President Trump says U.S. struck & seized Iranian tanker. ## Trump’s approval rating hits record low in NBC News Poll. * ## Good News: NBA players get surprise visits from their childhood heroes. * ## Trump shifts message on Iran war. # President Trump says U.S. struck & seized Iranian tanker. President Trump announcing the U.S. Navy struck and seized an Iranian tanke",
-      "translated": "트럼프 대통령은 미국이 이란 유조선을 타격하고 나포했다고 밝혔습니다.\n트럼프 대통령의 지지율이 NBC 뉴스 여론조사에서 역대 최저치를 기록했습니다.\nNBA 선수들이 어린 시절 영웅들의 깜짝 방문을 받았습니다.\n트럼프 대통령이 이란 전쟁에 대한 메시지를 바꿨습니다.",
-      "aggression_score": 77.0,
-      "threat_intensity": 70,
-      "specificity": 70,
+      "url": "https://nypost.com/2026/04/21/world-news/iran-prepared-to-reveal-new-cards-on-the-battlefield-as-trump-threatens-to-drop-lots-of-bombs-if-theres-no-deal/",
+      "content": "Iran 'prepared to reveal new cards on the battlefield' as Trump threatens to drop 'lots of bombs' if there's no deal - New York Post\n\n# Iran ‘prepared to reveal new cards on the battlefield’ as Trump threatens to drop ‘lots of bombs’ if there’s no deal. Iran has threatened to reveal “new cards” if the cease-fire isn’t extended and conflict restarts, while President Trump warned “lots of bombs” will start going off if there’s no peace deal. Iran hasn’t publicly confirmed if it is sending a team o",
+      "translated": "이란이 휴전 연장이 불발되고 분쟁이 재개될 경우 \"새로운 카드를 꺼낼 것\"이라고 위협했으며, 트럼프 대통령은 \"많은 폭탄을 투하할 것\"이라고 경고했다.",
+      "aggression_score": 78.0,
+      "threat_intensity": 75,
+      "specificity": 60,
       "deadline_specified": 100,
       "topic_tags": [
-        "military",
-        "iran",
-        "sanctions",
         "foreign_policy",
-        "tariffs"
-      ],
-      "rationale": "이란 유조선 나포 및 타격이라는 구체적인 군사 행동을 명시했으며, 협상단이 다음 날 파키스탄으로 돌아간다는 구체적인 시한을 제시했습니다. 이는 이란과의 긴장 고조 상황에서 발생한 것으로, 위협 강도와 구체성이 높습니다."
-    },
-    {
-      "source": "news",
-      "url": "https://nypost.com/2026/04/20/us-news/trump-tells-the-post-he-wont-be-rushed-to-end-iran-war-lashes-out-at-pols-urging-him-to-settle-they-are-helping-the-other-side/",
-      "content": "Exclusive | Trump tells The Post he ‘won’t be rushed’ to end Iran war, lashes out at pols urging him to settle: 'They are helping the other side' - nypost.com\n\n# Trump tells The Post he ‘won’t be rushed’ to end Iran war, lashes out at pols urging him to settle: ‘They are helping the other side’. WASHINGTON — President Trump told The Post he “won’t be rushed” to end the Iran war on its 52nd day — and lashed out at Democrats and Republicans trying to force him to end the conflict. Trump has from t",
-      "translated": "트럼프 대통령은 이란과의 전쟁을 52일 만에 끝내라는 압박에 \"서두르지 않을 것\"이라며, 이를 촉구하는 정치인들이 \"상대방을 돕는 것\"이라고 비난했다.",
-      "aggression_score": 61.0,
-      "threat_intensity": 70,
-      "specificity": 60,
-      "deadline_specified": 40,
-      "topic_tags": [
-        "war",
-        "iran",
-        "foreign_policy",
-        "military",
-        "sanctions"
-      ],
-      "rationale": "이란과의 전쟁을 '서두르지 않겠다'는 발언은 전쟁 지속 의지를 보여주며, 항구 봉쇄와 같은 구체적 조치가 언급되었으나, 전쟁 종결 시한은 '4주 정도'라는 모호한 예측에 그쳐 점수가 산정되었습니다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.foxnews.com/politics/supreme-court-hear-catholic-parishs-challenge-colorado-barred-schools-universal-prek-program",
-      "content": "Supreme Court to hear Catholic parish's challenge after Colorado barred schools from universal pre-K program - Fox News\n\n* #### Trump renews bridge, power plant threat against Iran in push for deal, mocks 'tough guy' IRGC. * #### Walz rips Trump and Vance in Europe, says 'feeble-minded, trigger-happy president' has no exit plan for Iran. * #### Legal analysts debate if Trump's Iran threats constitute war crimes. * #### Iran RESPONDS after US military SEIZES cargo ship. * #### US forces seize Ira",
-      "translated": "대법원이 콜로라도주의 보편적 유치원 프로그램에서 가톨릭 교구를 배제한 결정에 대한 소송을 심리할 예정이다.\n트럼프 전 대통령이 이란과의 협상을 위해 다리와 발전소 공격 위협을 재차 언급하며 이란 혁명수비대를 조롱했다.\n왈츠 주지사는 유럽에서 트럼프와 밴스를 비판하며 '정신 나간, 방아쇠를 당기기 좋아하는 대통령'에게는 이란에 대한 출구 전략이 없다고 말했다.\n법률 분석가들은 트럼프의 이란 위협이 합헌적인지에 대해 논쟁하고 있다.",
-      "aggression_score": 58.0,
-      "threat_intensity": 70,
-      "specificity": 60,
-      "deadline_specified": 40,
-      "topic_tags": [
-        "tariffs",
-        "immigration",
-        "foreign_policy",
-        "trade",
         "military",
         "war",
         "iran",
-        "sanctions",
-        "election"
+        "middle_east"
       ],
-      "rationale": "트럼프가 이란과의 거래를 위해 다리, 발전소 위협을 재확인하고 IRGC를 조롱했다는 내용이 포함되어 있어 위협 강도와 구체성이 높게 평가되었습니다. 하지만 시한 명시는 모호하여 중간 점수를 부여했습니다."
+      "rationale": "트럼프가 이란과의 협상 결렬 시 '많은 폭탄' 투하를 위협하며 구체적인 휴전 종료 시점(수요일 저녁)을 명시했기 때문에 위협 강도와 시한 명시 점수가 높음. 폭탄의 구체적인 수량이나 목표는 명확하지 않아 구체성 점수는 중간."
     },
     {
       "source": "news",
-      "url": "https://www.facebook.com/SkyNewsAustralia/videos/trump-warns-iran-will-be-blown-up-if-deal-fails-in-brutal-escalation/1271543174562816/",
-      "content": "Sky News Australia. . US President Donald Trump has issued a chilling warning that Iran could be \"blown up\" if it refuses to agree to a deal. - Facebook\n\n# US President Donald Trump has issued a chilling warning that Iran could be \"blown up\" if it refuses to agree to a deal. # Video. Trump warns Iran will be ‘blown up’ if deal fails in brutal escalation. ## **Sky News Australia**. US President Donald Trump has issued a chilling warning that Iran could be \"blown up\" if it refuses to agree to a de",
-      "translated": "트럼프 미국 대통령이 이란이 합의에 응하지 않으면 \"폭파될 것\"이라고 경고했습니다.",
-      "aggression_score": 57.5,
-      "threat_intensity": 75,
-      "specificity": 50,
+      "url": "https://www.govexec.com/management/2026/04/contractors-sue-block-trumps-federal-dei-executive-order/413013/?oref=ge-featured-river-top",
+      "content": "Contractors sue to block Trump’s federal DEI executive order - Government Executive\n\nA coalition that includes the National Association of Minority Contractors and several higher education groups on Monday filed a lawsuit to block a recent Trump executive order targeting diversity, equity and inclusion programs at federal contracting companies. This executive order is aimed at undermining the very policies that work to address that discrimination and move the nation toward fairness and inclusion",
+      "translated": "소수 민족 건설업자 협회를 포함한 단체들이 트럼프 행정부의 연방 계약업체 대상 다양성, 형평성, 포용성(DEI) 프로그램 폐지 행정명령을 막기 위해 소송을 제기했습니다.",
+      "aggression_score": 47.5,
+      "threat_intensity": 55,
+      "specificity": 70,
       "deadline_specified": 0,
       "topic_tags": [
-        "military",
-        "war",
-        "iran",
-        "foreign_policy",
-        "sanctions"
+        "other",
+        "election"
       ],
-      "rationale": "이란이 합의에 응하지 않으면 '폭파될 수 있다'는 발언은 군사적 위협의 강도가 높으나, 구체적인 조치나 시한은 명시되지 않아 중간 수준의 점수를 부여함."
+      "rationale": "DEI 프로그램 관련 행정명령에 대한 소송으로, 계약 해지, 향후 계약 기회 박탈, 법무부 소송 가능성 등 구체적 제재가 언급되었으나, 발언 자체의 위협 강도는 중간 수준이며 시한은 명시되지 않았습니다."
     }
   ],
-  "explanation": "[매우 높음] Aggression 78.5 × Pain 61.0 → composite=0.706, interaction=0.287, raw=0.994. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[매우 높음] Aggression 91.5 × Pain 68.0 → composite=0.809, interaction=0.373, raw=1.182. 룰베이스 공식 rule-based-v0.1 적용."
 }
