@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-23T06:52:00.020785+09:00",
-  "date": "2026-04-23",
-  "taco_probability": 79.08,
-  "aggression_score": 60.0,
-  "pain_index": 68.21,
+  "generated_at": "2026-04-24T06:45:09.035842+09:00",
+  "date": "2026-04-24",
+  "taco_probability": 90.43,
+  "aggression_score": 79.5,
+  "pain_index": 72.73,
   "expected_window_hours": [
-    48.0,
-    96.0
+    24.0,
+    48.0
   ],
   "model_version": "rule-based-v0.1",
   "threshold": {
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-22T21:50:34.598862+00:00",
+    "ts": "2026-04-23T21:43:49.849896+00:00",
     "treasury_10y": 4.3,
-    "sp500": 7137.89990234375,
-    "vix": 18.920000076293945,
-    "djia": 49490.03125,
-    "nasdaq": 24657.56640625,
-    "wti_usd": 92.87000274658203,
-    "breakeven_5y": 2.61,
-    "btc_usd": 78803.0,
+    "sp500": 7108.39990234375,
+    "vix": 19.309999465942383,
+    "djia": 49310.3203125,
+    "nasdaq": 24438.50390625,
+    "wti_usd": 97.0,
+    "breakeven_5y": 2.58,
+    "btc_usd": 78022.0,
     "trump_approval": 38.5
   },
   "pain": {
-    "index": 68.21,
-    "weighted_z": 0.3817,
+    "index": 72.73,
+    "weighted_z": 0.4904,
     "contributions": {
       "treasury_10y": 0.0,
-      "sp500": -0.1189,
-      "djia": -0.0993,
-      "nasdaq": -0.1894,
-      "vix": 0.072,
-      "wti_usd": 0.0918,
-      "breakeven_5y": 0.055,
-      "btc_usd": -0.0794,
+      "sp500": -0.1042,
+      "djia": -0.0874,
+      "nasdaq": -0.1644,
+      "vix": 0.0866,
+      "wti_usd": 0.14,
+      "breakeven_5y": 0.04,
+      "btc_usd": -0.0703,
       "trump_approval": 0.65
     },
     "missing": []
@@ -45,50 +45,31 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.bbc.com/news/articles/cvg4yr90jr2o",
-      "content": "Trump buys time for Iran deal after frantic day of diplomacy - BBC\n\n# Trump buys time for Iran deal after frantic day of diplomacy. President Donald Trump announced that he would extend the ceasefire with Iran, set to expire on Wednesday evening, to allow the regime more time to create a \"unified proposal\" to end the war. In the end, Trump announced the ceasefire extension on Truth Social, his preferred means for war updates since it began in late February. \"We have been asked to hold our Attack",
-      "translated": "트럼프 대통령이 이란과의 핵 합의 시한을 연장하며 외교적 노력을 위한 시간을 벌었습니다.",
-      "aggression_score": 60.0,
-      "threat_intensity": 75,
-      "specificity": 60,
-      "deadline_specified": 40,
+      "url": "https://www.newsweek.com/trump-navy-will-shoot-kill-mine-boats-amid-strait-escalation-11869443",
+      "content": "Trump Says Navy Will ‘Shoot and Kill’ Mine Boats Amid Strait Escalation - Newsweek\n\n# Trump Says Navy Will ‘Shoot and Kill’ Mine Boats Amid Strait Escalation. President Donald Trump has ordered the U.S. Navy to target any boats caught laying sea mines in the Strait of Hormuz. Trump posted on Truth Social that he had given an order to \"shoot and kill any boat\" caught laying mines in the strait, adding that \"there is to be no hesitation\" in a U.S. response. However, one Iran expert, Ali Vaez from ",
+      "translated": "트럼프 대통령은 호르무즈 해협에서 기뢰를 부설하는 보트를 발견하면 미 해군이 \"쏘고 죽이라\"고 명령했습니다.",
+      "aggression_score": 79.5,
+      "threat_intensity": 90,
+      "specificity": 85,
+      "deadline_specified": 60,
       "topic_tags": [
-        "iran",
-        "foreign_policy",
         "military",
-        "nuclear",
-        "sanctions"
+        "foreign_policy",
+        "iran",
+        "middle_east",
+        "war"
       ],
-      "rationale": "트럼프는 이란에 대한 '공격'을 유예했으나, 이는 이란이 '통합 제안'을 내놓을 때까지라는 조건부 유예이며, 호르무즈 봉쇄는 유지될 것이라고 밝혀 높은 군사적·경제적 압박을 유지하고 있다. 공격 유예 시한이 불분명하여 시한 명확성 점수는 낮다."
+      "rationale": "해협 내 기뢰 부설 선박에 대한 '사살' 명령은 매우 높은 수준의 군사적 위협을 구체적인 대상과 조치로 명시했으며, '즉각적인 대응'을 강조하여 시한의 모호성을 상쇄함."
     },
     {
       "source": "news",
-      "url": "https://www.politico.com/news/2026/04/22/iran-war-ceasefire-strait-of-hormuz-00886525",
-      "content": "Iran reports seizing 2 ships in Strait of Hormuz hours after Trump’s ceasefire extension - Politico\n\n# Iran reports seizing 2 ships in Strait of Hormuz hours after Trump’s ceasefire extension. Trump announced that he was extending the ceasefire indefinitely on Tuesday. Iran’s Islamic Revolutionary Guard Corps seized two foreign ships traveling through the Strait of Hormuz on Wednesday, according to a semi-official state news agency, a major escalation coming just hours after President Donald Tru",
-      "translated": "트럼프 대통령의 휴전 연장 발표 몇 시간 후 이란이 호르무즈 해협에서 선박 두 척을 나포했다고 보도되었습니다.",
-      "aggression_score": 57.5,
-      "threat_intensity": 65,
+      "url": "https://nypost.com/2026/04/23/us-news/trump-threatens-to-finish-it-up-militarily-if-iran-refuses-to-make-a-deal/",
+      "content": "Trump threatens to ‘finish it up militarily’ if Iran refuses to make a deal - New York Post\n\n# Trump threatens to ‘finish it up militarily’ if Iran refuses to make a deal. President Trump said Thursday afternoon that he plans to resume bombing Iran if there’s no peace deal. “If they don’t want to make a deal, then I’ll finish it up militarily with the other 25% of the targets,” Trump said in the Oval Office. Trump fended off reporters asking him about his original four-week timeframe for the war",
+      "translated": "트럼프 대통령은 이란이 협상에 응하지 않을 경우 군사적으로 마무리하겠다고 위협했다.",
+      "aggression_score": 65.5,
+      "threat_intensity": 85,
       "specificity": 65,
       "deadline_specified": 40,
-      "topic_tags": [
-        "foreign_policy",
-        "trade",
-        "military",
-        "iran",
-        "sanctions",
-        "middle_east"
-      ],
-      "rationale": "트럼프는 이란의 선박 나포에 대응하여 기존의 해상 봉쇄를 계속할 것을 지시하며 군사적 준비 태세를 유지하겠다고 밝혔다. 이는 구체적인 대상(이란)과 조치(봉쇄)를 명시했으나, 새로운 위협이라기보다는 기존 조치의 유지이며, 시한은 특정 날짜가 아닌 조건부로 제시되어 모호하다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.cnn.com/2026/04/22/politics/deadlines-iran-war-trump",
-      "content": "Trump’s blown deadlines on Iran - CNN\n\nTrump said Iran had to “FULLY OPEN, WITHOUT THREAT, the Strait of Hormuz, within 48 HOURS.” Otherwise, the United States would start striking its power plants. Trump said he was adding eight more days to the deadline, citing an “Iranian Government request” for more time and talks that were “going very well.”. Trump re-upped the deadline on April 4, saying Iran had “48 hours before all Hell will reign down on them.”. Despite Iran not cutting a deal or openin",
-      "translated": "트럼프 대통령이 이란에 호르무즈 해협 개방을 48시간 내 요구했으나, 이란 정부의 요청으로 마감 시한을 연장했다.",
-      "aggression_score": 51.0,
-      "threat_intensity": 75,
-      "specificity": 70,
-      "deadline_specified": 0,
       "topic_tags": [
         "foreign_policy",
         "military",
@@ -96,45 +77,58 @@
         "iran",
         "middle_east"
       ],
-      "rationale": "트럼프는 이란의 호르무즈 해협 개방을 조건으로 발전소 타격 등 구체적인 군사 행동을 위협하며 높은 위협 강도와 구체성을 보였으나, 여러 차례 시한을 연장하고 백악관이 '확정된 시한 없음'을 밝혀 시한 명시 점수는 0점 처리됨."
+      "rationale": "발언은 이란과의 협상 결렬 시 군사 행동 재개를 명확히 위협하며, 구체적인 대상(이란)과 조치(폭격 재개, 나머지 25% 목표물)를 언급했으나, 실행 시기는 '협상 결렬 시'라는 조건부와 '오래 걸리지 않을 것'이라는 모호한 표현으로 불분명하다."
     },
     {
       "source": "news",
-      "url": "https://www.foxnews.com/opinion/trumps-operation-epic-fury-humiliated-experts-redrew-middle-east",
-      "content": "Trump’s Operation Epic Fury humiliated the experts and redrew the Middle East - Fox News\n\n## From China's absence to stable energy prices, the dire warnings about Trump's Operation Epic Fury have largely failed to materialize. #### Iran ceasefire will be extended with a continued port blockade, President Trump says. The general consensus seemed to be that, from President Trump on down, the administration was not doing the long-term planning to prevent these bad outcomes, notably countries in the",
-      "translated": "트럼프의 '작전명 에픽 퓨리'는 전문가들을 당황하게 하고 중동 지도를 다시 그렸으며, 전문가들의 경고와 달리 중국의 불참에도 불구하고 안정적인 에너지 가격을 유지했다.",
-      "aggression_score": 49.5,
-      "threat_intensity": 75,
-      "specificity": 65,
+      "url": "https://time.com/article/2026/04/23/in-cuba-to-be-or-not-to-be/",
+      "content": "In Cuba: To Be, or Not to Be - Time Magazine\n\nThe anxiety and uncertainty surrounding Cuba’s future have intensified further since U.S. President Donald Trump signed an executive order on Feb. 29 pledging to impose punishing additional tariffs upon any country that supplies the island with the oil that Venezuela, its primary economic supporter, can no longer furnish. The inability to import fuel, the prolonged blackouts, the collapse of public transportation, the diminished economic and commerci",
+      "translated": "트럼프 미국 대통령이 베네수엘라발 원유 공급국에 추가 관세를 부과하는 행정명령에 서명하면서 쿠바의 미래에 대한 불안과 불확실성이 더욱 커지고 있다.",
+      "aggression_score": 49.0,
+      "threat_intensity": 70,
+      "specificity": 60,
       "deadline_specified": 0,
       "topic_tags": [
+        "tariffs",
+        "sanctions",
         "foreign_policy",
-        "military",
-        "iran",
-        "middle_east",
-        "nuclear",
-        "sanctions"
+        "energy",
+        "other"
       ],
-      "rationale": "트럼프가 이란에 핵 프로그램 중단 및 우라늄 제거를 요구하며 군사적 확전을 경고하고 항구 봉쇄를 지속하겠다고 밝혀 위협 강도와 구체성이 높지만, 시한이 명시되지 않아 최종 점수가 낮아졌다."
+      "rationale": "트럼프 행정부가 쿠바에 석유를 공급하는 국가에 대해 추가 관세를 부과하겠다는 행정명령을 발표한 것은 구체적인 조치(관세)와 대상(석유 공급 국가)을 명시했으나, 실행 시한이 명확하지 않아 위협 강도와 구체성 점수가 높고 시한 명시 점수는 낮음."
     },
     {
       "source": "news",
-      "url": "https://edition.cnn.com/2026/04/21/politics/iran-trump-negotiations-peace-ceasefire",
-      "content": "Why President Trump extended his ceasefire with Iran - CNN\n\n# Why President Trump extended his ceasefire with Iran. Rather than resume military strikes, President Donald Trump opted to extend a two-week ceasefire with Iran soon before it was set to expire. Trump, who called Iranian government officials “seriously fractured” in an afternoon Truth Social post extending the ceasefire, remains eager for a diplomatic solution to the war, wary of reviving an unpopular conflict he’s claimed the US alre",
-      "translated": "트럼프 대통령은 이란과의 휴전 만료를 앞두고 군사 공격 재개 대신 2주간의 휴전을 연장하기로 결정했습니다.",
-      "aggression_score": 29.0,
-      "threat_intensity": 30,
-      "specificity": 20,
-      "deadline_specified": 40,
+      "url": "https://www.huffpost.com/news/topic/iran-war?page=47",
+      "content": "Iran War - HuffPost\n\nPart of HuffPost World News. ©2026 BuzzFeed, Inc. All rights reserved. Trump Administration Nears $500 Million Spirit Rescue As Iran Fuel Shock Hits Airlines. 'Wasn't My Decision': Republicans Starting To Regret Trump's Redistricting War. United Airlines Says Fares May Need To Rise Up To 20% To Offset Fuel Surge. John Kerry Takes Down Trump's War And FBI Boss' Drinking Scandal With 1 Punch. Democrat Says Trump Admin Plan To Test Drinking Water Suggests A ‘Darker Reality’. 'B",
+      "translated": "트럼프 행정부가 이란발 유가 급등으로 항공사들이 어려움을 겪는 가운데 5억 달러 규모의 지원책 마련에 나섰다. 공화당 의원들은 트럼프의 선거구 재조정 정책에 대한 후회를 표하고 있으며, 유가 상승으로 인해 유나이티드 항공은 요금 인상을 검토 중이다. 한편 존 케리는 트럼프의 전쟁 정책과 FBI 국장의 음주 스캔들을 비판했다.",
+      "aggression_score": 46.0,
+      "threat_intensity": 70,
+      "specificity": 60,
+      "deadline_specified": 0,
       "topic_tags": [
-        "foreign_policy",
         "iran",
         "military",
-        "sanctions",
-        "war"
+        "war",
+        "foreign_policy"
       ],
-      "rationale": "트럼프가 이란과의 휴전을 연장하기로 결정했으며, 이는 군사적 공격 재개 대신 외교적 해결을 모색하겠다는 의지를 보여줍니다. 발언 자체는 이란 정부를 '심각하게 분열되었다'고 비판하지만, 이는 구체적인 위협보다는 수사적인 표현에 가깝습니다. 휴전 연장 시한이 명확히 제시되지 않았고(soon), 구체적인 제재나 군사 행동에 대한 언급이 없어 위협 강도와 구체성은 낮게 평가되었습니다."
+      "rationale": "발언은 이란에 대한 군사 공격 논의가 고조되고 있음을 나타내며, 대상과 조치는 명확하나 구체적인 시한은 명시되지 않았다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.axios.com/2026/04/23/trump-drug-price-deal-regeneron",
+      "content": "Trump to unveil drug price deal with Regeneron - Axios\n\n# Trump to unveil drug price deal with Regeneron. Using some kinds of trackers (like cross-site or behavioral advertising cookies) may be considered a “sale” or “sharing” of personal data under certain state laws. Because we can't link your Axios subscriber account (email) to browser cookies, you may also want to update your settings in the Privacy Center to ensure your account is fully opted out. # Trump to unveil drug price deal with Rege",
+      "translated": "트럼프, 리제네론과 약값 인하 합의 발표 예정.",
+      "aggression_score": 41.0,
+      "threat_intensity": 30,
+      "specificity": 50,
+      "deadline_specified": 100,
+      "topic_tags": [
+        "other",
+        "energy"
+      ],
+      "rationale": "Regeneron과의 약가 인하 합의 발표는 특정 기업과의 협상을 구체적으로 명시하고 있으나, 이는 위협보다는 정책 발표에 가깝습니다. 'Thursday'라는 구체적인 시한이 제시되었습니다."
     }
   ],
-  "explanation": "[높음] Aggression 60.0 × Pain 68.2 → composite=0.637, interaction=0.246, raw=0.883. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[매우 높음] Aggression 79.5 × Pain 72.7 → composite=0.765, interaction=0.347, raw=1.111. 룰베이스 공식 rule-based-v0.1 적용."
 }
