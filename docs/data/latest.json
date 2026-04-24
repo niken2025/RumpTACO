@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-24T06:45:09.035842+09:00",
-  "date": "2026-04-24",
-  "taco_probability": 90.43,
-  "aggression_score": 79.5,
-  "pain_index": 72.73,
+  "generated_at": "2026-04-25T06:48:05.123143+09:00",
+  "date": "2026-04-25",
+  "taco_probability": 91.74,
+  "aggression_score": 86.5,
+  "pain_index": 69.78,
   "expected_window_hours": [
     24.0,
     48.0
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-23T21:43:49.849896+00:00",
-    "treasury_10y": 4.3,
-    "sp500": 7108.39990234375,
-    "vix": 19.309999465942383,
-    "djia": 49310.3203125,
-    "nasdaq": 24438.50390625,
-    "wti_usd": 97.0,
-    "breakeven_5y": 2.58,
-    "btc_usd": 78022.0,
+    "ts": "2026-04-24T21:45:21.858852+00:00",
+    "treasury_10y": 4.34,
+    "sp500": 7165.080078125,
+    "vix": 18.709999084472656,
+    "djia": 49230.7109375,
+    "nasdaq": 24836.59765625,
+    "wti_usd": 94.87999725341797,
+    "breakeven_5y": 2.61,
+    "btc_usd": 77603.0,
     "trump_approval": 38.5
   },
   "pain": {
-    "index": 72.73,
-    "weighted_z": 0.4904,
+    "index": 69.78,
+    "weighted_z": 0.4185,
     "contributions": {
-      "treasury_10y": 0.0,
-      "sp500": -0.1042,
-      "djia": -0.0874,
-      "nasdaq": -0.1644,
-      "vix": 0.0866,
-      "wti_usd": 0.14,
-      "breakeven_5y": 0.04,
-      "btc_usd": -0.0703,
+      "treasury_10y": 0.024,
+      "sp500": -0.1325,
+      "djia": -0.082,
+      "nasdaq": -0.2099,
+      "vix": 0.0641,
+      "wti_usd": 0.1153,
+      "breakeven_5y": 0.055,
+      "btc_usd": -0.0654,
       "trump_approval": 0.65
     },
     "missing": []
@@ -45,90 +45,92 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.newsweek.com/trump-navy-will-shoot-kill-mine-boats-amid-strait-escalation-11869443",
-      "content": "Trump Says Navy Will ‘Shoot and Kill’ Mine Boats Amid Strait Escalation - Newsweek\n\n# Trump Says Navy Will ‘Shoot and Kill’ Mine Boats Amid Strait Escalation. President Donald Trump has ordered the U.S. Navy to target any boats caught laying sea mines in the Strait of Hormuz. Trump posted on Truth Social that he had given an order to \"shoot and kill any boat\" caught laying mines in the strait, adding that \"there is to be no hesitation\" in a U.S. response. However, one Iran expert, Ali Vaez from ",
-      "translated": "트럼프 대통령은 호르무즈 해협에서 기뢰를 부설하는 보트를 발견하면 미 해군이 \"쏘고 죽이라\"고 명령했습니다.",
-      "aggression_score": 79.5,
-      "threat_intensity": 90,
-      "specificity": 85,
-      "deadline_specified": 60,
+      "url": "https://www.usatoday.com/story/graphics/2026/04/24/trump-mixed-statements-iran-war/89732073007/",
+      "content": "Trump Iran war statements are conflicting, contradictory and confusing - USA Today\n\n# Trump Iran war statements are conflicting, contradictory and confusing. The U.S-Israel war on Iran, a conflict that President Donald Trump originally said would take four weeks or less, will soon enter its third month. During that time, Trump has made many statements, some of them contradictory, about the war’s military progress, status of negotiations and ceasefires, and how long the conflict would last. Trump",
+      "translated": "트럼프 대통령의 이란 전쟁 관련 발언은 상충되고 모순되며 혼란스럽다는 평가가 나왔습니다.",
+      "aggression_score": 86.5,
+      "threat_intensity": 85,
+      "specificity": 75,
+      "deadline_specified": 100,
       "topic_tags": [
         "military",
+        "war",
+        "iran",
+        "middle_east",
+        "sanctions"
+      ],
+      "rationale": "트럼프가 호르무즈 해협에서 기뢰 부설 선박에 대한 해군 발포 명령과 이란 항구 봉쇄를 지시한 것으로 보도되어, 구체적인 군사 행동 위협이 매우 높고 실행 시점이 명확하다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.timesofisrael.com/trump-said-dispatching-witkoff-kushner-for-talks-with-iran-fm-in-pakistan-in-coming-days/",
+      "content": "Trump said dispatching Witkoff, Kushner for talks with Iran FM in Pakistan in coming days - The Times of Israel\n\n# Trump said dispatching Witkoff, Kushner for talks with Iran FM in Pakistan in coming days. ## Vance reportedly on standby to join if negotiations progress; US said preparing new battle plans for Strait of Hormuz; Israel said to assess that US wants deal, but Iran won’t make one. US President Donald Trump has reportedly decided to dispatch special envoy Steve Witkoff and son-in-law J",
+      "translated": "트럼프 대통령이 이란 외무장관과 파키스탄에서 회담하기 위해 위트코프와 쿠슈너를 파견할 것이라고 밝혔다.",
+      "aggression_score": 70.0,
+      "threat_intensity": 70,
+      "specificity": 70,
+      "deadline_specified": 70,
+      "topic_tags": [
         "foreign_policy",
         "iran",
         "middle_east",
+        "military",
         "war"
       ],
-      "rationale": "해협 내 기뢰 부설 선박에 대한 '사살' 명령은 매우 높은 수준의 군사적 위협을 구체적인 대상과 조치로 명시했으며, '즉각적인 대응'을 강조하여 시한의 모호성을 상쇄함."
+      "rationale": "트럼프의 발언 자체는 이란과의 대화를 위한 특사 파견이지만, 기사 내용에서 호르무즈 해협 전투 계획 및 이란 에너지/인프라 공격 준비 등 구체적인 군사 행동 가능성이 언급되어 정책 위협 강도와 구체성이 높게 평가됨. 대화 및 잠재적 군사 행동 모두 'coming days', 'on Friday', 'over in weeks' 등 비교적 명확한 시한이 제시됨."
     },
     {
       "source": "news",
-      "url": "https://nypost.com/2026/04/23/us-news/trump-threatens-to-finish-it-up-militarily-if-iran-refuses-to-make-a-deal/",
-      "content": "Trump threatens to ‘finish it up militarily’ if Iran refuses to make a deal - New York Post\n\n# Trump threatens to ‘finish it up militarily’ if Iran refuses to make a deal. President Trump said Thursday afternoon that he plans to resume bombing Iran if there’s no peace deal. “If they don’t want to make a deal, then I’ll finish it up militarily with the other 25% of the targets,” Trump said in the Oval Office. Trump fended off reporters asking him about his original four-week timeframe for the war",
-      "translated": "트럼프 대통령은 이란이 협상에 응하지 않을 경우 군사적으로 마무리하겠다고 위협했다.",
-      "aggression_score": 65.5,
-      "threat_intensity": 85,
+      "url": "https://www.huffpost.com/entry/donald-trump-slams-reporter-iran-question_n_69eb1155e4b0bb584bca6203",
+      "content": "Donald Trump Loses It With Female Reporter Over Simple Question About Iran - HuffPost\n\n# Donald Trump Loses It With Female Reporter Over Simple Question About Iran. Donald Trump launched yet another personal attack on a female journalist on Thursday as he fielded questions about his ongoing Iran war. Trump said he had “hoped” it would be that short but pointed to the temporary ceasefire, adding that Iran’s military had been “decimated” early on and that he “didn’t want to put that kind of a time",
+      "translated": "트럼프, 이란 관련 간단한 질문에 여성 기자에게 격분",
+      "aggression_score": 49.5,
+      "threat_intensity": 75,
       "specificity": 65,
-      "deadline_specified": 40,
+      "deadline_specified": 0,
       "topic_tags": [
-        "foreign_policy",
         "military",
         "war",
         "iran",
-        "middle_east"
+        "foreign_policy",
+        "sanctions"
       ],
-      "rationale": "발언은 이란과의 협상 결렬 시 군사 행동 재개를 명확히 위협하며, 구체적인 대상(이란)과 조치(폭격 재개, 나머지 25% 목표물)를 언급했으나, 실행 시기는 '협상 결렬 시'라는 조건부와 '오래 걸리지 않을 것'이라는 모호한 표현으로 불분명하다."
+      "rationale": "이란에 대한 군사적 행동 재개 위협과 호르무즈 해협 봉쇄 언급으로 위협 강도와 구체성은 높으나, 실행 시한이 명시되지 않아 최종 점수는 중위권이다."
     },
     {
       "source": "news",
-      "url": "https://time.com/article/2026/04/23/in-cuba-to-be-or-not-to-be/",
-      "content": "In Cuba: To Be, or Not to Be - Time Magazine\n\nThe anxiety and uncertainty surrounding Cuba’s future have intensified further since U.S. President Donald Trump signed an executive order on Feb. 29 pledging to impose punishing additional tariffs upon any country that supplies the island with the oil that Venezuela, its primary economic supporter, can no longer furnish. The inability to import fuel, the prolonged blackouts, the collapse of public transportation, the diminished economic and commerci",
-      "translated": "트럼프 미국 대통령이 베네수엘라발 원유 공급국에 추가 관세를 부과하는 행정명령에 서명하면서 쿠바의 미래에 대한 불안과 불확실성이 더욱 커지고 있다.",
+      "url": "https://www.facebook.com/SkyNewsAustralia/posts/us-president-donald-trump-has-unleashed-on-a-reporters-stupid-question-about-the/1409493907874870/",
+      "content": "Sky News Australia. . US President Donald Trump has unleashed on a reporter’s “stupid” question about the ongoing conflict with Iran. - facebook.com\n\n# US President Donald Trump has unleashed on a reporter’s “stupid” question about the ongoing conflict with Iran. # Video. Trump ruthlessly shuts down reporter's 'stupid' question if he would use a nuclear weapon on Iran. US President Donald Trump has unleashed on a reporter’s “stupid” question about the ongoing conflict with Iran. ## Related Video",
+      "translated": "트럼프 미국 대통령이 이란과의 분쟁에 대한 기자의 \"어리석은\" 질문에 격분하며 핵무기 사용 가능성을 일축했다.",
       "aggression_score": 49.0,
       "threat_intensity": 70,
-      "specificity": 60,
+      "specificity": 70,
+      "deadline_specified": 0,
+      "topic_tags": [
+        "military",
+        "war",
+        "iran",
+        "nuclear",
+        "foreign_policy"
+      ],
+      "rationale": "이란과의 핵무기 사용 가능성에 대한 질문에 '어리석은 질문'이라고 일축하며 군사적 행동 가능성을 시사했으나, 구체적인 시한이나 조건은 명시하지 않아 중간 수준의 위협 강도와 구체성을 부여함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.cnbc.com/2026/04/24/trump-tariffs-uk-tech-apple-google-meta.html",
+      "content": "Trump warns of ‘big tariff’ if UK doesn’t drop digital services tax on U.S. tech firms - CNBC\n\n# Trump warns of ‘big tariff’ if UK doesn’t drop digital services tax on U.S. tech firms. * Trump has threatened to impose steep tariffs on the U.K. unless it drops its digital services tax on U.S. tech companies. * The tax is a 2% levy on the revenues of search engines, social media services and online marketplaces that derive value from U.K. users. * \"If they don't drop the tax, we'll probably put a ",
+      "translated": "트럼프 대통령이 영국이 미국 기술 기업에 대한 디지털 서비스세를 철폐하지 않으면 '큰 관세'를 부과하겠다고 경고했습니다.",
+      "aggression_score": 47.0,
+      "threat_intensity": 65,
+      "specificity": 55,
       "deadline_specified": 0,
       "topic_tags": [
         "tariffs",
-        "sanctions",
-        "foreign_policy",
-        "energy",
+        "trade",
         "other"
       ],
-      "rationale": "트럼프 행정부가 쿠바에 석유를 공급하는 국가에 대해 추가 관세를 부과하겠다는 행정명령을 발표한 것은 구체적인 조치(관세)와 대상(석유 공급 국가)을 명시했으나, 실행 시한이 명확하지 않아 위협 강도와 구체성 점수가 높고 시한 명시 점수는 낮음."
-    },
-    {
-      "source": "news",
-      "url": "https://www.huffpost.com/news/topic/iran-war?page=47",
-      "content": "Iran War - HuffPost\n\nPart of HuffPost World News. ©2026 BuzzFeed, Inc. All rights reserved. Trump Administration Nears $500 Million Spirit Rescue As Iran Fuel Shock Hits Airlines. 'Wasn't My Decision': Republicans Starting To Regret Trump's Redistricting War. United Airlines Says Fares May Need To Rise Up To 20% To Offset Fuel Surge. John Kerry Takes Down Trump's War And FBI Boss' Drinking Scandal With 1 Punch. Democrat Says Trump Admin Plan To Test Drinking Water Suggests A ‘Darker Reality’. 'B",
-      "translated": "트럼프 행정부가 이란발 유가 급등으로 항공사들이 어려움을 겪는 가운데 5억 달러 규모의 지원책 마련에 나섰다. 공화당 의원들은 트럼프의 선거구 재조정 정책에 대한 후회를 표하고 있으며, 유가 상승으로 인해 유나이티드 항공은 요금 인상을 검토 중이다. 한편 존 케리는 트럼프의 전쟁 정책과 FBI 국장의 음주 스캔들을 비판했다.",
-      "aggression_score": 46.0,
-      "threat_intensity": 70,
-      "specificity": 60,
-      "deadline_specified": 0,
-      "topic_tags": [
-        "iran",
-        "military",
-        "war",
-        "foreign_policy"
-      ],
-      "rationale": "발언은 이란에 대한 군사 공격 논의가 고조되고 있음을 나타내며, 대상과 조치는 명확하나 구체적인 시한은 명시되지 않았다."
-    },
-    {
-      "source": "news",
-      "url": "https://www.axios.com/2026/04/23/trump-drug-price-deal-regeneron",
-      "content": "Trump to unveil drug price deal with Regeneron - Axios\n\n# Trump to unveil drug price deal with Regeneron. Using some kinds of trackers (like cross-site or behavioral advertising cookies) may be considered a “sale” or “sharing” of personal data under certain state laws. Because we can't link your Axios subscriber account (email) to browser cookies, you may also want to update your settings in the Privacy Center to ensure your account is fully opted out. # Trump to unveil drug price deal with Rege",
-      "translated": "트럼프, 리제네론과 약값 인하 합의 발표 예정.",
-      "aggression_score": 41.0,
-      "threat_intensity": 30,
-      "specificity": 50,
-      "deadline_specified": 100,
-      "topic_tags": [
-        "other",
-        "energy"
-      ],
-      "rationale": "Regeneron과의 약가 인하 합의 발표는 특정 기업과의 협상을 구체적으로 명시하고 있으나, 이는 위협보다는 정책 발표에 가깝습니다. 'Thursday'라는 구체적인 시한이 제시되었습니다."
+      "rationale": "영국이 디지털 서비스세를 철폐하지 않으면 '큰 관세'를 부과하겠다고 경고하며, 구체적인 수치는 없으나 관세 부과라는 조치와 대상(영국)이 명확함. 시한은 명시되지 않음."
     }
   ],
-  "explanation": "[매우 높음] Aggression 79.5 × Pain 72.7 → composite=0.765, interaction=0.347, raw=1.111. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[매우 높음] Aggression 86.5 × Pain 69.8 → composite=0.790, interaction=0.362, raw=1.152. 룰베이스 공식 rule-based-v0.1 적용."
 }
