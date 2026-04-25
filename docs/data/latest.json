@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-25T06:48:05.123143+09:00",
-  "date": "2026-04-25",
-  "taco_probability": 91.74,
-  "aggression_score": 86.5,
-  "pain_index": 69.78,
+  "generated_at": "2026-04-26T06:37:07.394086+09:00",
+  "date": "2026-04-26",
+  "taco_probability": 71.31,
+  "aggression_score": 48.0,
+  "pain_index": 69.6,
   "expected_window_hours": [
-    24.0,
-    48.0
+    48.0,
+    96.0
   ],
   "model_version": "rule-based-v0.1",
   "threshold": {
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-24T21:45:21.858852+00:00",
+    "ts": "2026-04-25T21:35:30.536987+00:00",
     "treasury_10y": 4.34,
     "sp500": 7165.080078125,
     "vix": 18.709999084472656,
     "djia": 49230.7109375,
-    "nasdaq": 24836.59765625,
-    "wti_usd": 94.87999725341797,
+    "nasdaq": 24836.599609375,
+    "wti_usd": 94.4000015258789,
     "breakeven_5y": 2.61,
-    "btc_usd": 77603.0,
+    "btc_usd": 77499.0,
     "trump_approval": 38.5
   },
   "pain": {
-    "index": 69.78,
-    "weighted_z": 0.4185,
+    "index": 69.6,
+    "weighted_z": 0.4142,
     "contributions": {
       "treasury_10y": 0.024,
       "sp500": -0.1325,
       "djia": -0.082,
       "nasdaq": -0.2099,
       "vix": 0.0641,
-      "wti_usd": 0.1153,
+      "wti_usd": 0.1097,
       "breakeven_5y": 0.055,
-      "btc_usd": -0.0654,
+      "btc_usd": -0.0642,
       "trump_approval": 0.65
     },
     "missing": []
@@ -45,92 +45,94 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.usatoday.com/story/graphics/2026/04/24/trump-mixed-statements-iran-war/89732073007/",
-      "content": "Trump Iran war statements are conflicting, contradictory and confusing - USA Today\n\n# Trump Iran war statements are conflicting, contradictory and confusing. The U.S-Israel war on Iran, a conflict that President Donald Trump originally said would take four weeks or less, will soon enter its third month. During that time, Trump has made many statements, some of them contradictory, about the war’s military progress, status of negotiations and ceasefires, and how long the conflict would last. Trump",
-      "translated": "트럼프 대통령의 이란 전쟁 관련 발언은 상충되고 모순되며 혼란스럽다는 평가가 나왔습니다.",
-      "aggression_score": 86.5,
-      "threat_intensity": 85,
-      "specificity": 75,
-      "deadline_specified": 100,
+      "url": "https://www.nbcnews.com/nightly-news/video/trump-says-iran-is-making-an-offer-262087749864",
+      "content": "Trump says Iran is ‘making an offer’ - NBC News\n\nTrump says Iran is ‘making an offer’. ## Trump says Iran is ‘making an offer’. * ## Search for suspects after deadly Louisiana mall shooting. * ## Trump warns U.S. will ‘shoot and kill’ Iranian mine boats. * ## Wildfires rage in southern Georgia, destroying homes. * ## New baby elephant makes debut at The National Zoo. * ## Massive wildfires explode in Florida and Georgia. * ## Iran attacks and seizes commercial ships after Trump extends ceasefire",
+      "translated": "트럼프 대통령은 이란이 '제안을 하고 있다'고 말했다.\n루이지애나 쇼핑몰 총격 사건 용의자 수색이 진행 중이다.\n트럼프 대통령은 미국이 이란의 기뢰 부설 선박에 '총을 쏘고 죽일 것'이라고 경고했다.\n조지아 남부에서 대규모 산불이 발생해 주택이 파괴되고 있다.\n국립 동물원에서 아기 코끼리가 새로 공개되었다.\n거대한 산불이 폭발적으로 확산되고 있다.",
+      "aggression_score": 48.0,
+      "threat_intensity": 70,
+      "specificity": 50,
+      "deadline_specified": 0,
       "topic_tags": [
         "military",
-        "war",
         "iran",
-        "middle_east",
+        "foreign_policy",
         "sanctions"
       ],
-      "rationale": "트럼프가 호르무즈 해협에서 기뢰 부설 선박에 대한 해군 발포 명령과 이란 항구 봉쇄를 지시한 것으로 보도되어, 구체적인 군사 행동 위협이 매우 높고 실행 시점이 명확하다."
+      "rationale": "이란 군함에 대한 군사적 위협을 직접적으로 언급했으나, 구체적인 조치나 시한은 명시되지 않아 중간 수준의 점수를 부여함."
     },
     {
       "source": "news",
-      "url": "https://www.timesofisrael.com/trump-said-dispatching-witkoff-kushner-for-talks-with-iran-fm-in-pakistan-in-coming-days/",
-      "content": "Trump said dispatching Witkoff, Kushner for talks with Iran FM in Pakistan in coming days - The Times of Israel\n\n# Trump said dispatching Witkoff, Kushner for talks with Iran FM in Pakistan in coming days. ## Vance reportedly on standby to join if negotiations progress; US said preparing new battle plans for Strait of Hormuz; Israel said to assess that US wants deal, but Iran won’t make one. US President Donald Trump has reportedly decided to dispatch special envoy Steve Witkoff and son-in-law J",
-      "translated": "트럼프 대통령이 이란 외무장관과 파키스탄에서 회담하기 위해 위트코프와 쿠슈너를 파견할 것이라고 밝혔다.",
-      "aggression_score": 70.0,
+      "url": "https://bdnews24.com/world/2ae5aa92f090",
+      "content": "US legal advisor says Iran war justified by Tehran's 'aggression' over decades - bdnews24.com\n\nThe US State Department's top lawyer has argued that President Donald Trump's war with Iran was launched in self-defense and to defend US ally Israel, arguing the bombing campaign was not the start of a new war but the continuation of an ongoing conflict. State Department Legal Advisor Reed Rubinstein made the arguments in a statement released days before a May 1 deadline for the Trump administration t",
+      "translated": "미국 법률 고문은 수십 년간 이어진 이란의 '침략' 때문에 이란과의 전쟁이 정당화된다고 주장했습니다.",
+      "aggression_score": 47.5,
       "threat_intensity": 70,
-      "specificity": 70,
-      "deadline_specified": 70,
-      "topic_tags": [
-        "foreign_policy",
-        "iran",
-        "middle_east",
-        "military",
-        "war"
-      ],
-      "rationale": "트럼프의 발언 자체는 이란과의 대화를 위한 특사 파견이지만, 기사 내용에서 호르무즈 해협 전투 계획 및 이란 에너지/인프라 공격 준비 등 구체적인 군사 행동 가능성이 언급되어 정책 위협 강도와 구체성이 높게 평가됨. 대화 및 잠재적 군사 행동 모두 'coming days', 'on Friday', 'over in weeks' 등 비교적 명확한 시한이 제시됨."
-    },
-    {
-      "source": "news",
-      "url": "https://www.huffpost.com/entry/donald-trump-slams-reporter-iran-question_n_69eb1155e4b0bb584bca6203",
-      "content": "Donald Trump Loses It With Female Reporter Over Simple Question About Iran - HuffPost\n\n# Donald Trump Loses It With Female Reporter Over Simple Question About Iran. Donald Trump launched yet another personal attack on a female journalist on Thursday as he fielded questions about his ongoing Iran war. Trump said he had “hoped” it would be that short but pointed to the temporary ceasefire, adding that Iran’s military had been “decimated” early on and that he “didn’t want to put that kind of a time",
-      "translated": "트럼프, 이란 관련 간단한 질문에 여성 기자에게 격분",
-      "aggression_score": 49.5,
-      "threat_intensity": 75,
       "specificity": 65,
       "deadline_specified": 0,
       "topic_tags": [
+        "foreign_policy",
         "military",
         "war",
         "iran",
-        "foreign_policy",
-        "sanctions"
+        "israel",
+        "nuclear"
       ],
-      "rationale": "이란에 대한 군사적 행동 재개 위협과 호르무즈 해협 봉쇄 언급으로 위협 강도와 구체성은 높으나, 실행 시한이 명시되지 않아 최종 점수는 중위권이다."
+      "rationale": "트럼프 행정부의 이란에 대한 군사 행동(전쟁, 폭격)을 정당화하는 법률 고문의 발언으로, 구체적인 군사 행동의 언급이 있으나 새로운 위협의 시한은 명시되지 않았다."
     },
     {
       "source": "news",
-      "url": "https://www.facebook.com/SkyNewsAustralia/posts/us-president-donald-trump-has-unleashed-on-a-reporters-stupid-question-about-the/1409493907874870/",
-      "content": "Sky News Australia. . US President Donald Trump has unleashed on a reporter’s “stupid” question about the ongoing conflict with Iran. - facebook.com\n\n# US President Donald Trump has unleashed on a reporter’s “stupid” question about the ongoing conflict with Iran. # Video. Trump ruthlessly shuts down reporter's 'stupid' question if he would use a nuclear weapon on Iran. US President Donald Trump has unleashed on a reporter’s “stupid” question about the ongoing conflict with Iran. ## Related Video",
-      "translated": "트럼프 미국 대통령이 이란과의 분쟁에 대한 기자의 \"어리석은\" 질문에 격분하며 핵무기 사용 가능성을 일축했다.",
-      "aggression_score": 49.0,
-      "threat_intensity": 70,
-      "specificity": 70,
+      "url": "https://www.nytimes.com/2026/04/25/us/politics/trump-iran-nuclear.html",
+      "content": "Trump Seeks to Abolish Iran’s Atomic Stockpile, a Problem He Helped Create - The New York Times\n\n# Trump Seeks to Abolish Iran’s Atomic Stockpile, a Problem He Helped Create - The New York Times. # Trump Seeks to Abolish Iran’s Atomic Stockpile, a Problem He Helped Create. President Trump withdrew from the Obama-era nuclear accord in 2018, saying it was the worst deal ever. In February in preparation for a possible war with the United States, Iran moved missile launchers into positions within st",
+      "translated": "트럼프 대통령이 자신이 초래한 문제인 이란의 핵무기 보유를 철폐하려 한다.",
+      "aggression_score": 41.0,
+      "threat_intensity": 60,
+      "specificity": 50,
       "deadline_specified": 0,
       "topic_tags": [
-        "military",
-        "war",
         "iran",
         "nuclear",
-        "foreign_policy"
+        "foreign_policy",
+        "sanctions",
+        "military",
+        "war"
       ],
-      "rationale": "이란과의 핵무기 사용 가능성에 대한 질문에 '어리석은 질문'이라고 일축하며 군사적 행동 가능성을 시사했으나, 구체적인 시한이나 조건은 명시하지 않아 중간 수준의 위협 강도와 구체성을 부여함."
+      "rationale": "트럼프가 이란의 핵무기 비축량 폐기를 추구한다는 내용은 있지만, 구체적인 제재나 군사 행동 언급은 없고 시한도 명시되지 않아 중간 수준의 공격성 점수를 부여함."
     },
     {
       "source": "news",
-      "url": "https://www.cnbc.com/2026/04/24/trump-tariffs-uk-tech-apple-google-meta.html",
-      "content": "Trump warns of ‘big tariff’ if UK doesn’t drop digital services tax on U.S. tech firms - CNBC\n\n# Trump warns of ‘big tariff’ if UK doesn’t drop digital services tax on U.S. tech firms. * Trump has threatened to impose steep tariffs on the U.K. unless it drops its digital services tax on U.S. tech companies. * The tax is a 2% levy on the revenues of search engines, social media services and online marketplaces that derive value from U.K. users. * \"If they don't drop the tax, we'll probably put a ",
-      "translated": "트럼프 대통령이 영국이 미국 기술 기업에 대한 디지털 서비스세를 철폐하지 않으면 '큰 관세'를 부과하겠다고 경고했습니다.",
-      "aggression_score": 47.0,
-      "threat_intensity": 65,
-      "specificity": 55,
-      "deadline_specified": 0,
+      "url": "https://www.modernghana.com/amp/videonews/640550",
+      "content": "US envoys head to Pakistan for Iran talks | BBC News - Modern Ghana\n\nHome  › BBC       25.04.2026. # US envoys head to Pakistan for Iran talks | BBC News. US special envoy Steve Witkoff and President Trump's son-in-law Jared Kushner are heading to Pakistan for Iran talks on Saturday, the White House said. Meanwhile, Iran confirmed its foreign minister will also travel to Pakistan's capital Islamabad - but didn't mention talks with the US. Earlier, US Defence Secretary Pete Hegseth said Iran had ",
+      "translated": "미국 특사들이 이란과의 회담을 위해 파키스탄으로 향한다.",
+      "aggression_score": 37.5,
+      "threat_intensity": 45,
+      "specificity": 30,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "iran",
+        "foreign_policy",
+        "military",
+        "sanctions",
+        "israel",
+        "middle_east"
+      ],
+      "rationale": "이란과의 협상을 위한 미국 특사 파견은 외교적 움직임이지만, 이란 항구에 대한 해상 봉쇄 강화 언급은 잠재적 위협으로 간주될 수 있습니다. 구체적인 제재 수치나 발효 시점은 명시되지 않았으며, 'growing and going global'이라는 표현은 모호합니다. 협상 시한 역시 'Saturday'로만 언급되어 구체성이 떨어집니다."
+    },
+    {
+      "source": "news",
+      "url": "https://www.axios.com/2026/04/25/trump-tariffs-refunds-ceos",
+      "content": "Trump tariff refunds put businesses on the spot - Axios\n\n**What they're saying:** \"It's brilliant if they don't do that,\" President Trump told CNBC this week, referring to importers who do not seek a refund. * Responding to a question about large companies second-guessing whether to go through the refund process, Trump added: \"If they don't do that, they got to know me very well. **Between the lines:** CEOs have to weigh whether to seek a refund and risk Trump-sized blowback. **By the numbers:**",
+      "translated": "트럼프 대통령이 수입업자들이 관세 환급을 신청하지 않는 것을 '훌륭하다'고 언급하며, 대기업들이 환급 절차를 재고하는 것에 대해 \"나를 아주 잘 아는 것\"이라고 말했다.",
+      "aggression_score": 29.0,
+      "threat_intensity": 30,
+      "specificity": 20,
+      "deadline_specified": 40,
       "topic_tags": [
         "tariffs",
         "trade",
         "other"
       ],
-      "rationale": "영국이 디지털 서비스세를 철폐하지 않으면 '큰 관세'를 부과하겠다고 경고하며, 구체적인 수치는 없으나 관세 부과라는 조치와 대상(영국)이 명확함. 시한은 명시되지 않음."
+      "rationale": "트럼프는 기업들이 관세 환급 절차를 밟지 않으면 자신을 잘 아는 것이라고 말하며, 이는 환급 신청 시 '트럼프식 보복'을 받을 수 있다는 암시를 줍니다. 하지만 구체적인 위협의 강도, 대상, 시한이 명확하지 않아 점수가 낮습니다."
     }
   ],
-  "explanation": "[매우 높음] Aggression 86.5 × Pain 69.8 → composite=0.790, interaction=0.362, raw=1.152. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[높음] Aggression 48.0 × Pain 69.6 → composite=0.577, interaction=0.200, raw=0.778. 룰베이스 공식 rule-based-v0.1 적용."
 }
