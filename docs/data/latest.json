@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-27T06:38:06.206693+09:00",
-  "date": "2026-04-27",
-  "taco_probability": 93.5,
-  "aggression_score": 95.0,
-  "pain_index": 68.04,
+  "generated_at": "2026-04-28T06:54:05.859967+09:00",
+  "date": "2026-04-28",
+  "taco_probability": 71.02,
+  "aggression_score": 49.0,
+  "pain_index": 67.82,
   "expected_window_hours": [
-    24.0,
-    48.0
+    48.0,
+    96.0
   ],
   "model_version": "rule-based-v0.1",
   "threshold": {
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-26T21:36:41.272238+00:00",
-    "treasury_10y": 4.34,
-    "sp500": 7165.080078125,
-    "vix": 18.709999084472656,
-    "djia": 49230.7109375,
-    "nasdaq": 24836.599609375,
-    "wti_usd": 94.4000015258789,
-    "breakeven_5y": 2.61,
-    "btc_usd": 78037.0,
+    "ts": "2026-04-27T21:52:37.204919+00:00",
+    "treasury_10y": 4.31,
+    "sp500": 7173.91015625,
+    "vix": 18.020000457763672,
+    "djia": 49167.7890625,
+    "nasdaq": 24887.099609375,
+    "wti_usd": 96.68000030517578,
+    "breakeven_5y": 2.62,
+    "btc_usd": 76913.0,
     "trump_approval": 38.8
   },
   "pain": {
-    "index": 68.04,
-    "weighted_z": 0.3779,
+    "index": 67.82,
+    "weighted_z": 0.3727,
     "contributions": {
-      "treasury_10y": 0.024,
-      "sp500": -0.1325,
-      "djia": -0.082,
-      "nasdaq": -0.2099,
-      "vix": 0.0641,
-      "wti_usd": 0.1097,
-      "breakeven_5y": 0.055,
-      "btc_usd": -0.0704,
+      "treasury_10y": 0.006,
+      "sp500": -0.137,
+      "djia": -0.0779,
+      "nasdaq": -0.2157,
+      "vix": 0.0383,
+      "wti_usd": 0.1363,
+      "breakeven_5y": 0.06,
+      "btc_usd": -0.0573,
       "trump_approval": 0.62
     },
     "missing": []
@@ -45,84 +45,109 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.forbes.com/sites/zacharyfolk/2026/04/26/leavitt-says-suspected-gunman-wanted-to-assassinate-trump-at-white-house-correspondents-dinner-live-updates/",
-      "content": "Suspect In White House Correspondents’ Dinner Shooting Wanted To ‘Assassinate’ Trump, Leavitt Says (Live Updates) - Forbes\n\n# Leavitt Says Suspected Gunman Wanted To ‘Assassinate’ Trump At White House Correspondents’ Dinner (Live Updates). White House press secretary Karoline Leavitt said the suspected shooter at the White House Correspondents’ Dinner on Saturday night was trying to “assassinate” President Donald Trump and “kill as many top Trump administration officials as possible,” shortly af",
-      "translated": "백악관 만찬 총격 용의자는 트럼프를 암살하려 했다고 카롤린 리빗 백악관 대변인이 밝혔다.",
-      "aggression_score": 95.0,
-      "threat_intensity": 95,
-      "specificity": 90,
-      "deadline_specified": 100,
+      "url": "https://www.nbcnews.com/video/at-least-19-killed-dozens-hurt-in-colombia-highway-blast-262149189833",
+      "content": "At least 19 killed, dozens hurt in Colombia highway blast - NBC News\n\n## Trump says Iran is ‘making an offer’. * ## Lebanese refugees hope to return home as ceasefire with Israel is extended. * ## Israel waiting for U.S. green light to return Iran to ‘dark and stone ages’. * ## Iran attacks and seizes commercial ships after Trump extends ceasefire. * ## Trump extends ceasefire deadline with Iran as talks stall. * ## Americans injured in deadly Mexico pyramid shooting. * ## Beirut residents say t",
+      "translated": "콜롬비아 고속도로 폭발로 최소 19명 사망, 수십 명 부상.\n트럼프, 이란이 '제안을 하고 있다'고 말함.\n이스라엘과의 휴전 연장으로 레바논 난민들이 귀환을 희망하고 있음.\n트럼프가 휴전을 연장하자 이란이 상선들을 공격하고 나포함.\n트럼프, 이란과의 휴전 시한을 연장함.",
+      "aggression_score": 49.0,
+      "threat_intensity": 70,
+      "specificity": 60,
+      "deadline_specified": 0,
       "topic_tags": [
+        "tariffs",
+        "immigration",
+        "foreign_policy",
+        "trade",
+        "military",
+        "war",
+        "iran",
+        "israel",
+        "russia",
+        "china",
+        "north_korea",
+        "middle_east",
+        "nuclear",
+        "sanctions",
+        "election",
+        "crypto",
+        "energy",
+        "fed",
         "other"
       ],
-      "rationale": "트럼프 대통령과 행정부 고위 관료들을 대상으로 한 암살 시도에 대한 수사 보고로, 대상과 행위가 매우 구체적이며 시한(발생 시점)이 명확하게 명시되어 있어 위협 강도가 매우 높음."
+      "rationale": "콜롬비아 고속도로 폭발 사건에 대한 발언으로, '테러 행위'로 규정하고 있지만 구체적인 위협 대상이나 시한은 명시되지 않아 중간 수준의 공격성 점수를 부여합니다."
     },
     {
       "source": "news",
-      "url": "https://www.latimes.com/world-nation/story/2026-04-26/trump-administration-to-target-corruption-in-mexico",
-      "content": "U.S. may soon target Mexican politicians in anti-corruption campaign - Los Angeles Times\n\n* Ronald Johnson, the U.S. ambassador to Mexico, signaled a Trump administration will launch an anti-corruption campaign targeting Mexican officials allegedly linked to organized crime. * The U.S. has already revoked the visas of some Mexican leaders, including Sinaloa Gov. Rubén Rocha Moya, who has repeatedly denied any links to cartels. LOS MOCHIS, Mexico — The U.S. ambassador to Mexico, Ronald Johnson, t",
-      "translated": "미국이 멕시코의 부패 척결을 위해 현지 정치인들을 겨냥한 캠페인을 곧 시작할 수 있다고 로스앤젤레스 타임스가 보도했습니다. 트럼프 행정부는 조직범죄와 연루된 것으로 의심되는 멕시코 공직자들을 대상으로 반부패 캠페인을 개시할 것이라고 주멕시코 미국 대사가 밝혔습니다.",
-      "aggression_score": 57.5,
-      "threat_intensity": 65,
-      "specificity": 65,
-      "deadline_specified": 40,
-      "topic_tags": [
-        "foreign_policy",
-        "sanctions"
-      ],
-      "rationale": "미국 대사가 멕시코 정치인을 대상으로 한 반부패 캠페인 개시를 시사하며, 비자 취소 등 구체적 조치를 언급했으나, 실행 시점이 '곧(soon)'으로 모호하고 구체적인 대상 수치는 명시되지 않음."
-    },
-    {
-      "source": "news",
-      "url": "https://www.investing.com/news/economy-news/diplomatic-stalemate-lingers-as-us-envoys-head-to-pakistan-iran-reopens-airport-4637338",
-      "content": "U.S. Navy intercepts Iran-linked vessel in Arabian Sea, orders return to Iran - Investing.com\n\n**Investing.com --** U.S. naval forces intercepted a sanctioned vessel called ’Sevan’ in the Arabian Sea on Saturday, in a move tied to the Trump administration’s campaign to block Iranian energy exports, U.S. Central Command said. \"M/V Sevan was among 19 “shadow fleet” vessels sanctioned by the U.S. Department of Treasury for activities related to transporting billions of dollars worth of Iranian ener",
-      "translated": "미국 해군이 아라비아해에서 이란 제재 대상 선박 '세반'을 나포하여 이란으로 돌려보내도록 명령했다.",
-      "aggression_score": 34.5,
-      "threat_intensity": 60,
-      "specificity": 35,
+      "url": "https://www.nbcnews.com/video/hope-for-us-iran-peace-deal-fading-262142533610",
+      "content": "Hope for US-Iran peace deal fading - NBC News\n\n* ## Trump raised questions about security at WHCD. * ## New details on shooting at WH Correspondents’ Dinner. ## Concerns over rise of targeted political violence after WH Correspondents’ Dinner shooting. * ## Trump renews calls for new White House ballroom after shooting. * ## Trump says Iran is ‘making an offer’. * ## Search for suspects after deadly Louisiana mall shooting. * ## Trump warns U.S. will ‘shoot and kill’ Iranian mine boats. Presiden",
+      "translated": "미국과 이란의 평화 협상 전망이 어두워지고 있다는 NBC 뉴스 보도가 나왔습니다.\n트럼프 전 대통령은 백악관 출입기자단 만찬회에서의 총격 사건 이후 정치적 폭력 증가에 대한 우려를 표하며 새로운 만찬회장 마련을 촉구했습니다.",
+      "aggression_score": 44.0,
+      "threat_intensity": 70,
+      "specificity": 50,
       "deadline_specified": 0,
       "topic_tags": [
-        "foreign_policy",
-        "iran",
         "military",
-        "middle_east",
-        "sanctions"
+        "iran",
+        "foreign_policy",
+        "tariffs"
       ],
-      "rationale": "트럼프의 발언은 이란의 군사력과 지도부를 폄하하는 매우 공격적인 수사를 사용하며 강한 압박을 가하지만, 구체적인 제재나 군사 행동 등 정책적 위협 조치를 명시하지 않았고, 실행 시한도 언급되지 않았다."
+      "rationale": "이란 군함에 대한 '발포 및 사살' 경고는 군사적 위협의 강도가 높으나, 구체적인 시한이나 대상 함선에 대한 언급이 없어 구체성과 시한 명시 점수가 낮음. 또한, 파키스탄 방문 취소는 외교적 결정으로 해석될 수 있음."
     },
     {
       "source": "news",
-      "url": "https://www.washingtonpost.com/business/2026/04/26/iran-israel-us-lebanon-latest-april-26-2026/3486c3d0-413b-11f1-bb46-ed564688d953_story.html",
-      "content": "The Latest: Trump says he called off dispatching envoys to Iran talks - The Washington Post\n\n# The Latest: Trump says he called off dispatching envoys to Iran talks. U.S. President Donald Trump says he told his top envoys not to travel to Pakistan to negotiate with Iran. Iraqi Muslim women hold portraits of Iran’s late Supreme Leader Ayatollah Ali Khamenei and his son Ayatollah Mojtaba Khamenei, during a protest against U.S. and Israeli attacks on multiple cities across Iran, in Baghdad, Iraq, S",
-      "translated": "트럼프 대통령이 이란과의 협상을 위해 파키스탄으로 향하려던 최고 사절단의 파견을 취소했다고 밝혔습니다.",
-      "aggression_score": 29.5,
-      "threat_intensity": 25,
-      "specificity": 65,
+      "url": "https://nypost.com/2026/04/26/opinion/trumps-threats-to-iran-letters/",
+      "content": "Trump’s threats to Iran: Letters to the Editor — April 27, 2026 - New York Post\n\n# Trump’s threats to Iran: Letters to the Editor — April 27, 2026. ### **The Issue:** President Trump’s approach to the war with Iran as peace talks continue. President Trump’s threat to “finish up” in Iran shouldn’t be surprising. The Trump administration’s strategy has been clear: Assert that America is dominating this war — even if the narrative is at odds with reality. The war in Iran is unlikely to be “finishin",
+      "translated": "트럼프 대통령의 이란과의 전쟁에 대한 접근 방식은 평화 협상이 진행되는 가운데 계속되고 있으며, 그의 \"마무리하겠다\"는 위협은 놀랍지 않다는 내용입니다.",
+      "aggression_score": 41.5,
+      "threat_intensity": 70,
+      "specificity": 45,
       "deadline_specified": 0,
       "topic_tags": [
         "foreign_policy",
+        "war",
         "iran",
         "middle_east"
       ],
-      "rationale": "이란과의 협상 중단을 선언하며 외교적 압박을 가하지만, 직접적인 해를 예고하는 위협이나 구체적인 제재 조치 언급은 없어 위협 강도는 낮음. 대상과 조치는 명확하나 시한은 명시되지 않음."
+      "rationale": "트럼프의 '이란 전쟁 마무리' 발언은 강한 위협을 내포하지만, 구체적인 실행 방안이나 시한이 전혀 명시되지 않아 전반적인 공격성 점수가 낮게 평가됨."
     },
     {
       "source": "news",
-      "url": "https://www.greenwichtime.com/business/article/the-latest-trump-says-he-called-off-dispatching-22226626.php",
-      "content": "The Latest: Trump says he called off dispatching envoys to Iran talks - Greenwich Time\n\nU.S. President Donald Trump said he told his top envoys Steve Witkoff and Jared Kushner not to travel to Pakistan to negotiate with Iran, stating on Fox News that \"they can call us any time they want.”. Iran's President Masoud Pezeshkian said his country won’t negotiate while the United States imposes a blockade on its ports. “should first remove operational obstacles, including the blockade,” to allow a new ",
-      "translated": "트럼프 대통령은 이란과의 협상을 위해 파키스탄으로 갈 예정이었던 특사들에게 가지 말라고 지시했으며, 이란은 미국의 봉쇄 조치가 해제될 때까지 협상하지 않을 것이라고 밝혔다.",
-      "aggression_score": 17.0,
-      "threat_intensity": 30,
-      "specificity": 20,
+      "url": "https://www.cnbc.com/2026/04/27/trump-iran-war-strait-of-hormuz-rubio.html",
+      "content": "Iran would reopen Strait of Hormuz, postpone nuclear talks if U.S. lifts blockade and war ends: Reports - CNBC\n\n# Iran would reopen Strait of Hormuz, postpone nuclear talks if U.S. lifts blockade and war ends: Reports. * Iran offered to reopen the Strait of Hormuz if the U.S. lifts its blockade and the war ends, while setting aside nuclear negotiations for later, reports said. Iran has offered to reopen the Strait of Hormuz if the U.S. lifts its blockade of Iranian ports and the war ends, while ",
+      "translated": "이란이 미국의 봉쇄 해제와 전쟁 종식을 조건으로 호르무즈 해협을 재개방하고 핵 협상은 연기하겠다고 제안했다.",
+      "aggression_score": 38.0,
+      "threat_intensity": 50,
+      "specificity": 60,
       "deadline_specified": 0,
       "topic_tags": [
         "iran",
         "foreign_policy",
         "sanctions",
-        "trade"
+        "war",
+        "energy",
+        "other"
       ],
-      "rationale": "이란과의 협상단 파견 취소는 외교적 압박의 일환으로, 직접적인 위협보다는 협상 테이블에서 유리한 고지를 점하려는 의도로 해석됩니다. 구체적인 제재나 군사적 행동 언급이 없어 위협 강도가 낮고, 시한 명시도 없습니다. 이란의 항구 봉쇄 해제 요구는 협상 조건 제시로, 트럼프 발언의 공격성을 높이지 않습니다."
+      "rationale": "이란이 호르무즈 해협 봉쇄 해제 및 전쟁 종식을 조건으로 핵협상 연기를 제안했으나, 트럼프 대통령은 거래가 100% 완료될 때까지 봉쇄 해제를 하지 않겠다고 밝혀 구체적인 제재 해제 시한이나 수치가 명시되지 않았고, 위협 강도도 조건부 협상 제안 수준으로 평가됨."
+    },
+    {
+      "source": "news",
+      "url": "https://www.nbcnews.com/world/iran/trump-iran-war-call-us-peace-talks-araghchi-putin-hormuz-rcna342251",
+      "content": "Trump tells Iran 'call us' with peace talks stalled as Putin hosts Tehran's top diplomat - NBC News\n\n# Trump tells Iran 'call us,' with peace talks stalled as Putin hosts Tehran's top diplomat. Iranian Foreign Minister Abbas Araghchi arrived in St. Petersburg on Monday after President Donald Trump canceled U.S. envoys' trip to Pakistan. That's President Donald Trump's message to Iran, with peace talks stalled and the two countries engaged in a standoff over the Strait of Hormuz that saw energy p",
+      "translated": "트럼프 대통령이 평화 협상이 교착 상태에 빠진 가운데 이란에 \"전화하라\"고 제안했으며, 푸틴 대통령은 테헤란 최고 외교관을 접견했다.",
+      "aggression_score": 29.0,
+      "threat_intensity": 30,
+      "specificity": 20,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "foreign_policy",
+        "iran",
+        "russia",
+        "trade",
+        "energy",
+        "nuclear",
+        "sanctions"
+      ],
+      "rationale": "트럼프는 이란에게 '전화하라'고 말하며 대화를 제안했지만, 이는 구체적인 위협이나 제재를 명시하지 않은 수사적 제안에 가깝습니다. '평화 협상'이라는 맥락은 공격성보다는 외교적 시도를 나타냅니다. 시한은 '10분 이내'라는 모호한 언급이 있지만, 이는 제안 자체에 대한 것이지 실행 시점에 대한 것은 아닙니다."
     }
   ],
-  "explanation": "[매우 높음] Aggression 95.0 × Pain 68.0 → composite=0.829, interaction=0.388, raw=1.217. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[높음] Aggression 49.0 × Pain 67.8 → composite=0.575, interaction=0.199, raw=0.774. 룰베이스 공식 rule-based-v0.1 적용."
 }
