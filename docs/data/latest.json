@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-28T06:54:05.859967+09:00",
-  "date": "2026-04-28",
-  "taco_probability": 71.02,
-  "aggression_score": 49.0,
-  "pain_index": 67.82,
+  "generated_at": "2026-04-29T06:58:06.675294+09:00",
+  "date": "2026-04-29",
+  "taco_probability": 78.7,
+  "aggression_score": 56.0,
+  "pain_index": 72.35,
   "expected_window_hours": [
     48.0,
     96.0
@@ -15,29 +15,29 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-27T21:52:37.204919+00:00",
-    "treasury_10y": 4.31,
-    "sp500": 7173.91015625,
-    "vix": 18.020000457763672,
-    "djia": 49167.7890625,
-    "nasdaq": 24887.099609375,
-    "wti_usd": 96.68000030517578,
-    "breakeven_5y": 2.62,
-    "btc_usd": 76913.0,
+    "ts": "2026-04-28T21:56:37.471487+00:00",
+    "treasury_10y": 4.35,
+    "sp500": 7138.7998046875,
+    "vix": 17.829999923706055,
+    "djia": 49141.9296875,
+    "nasdaq": 24663.798828125,
+    "wti_usd": 99.62000274658203,
+    "breakeven_5y": 2.63,
+    "btc_usd": 76293.0,
     "trump_approval": 38.8
   },
   "pain": {
-    "index": 67.82,
-    "weighted_z": 0.3727,
+    "index": 72.35,
+    "weighted_z": 0.4809,
     "contributions": {
-      "treasury_10y": 0.006,
-      "sp500": -0.137,
-      "djia": -0.0779,
-      "nasdaq": -0.2157,
-      "vix": 0.0383,
-      "wti_usd": 0.1363,
-      "breakeven_5y": 0.06,
-      "btc_usd": -0.0573,
+      "treasury_10y": 0.03,
+      "sp500": -0.1194,
+      "djia": -0.0761,
+      "nasdaq": -0.1901,
+      "vix": 0.0311,
+      "wti_usd": 0.1706,
+      "breakeven_5y": 0.065,
+      "btc_usd": -0.0501,
       "trump_approval": 0.62
     },
     "missing": []
@@ -45,109 +45,91 @@
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.nbcnews.com/video/at-least-19-killed-dozens-hurt-in-colombia-highway-blast-262149189833",
-      "content": "At least 19 killed, dozens hurt in Colombia highway blast - NBC News\n\n## Trump says Iran is ‘making an offer’. * ## Lebanese refugees hope to return home as ceasefire with Israel is extended. * ## Israel waiting for U.S. green light to return Iran to ‘dark and stone ages’. * ## Iran attacks and seizes commercial ships after Trump extends ceasefire. * ## Trump extends ceasefire deadline with Iran as talks stall. * ## Americans injured in deadly Mexico pyramid shooting. * ## Beirut residents say t",
-      "translated": "콜롬비아 고속도로 폭발로 최소 19명 사망, 수십 명 부상.\n트럼프, 이란이 '제안을 하고 있다'고 말함.\n이스라엘과의 휴전 연장으로 레바논 난민들이 귀환을 희망하고 있음.\n트럼프가 휴전을 연장하자 이란이 상선들을 공격하고 나포함.\n트럼프, 이란과의 휴전 시한을 연장함.",
-      "aggression_score": 49.0,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-new-tariffs-supreme-court-b2966246.html",
+      "content": "Trump expected to announce new round of tariffs - The Independent\n\nPresident Donald Trump’s administration is expected to impose a new round of tariffs on consumers as millions of Americans continue to struggle with the high cost of living. Starting this week, the Office of the U.S. Trade Representative will hold hearings in two investigations that are expected to lead to a new round of U.S. tariffs — taxes paid by importers in the United States and usually passed on to consumers via higher pric",
+      "translated": "트럼프 행정부가 생활비 상승으로 어려움을 겪는 미국인들을 위해 새로운 관세 부과를 발표할 것으로 예상됩니다.",
+      "aggression_score": 56.0,
+      "threat_intensity": 65,
+      "specificity": 60,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "tariffs",
+        "trade"
+      ],
+      "rationale": "새로운 관세 부과가 예상되며 Section 301 언급으로 구체적인 경제적 위협이 명확히 제시되었으나, 관세의 구체적인 대상 국가나 수치는 명시되지 않았고, 관세 부과를 위한 청문회가 '이번 주' 시작된다고 언급되어 조치 개시가 임박했음을 시사하지만 관세의 실제 발효 시점은 모호함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.axios.com/2026/04/28/iran-war-peace-talks-stalemate",
+      "content": "The Iran conflict has become the new Cold War - Axios\n\n**Zoom in:** President Trump is vacillating between launching new military strikes or waiting to see whether his \"maximum pressure\" financial sanctions make Iran more inclined to negotiate an end to its nuclear weapons program, according to five advisers who have spoken with him. **Inside the room:** Some of Trump's senior advisers want him to maintain the U.S. blockade of the Strait of Hormuz for now — and impose more economic sanctions to ",
+      "translated": "이란과의 갈등이 새로운 냉전으로 부상하고 있으며, 트럼프 대통령은 군사적 공격과 경제 제재 사이에서 고심하고 있다.",
+      "aggression_score": 46.5,
+      "threat_intensity": 55,
+      "specificity": 40,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "military",
+        "sanctions",
+        "iran",
+        "nuclear",
+        "foreign_policy",
+        "trade"
+      ],
+      "rationale": "이란과의 군사적 충돌 가능성 및 추가 제재 언급이 있으나, 구체적인 조치나 시한은 명확하지 않아 중간 수준의 점수를 부여함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.manufacturing.net/supply-chain/news/22965602/new-us-tariffs-expected-after-investigations-into-forced-labor-manufacturing-disadvantages",
+      "content": "New U.S. Tariffs Expected After Investigations Into Forced Labor, Manufacturing Disadvantages - Manufacturing.net\n\n# New U.S. Tariffs Expected After Investigations Into Forced Labor, Manufacturing Disadvantages. WASHINGTON (AP) — When the Supreme Court killed his favorite tariffs in February, President Donald Trump promptly rolled out temporary import taxes to replace them. Starting this week, the Office of the U.S. Trade Representative will begin hearings in two investigations that are expected",
+      "translated": "미국이 강제 노동 및 제조 불이익에 대한 조사 후 새로운 관세를 부과할 것으로 예상된다.",
+      "aggression_score": 46.0,
       "threat_intensity": 70,
       "specificity": 60,
       "deadline_specified": 0,
       "topic_tags": [
         "tariffs",
-        "immigration",
-        "foreign_policy",
         "trade",
-        "military",
-        "war",
-        "iran",
-        "israel",
-        "russia",
-        "china",
-        "north_korea",
-        "middle_east",
-        "nuclear",
-        "sanctions",
-        "election",
-        "crypto",
-        "energy",
-        "fed",
-        "other"
+        "china"
       ],
-      "rationale": "콜롬비아 고속도로 폭발 사건에 대한 발언으로, '테러 행위'로 규정하고 있지만 구체적인 위협 대상이나 시한은 명시되지 않아 중간 수준의 공격성 점수를 부여합니다."
+      "rationale": "새로운 관세 부과 의지가 강하게 표명되었고(위협 강도 70점), 관세라는 구체적인 조치가 명확하나 대상 국가나 관세율이 명시되지 않아 구체성은 중간 수준(60점). 관세 부과 시점은 조사 이후로 명확한 시한이 없어(0점) 최종 점수가 낮아짐."
     },
     {
       "source": "news",
-      "url": "https://www.nbcnews.com/video/hope-for-us-iran-peace-deal-fading-262142533610",
-      "content": "Hope for US-Iran peace deal fading - NBC News\n\n* ## Trump raised questions about security at WHCD. * ## New details on shooting at WH Correspondents’ Dinner. ## Concerns over rise of targeted political violence after WH Correspondents’ Dinner shooting. * ## Trump renews calls for new White House ballroom after shooting. * ## Trump says Iran is ‘making an offer’. * ## Search for suspects after deadly Louisiana mall shooting. * ## Trump warns U.S. will ‘shoot and kill’ Iranian mine boats. Presiden",
-      "translated": "미국과 이란의 평화 협상 전망이 어두워지고 있다는 NBC 뉴스 보도가 나왔습니다.\n트럼프 전 대통령은 백악관 출입기자단 만찬회에서의 총격 사건 이후 정치적 폭력 증가에 대한 우려를 표하며 새로운 만찬회장 마련을 촉구했습니다.",
-      "aggression_score": 44.0,
-      "threat_intensity": 70,
-      "specificity": 50,
-      "deadline_specified": 0,
-      "topic_tags": [
-        "military",
-        "iran",
-        "foreign_policy",
-        "tariffs"
-      ],
-      "rationale": "이란 군함에 대한 '발포 및 사살' 경고는 군사적 위협의 강도가 높으나, 구체적인 시한이나 대상 함선에 대한 언급이 없어 구체성과 시한 명시 점수가 낮음. 또한, 파키스탄 방문 취소는 외교적 결정으로 해석될 수 있음."
-    },
-    {
-      "source": "news",
-      "url": "https://nypost.com/2026/04/26/opinion/trumps-threats-to-iran-letters/",
-      "content": "Trump’s threats to Iran: Letters to the Editor — April 27, 2026 - New York Post\n\n# Trump’s threats to Iran: Letters to the Editor — April 27, 2026. ### **The Issue:** President Trump’s approach to the war with Iran as peace talks continue. President Trump’s threat to “finish up” in Iran shouldn’t be surprising. The Trump administration’s strategy has been clear: Assert that America is dominating this war — even if the narrative is at odds with reality. The war in Iran is unlikely to be “finishin",
-      "translated": "트럼프 대통령의 이란과의 전쟁에 대한 접근 방식은 평화 협상이 진행되는 가운데 계속되고 있으며, 그의 \"마무리하겠다\"는 위협은 놀랍지 않다는 내용입니다.",
-      "aggression_score": 41.5,
-      "threat_intensity": 70,
-      "specificity": 45,
-      "deadline_specified": 0,
-      "topic_tags": [
-        "foreign_policy",
-        "war",
-        "iran",
-        "middle_east"
-      ],
-      "rationale": "트럼프의 '이란 전쟁 마무리' 발언은 강한 위협을 내포하지만, 구체적인 실행 방안이나 시한이 전혀 명시되지 않아 전반적인 공격성 점수가 낮게 평가됨."
-    },
-    {
-      "source": "news",
-      "url": "https://www.cnbc.com/2026/04/27/trump-iran-war-strait-of-hormuz-rubio.html",
-      "content": "Iran would reopen Strait of Hormuz, postpone nuclear talks if U.S. lifts blockade and war ends: Reports - CNBC\n\n# Iran would reopen Strait of Hormuz, postpone nuclear talks if U.S. lifts blockade and war ends: Reports. * Iran offered to reopen the Strait of Hormuz if the U.S. lifts its blockade and the war ends, while setting aside nuclear negotiations for later, reports said. Iran has offered to reopen the Strait of Hormuz if the U.S. lifts its blockade of Iranian ports and the war ends, while ",
-      "translated": "이란이 미국의 봉쇄 해제와 전쟁 종식을 조건으로 호르무즈 해협을 재개방하고 핵 협상은 연기하겠다고 제안했다.",
-      "aggression_score": 38.0,
-      "threat_intensity": 50,
+      "url": "https://nypost.com/2026/04/28/us-news/trump-claims-iran-is-in-state-of-collapse-wants-strait-of-hormuz-re-open/",
+      "content": "Trump claims Iran is in ‘state of collapse,’ wants Strait of Hormuz re-open - New York Post\n\n# Trump claims Iran is in ‘state of collapse,’ wants Strait of Hormuz re-open. President Trump alleged Tuesday that Iran has admitted to being in a “state of collapse” under pressure from the United States and is desperate to get the Strait of Hormuz reopened. Since April 13, Trump has imposed a sweeping blockade to stop Iranian ships from traversing the crucial waterway. ## Follow The Post’s coverage on",
+      "translated": "트럼프 대통령은 이란이 미국의 압박으로 '붕괴 상태'에 빠졌으며 호르무즈 해협 재개방을 간절히 원한다고 주장했다.",
+      "aggression_score": 44.5,
+      "threat_intensity": 55,
       "specificity": 60,
       "deadline_specified": 0,
       "topic_tags": [
         "iran",
         "foreign_policy",
+        "trade",
         "sanctions",
-        "war",
-        "energy",
-        "other"
+        "military"
       ],
-      "rationale": "이란이 호르무즈 해협 봉쇄 해제 및 전쟁 종식을 조건으로 핵협상 연기를 제안했으나, 트럼프 대통령은 거래가 100% 완료될 때까지 봉쇄 해제를 하지 않겠다고 밝혀 구체적인 제재 해제 시한이나 수치가 명시되지 않았고, 위협 강도도 조건부 협상 제안 수준으로 평가됨."
+      "rationale": "이란의 '붕괴 상태'를 주장하며 호르무즈 해협 재개방을 요구하는 발언으로, 구체적인 제재나 군사 행동 언급은 없으나 해협 봉쇄 조치를 언급하며 압박의 강도를 높이고 있음. 시한은 명시되지 않음."
     },
     {
       "source": "news",
-      "url": "https://www.nbcnews.com/world/iran/trump-iran-war-call-us-peace-talks-araghchi-putin-hormuz-rcna342251",
-      "content": "Trump tells Iran 'call us' with peace talks stalled as Putin hosts Tehran's top diplomat - NBC News\n\n# Trump tells Iran 'call us,' with peace talks stalled as Putin hosts Tehran's top diplomat. Iranian Foreign Minister Abbas Araghchi arrived in St. Petersburg on Monday after President Donald Trump canceled U.S. envoys' trip to Pakistan. That's President Donald Trump's message to Iran, with peace talks stalled and the two countries engaged in a standoff over the Strait of Hormuz that saw energy p",
-      "translated": "트럼프 대통령이 평화 협상이 교착 상태에 빠진 가운데 이란에 \"전화하라\"고 제안했으며, 푸틴 대통령은 테헤란 최고 외교관을 접견했다.",
-      "aggression_score": 29.0,
-      "threat_intensity": 30,
-      "specificity": 20,
-      "deadline_specified": 40,
+      "url": "https://www.claimsjournal.com/news/national/2026/04/28/337208.htm",
+      "content": "Trump Says Iran Wants Hormuz Open in Tussle Over War’s End - Claims Journal\n\n# Trump Says Iran Wants Hormuz Open in Tussle Over War’s End. By Arsalan Shahla and Eltaf Najafizada | April 28, 2026. President Donald Trump said Iran has asked the U.S. to lift a naval blockade of the Strait of Hormuz while the two sides negotiate an end to the two-month war, which has upended global energy supplies. Iran has signaled it may be willing to accept an interim deal to reopen the Strait of Hormuz in exchan",
+      "translated": "트럼프 대통령은 이란이 두 달간의 전쟁을 끝내기 위한 협상 과정에서 호르무즈 해협 봉쇄 해제를 미국에 요청했다고 밝혔다.",
+      "aggression_score": 38.0,
+      "threat_intensity": 50,
+      "specificity": 60,
+      "deadline_specified": 0,
       "topic_tags": [
-        "foreign_policy",
+        "war",
         "iran",
-        "russia",
-        "trade",
-        "energy",
-        "nuclear",
-        "sanctions"
+        "military",
+        "sanctions",
+        "foreign_policy",
+        "energy"
       ],
-      "rationale": "트럼프는 이란에게 '전화하라'고 말하며 대화를 제안했지만, 이는 구체적인 위협이나 제재를 명시하지 않은 수사적 제안에 가깝습니다. '평화 협상'이라는 맥락은 공격성보다는 외교적 시도를 나타냅니다. 시한은 '10분 이내'라는 모호한 언급이 있지만, 이는 제안 자체에 대한 것이지 실행 시점에 대한 것은 아닙니다."
+      "rationale": "이란의 호르무즈 해협 봉쇄 해제 요구와 관련하여 트럼프 대통령이 언급한 내용으로, 전쟁 종식 협상의 맥락에서 나온 발언입니다. 구체적인 제재나 군사 행동 언급은 없으나, 해협 봉쇄 해제라는 구체적인 요구 사항이 제시되었고, 이란과의 협상이라는 맥락에서 중간 정도의 위협 강도를 보입니다. 시한은 명시되지 않았습니다."
     }
   ],
-  "explanation": "[높음] Aggression 49.0 × Pain 67.8 → composite=0.575, interaction=0.199, raw=0.774. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[높음] Aggression 56.0 × Pain 72.3 → composite=0.634, interaction=0.243, raw=0.877. 룰베이스 공식 rule-based-v0.1 적용."
 }
