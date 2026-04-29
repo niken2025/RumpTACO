@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-29T06:58:06.675294+09:00",
-  "date": "2026-04-29",
-  "taco_probability": 78.7,
-  "aggression_score": 56.0,
-  "pain_index": 72.35,
+  "generated_at": "2026-04-30T07:00:11.802875+09:00",
+  "date": "2026-04-30",
+  "taco_probability": 83.98,
+  "aggression_score": 59.5,
+  "pain_index": 78.92,
   "expected_window_hours": [
-    48.0,
-    96.0
+    24.0,
+    48.0
   ],
   "model_version": "rule-based-v0.1",
   "threshold": {
@@ -15,121 +15,125 @@
     "medium": 40
   },
   "market_snapshot": {
-    "ts": "2026-04-28T21:56:37.471487+00:00",
-    "treasury_10y": 4.35,
-    "sp500": 7138.7998046875,
-    "vix": 17.829999923706055,
-    "djia": 49141.9296875,
-    "nasdaq": 24663.798828125,
-    "wti_usd": 99.62000274658203,
-    "breakeven_5y": 2.63,
-    "btc_usd": 76293.0,
-    "trump_approval": 38.8
+    "ts": "2026-04-29T21:58:27.316154+00:00",
+    "treasury_10y": 4.36,
+    "sp500": 7135.9501953125,
+    "vix": 18.809999465942383,
+    "djia": 48861.80859375,
+    "nasdaq": 24673.240234375,
+    "wti_usd": 108.48999786376953,
+    "breakeven_5y": 2.67,
+    "btc_usd": 75952.0,
+    "trump_approval": 38.9
   },
   "pain": {
-    "index": 72.35,
-    "weighted_z": 0.4809,
+    "index": 78.92,
+    "weighted_z": 0.6602,
     "contributions": {
-      "treasury_10y": 0.03,
-      "sp500": -0.1194,
-      "djia": -0.0761,
-      "nasdaq": -0.1901,
-      "vix": 0.0311,
-      "wti_usd": 0.1706,
-      "breakeven_5y": 0.065,
-      "btc_usd": -0.0501,
-      "trump_approval": 0.62
+      "treasury_10y": 0.036,
+      "sp500": -0.118,
+      "djia": -0.0575,
+      "nasdaq": -0.1912,
+      "vix": 0.0679,
+      "wti_usd": 0.274,
+      "breakeven_5y": 0.085,
+      "btc_usd": -0.0461,
+      "trump_approval": 0.61
     },
     "missing": []
   },
   "top_statements": [
     {
       "source": "news",
-      "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-new-tariffs-supreme-court-b2966246.html",
-      "content": "Trump expected to announce new round of tariffs - The Independent\n\nPresident Donald Trump’s administration is expected to impose a new round of tariffs on consumers as millions of Americans continue to struggle with the high cost of living. Starting this week, the Office of the U.S. Trade Representative will hold hearings in two investigations that are expected to lead to a new round of U.S. tariffs — taxes paid by importers in the United States and usually passed on to consumers via higher pric",
-      "translated": "트럼프 행정부가 생활비 상승으로 어려움을 겪는 미국인들을 위해 새로운 관세 부과를 발표할 것으로 예상됩니다.",
-      "aggression_score": 56.0,
-      "threat_intensity": 65,
-      "specificity": 60,
+      "url": "https://www.nbcnews.com/world/iran/trump-warns-iran-deal-military-options-strait-hormuz-energy-prices-rcna342631",
+      "content": "Trump warns Iran ‘better get smart soon’ as he weighs military options over Strait of Hormuz - NBC News\n\n# Trump warns Iran ‘better get smart soon’ as he weighs military options over Strait of Hormuz. Members of Trump’s national security team presented the president with multiple options this week for how to handle the continuing bottleneck in the key waterway, a U.S. official and a person familiar with the meeting told NBC News. President Donald Trump warned Iran “better get smart soon” Wednesd",
+      "translated": "트럼프 대통령이 호르무즈 해협에서의 군사적 옵션을 검토하며 이란에 \"곧 똑똑해지는 게 좋을 것\"이라고 경고했습니다.",
+      "aggression_score": 59.5,
+      "threat_intensity": 70,
+      "specificity": 65,
       "deadline_specified": 40,
       "topic_tags": [
-        "tariffs",
-        "trade"
+        "iran",
+        "foreign_policy",
+        "military",
+        "middle_east"
       ],
-      "rationale": "새로운 관세 부과가 예상되며 Section 301 언급으로 구체적인 경제적 위협이 명확히 제시되었으나, 관세의 구체적인 대상 국가나 수치는 명시되지 않았고, 관세 부과를 위한 청문회가 '이번 주' 시작된다고 언급되어 조치 개시가 임박했음을 시사하지만 관세의 실제 발효 시점은 모호함."
+      "rationale": "이란에 대한 군사적 옵션 고려를 명시하여 위협 강도는 높으나, 구체적인 군사 행동의 종류나 발효 시한이 모호하여 구체성과 시한 명시 점수는 낮음."
     },
     {
       "source": "news",
-      "url": "https://www.axios.com/2026/04/28/iran-war-peace-talks-stalemate",
-      "content": "The Iran conflict has become the new Cold War - Axios\n\n**Zoom in:** President Trump is vacillating between launching new military strikes or waiting to see whether his \"maximum pressure\" financial sanctions make Iran more inclined to negotiate an end to its nuclear weapons program, according to five advisers who have spoken with him. **Inside the room:** Some of Trump's senior advisers want him to maintain the U.S. blockade of the Strait of Hormuz for now — and impose more economic sanctions to ",
-      "translated": "이란과의 갈등이 새로운 냉전으로 부상하고 있으며, 트럼프 대통령은 군사적 공격과 경제 제재 사이에서 고심하고 있다.",
+      "url": "https://nypost.com/2026/04/29/us-news/trump-complains-iran-cant-get-their-act-together-and-sign-a-nonnuclear-deal-as-war-passes-two-month-mark/",
+      "content": "Trump complains Iran 'can't get their act together' and 'sign a nonnuclear deal' as war passes two-month mark - New York Post\n\n# Trump complains Iran ‘can’t get their act together’ and ‘sign a nonnuclear deal’ as war passes two-month mark. Published  April 29, 2026, 6:07 a.m. ET. President Trump said early Wednesday that Iran’s leaders had “better get smart soon” and agree to give up their nuclear program as the war between Washington and Tehran passed its two-month anniversary. “Iran can’t get ",
+      "translated": "트럼프 대통령은 이란이 핵 합의에 서명하지 못하고 \"정신을 차리지 못하고 있다\"고 비판했습니다.",
       "aggression_score": 46.5,
       "threat_intensity": 55,
       "specificity": 40,
       "deadline_specified": 40,
       "topic_tags": [
-        "military",
-        "sanctions",
         "iran",
         "nuclear",
+        "war",
+        "sanctions",
         "foreign_policy",
         "trade"
       ],
-      "rationale": "이란과의 군사적 충돌 가능성 및 추가 제재 언급이 있으나, 구체적인 조치나 시한은 명확하지 않아 중간 수준의 점수를 부여함."
+      "rationale": "이란의 핵 프로그램 포기를 촉구하며 '더 이상 좋은 사람이 아니다'라고 경고하고 있으나, 구체적인 제재나 군사 행동 언급 없이 '곧 똑똑해져야 한다'는 모호한 시한을 제시함."
     },
     {
       "source": "news",
-      "url": "https://www.manufacturing.net/supply-chain/news/22965602/new-us-tariffs-expected-after-investigations-into-forced-labor-manufacturing-disadvantages",
-      "content": "New U.S. Tariffs Expected After Investigations Into Forced Labor, Manufacturing Disadvantages - Manufacturing.net\n\n# New U.S. Tariffs Expected After Investigations Into Forced Labor, Manufacturing Disadvantages. WASHINGTON (AP) — When the Supreme Court killed his favorite tariffs in February, President Donald Trump promptly rolled out temporary import taxes to replace them. Starting this week, the Office of the U.S. Trade Representative will begin hearings in two investigations that are expected",
-      "translated": "미국이 강제 노동 및 제조 불이익에 대한 조사 후 새로운 관세를 부과할 것으로 예상된다.",
-      "aggression_score": 46.0,
-      "threat_intensity": 70,
-      "specificity": 60,
+      "url": "https://www.ynetnews.com/article/rjr11prjc11x",
+      "content": "Largest US aircraft carrier to leave Mideast as Trump says Iran must ‘give up’ - ynetnews\n\n## After call with Netanyahu, Israeli officials believe Trump wants to keep naval blockade on Iran, betting it will force Tehran to surrender; president calls move “genius” but does not say whether US will resume strikes. U.S. President Donald Trump said Wednesday that Iran must surrender and say “we give up” under the pressure of the U.S. naval blockade on Iranian ports, but did not say whether additional",
+      "translated": "트럼프 대통령이 이란에 항복을 요구하며, 미국 항공모함이 중동을 떠날 것이라고 밝혔다.",
+      "aggression_score": 45.5,
+      "threat_intensity": 65,
+      "specificity": 50,
       "deadline_specified": 0,
       "topic_tags": [
-        "tariffs",
-        "trade",
-        "china"
-      ],
-      "rationale": "새로운 관세 부과 의지가 강하게 표명되었고(위협 강도 70점), 관세라는 구체적인 조치가 명확하나 대상 국가나 관세율이 명시되지 않아 구체성은 중간 수준(60점). 관세 부과 시점은 조사 이후로 명확한 시한이 없어(0점) 최종 점수가 낮아짐."
-    },
-    {
-      "source": "news",
-      "url": "https://nypost.com/2026/04/28/us-news/trump-claims-iran-is-in-state-of-collapse-wants-strait-of-hormuz-re-open/",
-      "content": "Trump claims Iran is in ‘state of collapse,’ wants Strait of Hormuz re-open - New York Post\n\n# Trump claims Iran is in ‘state of collapse,’ wants Strait of Hormuz re-open. President Trump alleged Tuesday that Iran has admitted to being in a “state of collapse” under pressure from the United States and is desperate to get the Strait of Hormuz reopened. Since April 13, Trump has imposed a sweeping blockade to stop Iranian ships from traversing the crucial waterway. ## Follow The Post’s coverage on",
-      "translated": "트럼프 대통령은 이란이 미국의 압박으로 '붕괴 상태'에 빠졌으며 호르무즈 해협 재개방을 간절히 원한다고 주장했다.",
-      "aggression_score": 44.5,
-      "threat_intensity": 55,
-      "specificity": 60,
-      "deadline_specified": 0,
-      "topic_tags": [
-        "iran",
         "foreign_policy",
         "trade",
+        "military",
+        "iran",
+        "russia",
+        "sanctions"
+      ],
+      "rationale": "이란의 핵 포기를 압박하기 위한 해상 봉쇄 유지 및 추가 군사 행동 가능성을 시사했으나, 구체적인 시한이나 추가 제재 수치 등은 명시되지 않아 중간 수준의 공격성 점수를 부여함."
+    },
+    {
+      "source": "news",
+      "url": "https://www.averyjournal.com/news/national/trump-warns-iran-better-get-smart-soon-and-accept-nuclear-deal/article_005be8f2-c6cc-5c62-be6e-0d3b19f19183.html",
+      "content": "Trump warns Iran better 'get smart soon' and accept nuclear deal - The Avery Journal-Times\n\nPresident Donald Trump warned Tehran on Wednesday that it should \"get smart soon\" and capitulate to Washington's demands for tight controls on its nuclear programme, as a US naval blockade turned the screws on Iran's economy. Pentagon chief Pete Hegseth was due to testify before Congress later in the day, but US press reports suggested Trump has already decided to reject Iran's latest proposed deal to reo",
+      "translated": "트럼프 대통령은 이란이 핵 프로그램에 대한 미국의 요구를 수용해야 한다고 경고하며 \"빨리 똑똑해져야 한다\"고 말했다.",
+      "aggression_score": 44.5,
+      "threat_intensity": 45,
+      "specificity": 50,
+      "deadline_specified": 40,
+      "topic_tags": [
+        "iran",
+        "nuclear",
         "sanctions",
+        "foreign_policy",
+        "trade",
         "military"
       ],
-      "rationale": "이란의 '붕괴 상태'를 주장하며 호르무즈 해협 재개방을 요구하는 발언으로, 구체적인 제재나 군사 행동 언급은 없으나 해협 봉쇄 조치를 언급하며 압박의 강도를 높이고 있음. 시한은 명시되지 않음."
+      "rationale": "트럼프는 이란에게 '곧 똑똑해져라'며 핵 합의를 수용하라고 경고했지만, 구체적인 제재나 군사 행동을 명시하지는 않았습니다. 'soon'이라는 모호한 시한을 언급했으며, 이란의 제안을 거부할 가능성을 시사하는 정도의 위협입니다."
     },
     {
       "source": "news",
-      "url": "https://www.claimsjournal.com/news/national/2026/04/28/337208.htm",
-      "content": "Trump Says Iran Wants Hormuz Open in Tussle Over War’s End - Claims Journal\n\n# Trump Says Iran Wants Hormuz Open in Tussle Over War’s End. By Arsalan Shahla and Eltaf Najafizada | April 28, 2026. President Donald Trump said Iran has asked the U.S. to lift a naval blockade of the Strait of Hormuz while the two sides negotiate an end to the two-month war, which has upended global energy supplies. Iran has signaled it may be willing to accept an interim deal to reopen the Strait of Hormuz in exchan",
-      "translated": "트럼프 대통령은 이란이 두 달간의 전쟁을 끝내기 위한 협상 과정에서 호르무즈 해협 봉쇄 해제를 미국에 요청했다고 밝혔다.",
-      "aggression_score": 38.0,
-      "threat_intensity": 50,
-      "specificity": 60,
-      "deadline_specified": 0,
+      "url": "https://www.cnbc.com/2026/04/29/trump-iran-threat-ai-picture-gun-war-strait-of-hormuz.html",
+      "content": "Trump threatens Iran with AI picture of himself with a gun: 'No more Mr. Nice guy!' - CNBC\n\n# Trump threatens Iran with AI picture of himself with a gun: 'No more Mr. Nice guy!'. U.S. President Donald Trump threatened Iran in a Truth Social post on Wednesday morning, saying the country \"better get smart soon!\". They better get smart soon!,\" Trump posted on the social media platform Truth Social shortly after 4 a.m. ET on Wednesday. The post comes as the crucial Strait of Hormuz remains blockaded",
+      "translated": "트럼프 전 대통령이 총을 든 자신의 인공지능(AI) 사진과 함께 이란을 향해 \"더 이상 좋은 사람이 아니다\"라며 경고했다.",
+      "aggression_score": 43.5,
+      "threat_intensity": 55,
+      "specificity": 30,
+      "deadline_specified": 40,
       "topic_tags": [
-        "war",
         "iran",
-        "military",
-        "sanctions",
         "foreign_policy",
-        "energy"
+        "military",
+        "sanctions"
       ],
-      "rationale": "이란의 호르무즈 해협 봉쇄 해제 요구와 관련하여 트럼프 대통령이 언급한 내용으로, 전쟁 종식 협상의 맥락에서 나온 발언입니다. 구체적인 제재나 군사 행동 언급은 없으나, 해협 봉쇄 해제라는 구체적인 요구 사항이 제시되었고, 이란과의 협상이라는 맥락에서 중간 정도의 위협 강도를 보입니다. 시한은 명시되지 않았습니다."
+      "rationale": "AI 이미지와 '더 이상 좋은 사람이 아니다'라는 발언은 위협적이지만, 구체적인 제재나 군사 행동 언급은 없어 위협 강도는 중간 수준입니다. 'soon'이라는 모호한 시한과 대상(이란)만 명시되어 구체성과 시한 명시 점수는 낮습니다."
     }
   ],
-  "explanation": "[높음] Aggression 56.0 × Pain 72.3 → composite=0.634, interaction=0.243, raw=0.877. 룰베이스 공식 rule-based-v0.1 적용."
+  "explanation": "[매우 높음] Aggression 59.5 × Pain 78.9 → composite=0.682, interaction=0.282, raw=0.964. 룰베이스 공식 rule-based-v0.1 적용."
 }
